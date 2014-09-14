@@ -17,11 +17,13 @@
         "profiles": [
             {
                 "network": "GitHub",
-                "username": "joshuahutt",
-                "url": "https://github.com/huttj/",
-                "tags": [
-                    "carl"
-                ]
+                "username": "huttj",
+                "url": "https://github.com/huttj/"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "169900357",
+                "url": "https://www.linkedin.com/profile/view?id=169900357"
             },
             {
                 "network": "Twitter",
@@ -35,27 +37,66 @@
             "company": "Avanade",
             "position": "User Assistance Lead",
             "website": "http://www.avanade.com",
-            "startDate": "2013-4-01",
+            "startDate": "2013-04-01",
             "endDate": "Present",
             "summary": "Avanade is a business technology solutions and managed services provider with innovative insights and expertise in Microsoft technologies that helps customers realize results.",
             "highlights": [
-                {
-                    "_value": "my name",
-                    "tags": ["carl"]
-                },
-                "Blah"
+                "Working closely with Technology Infrastructure (TI) developers, business consultants, product managers, and key product stakeholders to research and document enterprise requirements, user-stories, and product features, integrating the results into a core project methodology.",
+                "Participating in software re-architecture planning: validating database schemas, user requirements, and business processes in the context of the in-progress project methodology, as well as moderating the feature-methodology interaction",
+                "Working with the Software & Cloud Services (SCS) UX Working Group; developing a UX Design Pattern Library in SharePoint 2010 and KnockoutJS to capture internal UX patterns and offer SCS development teams a central, user-friendly repository for repeatable code and best practices.",
+                "Producing adaptive, user-centered HTML5 help and PowerPoint training decks to define and simplify complex user workflows.",
+                "Taking ownership of the entire library of end-user and business consultant documentation for an enterprise software platform with a diverse customer base, including installation guides, user guides, customer demonstration guides, and UI documentation.",
+                "Working with a senior Technical Writer to develop a new, iterative strategy for company-wide software documentation."
             ]
         },
         {
             "company": "University of Washington",
             "position": "Technical Writer",
             "website": "http://www.ee.washington.edu",
-            "startDate": "2011-01-01",
-            "endDate": "2013-03-01",
+            "startDate": "2011-01",
+            "endDate": "2013-03",
             "summary": "During my last two years at school, I worked for professor Alexander Mamishev in the Electrical Engineering department.",
             "highlights": [
-                "Wrote and published books, articles, journal articles.",
-                "Blah"
+                "Writing, editing, and publishing multi-million dollar research proposals, technical journal articles, Ph.D. dissertations, press releases, news articles, and three non-fiction books, including a Microsoft Word 2010 instructional book.",
+                {
+                    "value": "Leading public relations efforts at the Sensors, Energy, and Automation Laboratory (SEAL), including:",
+                    "data": [
+                        "Writing and disseminating SEAL-branded press releases based on successful research, articles, and grants;",
+                        "Drafting publicity articles for SEAL research and the STREAM Tools System;",
+                        "Analyzing potential target news outlets and organizations in the PNW and reaching out through cold-calling",
+                        "Arranging book publication and a corresponding author event at the UW’s University Book Store;",
+                        "Securing and coordinating a KING 5 TV news segment for the Dietary Data Recording System developed at SEAL"
+                    ]
+                },
+                "Creating a business plan, a marketing plan, and various products for the STREAM Tools business venture.",
+                "Adapting data from technical publications to create PowerPoint presentations, wall posters, and book manuscripts.",
+                "Updating, redesigning, and maintaining the SEAL website, including a creating a lightweight, PHP-based framework."
+            ]
+        },
+        {
+            "company": "Real Sort",
+            "position": "Web Designer & Business Consultant",
+            "website": "http://www.realsort.org",
+            "startDate": "2012-06",
+            "endDate": "2012-07",
+            "summary": "Real Sort offers an alternative to the standard professional organizing experience.",
+            "highlights": [
+                "Worked with the customer to identify branding requirements and develop a unique and personal brand positioning.",
+                "Redesigned the visual elements of the customer’s website to complement established branding and meet customer expectations.",
+                "Created additional custom-branded physical documents, including business cards, customer intake forms, and questionnaires.",
+                "Worked with the customer to develop and revise a business plan, marketing materials, and a three-tiered service offering."
+            ]
+        },
+        {
+            "company": "Minhang High School (China)",
+            "position": "High School English Teacher",
+            "website": "http://mhzx.mhedu.sh.cn/",
+            "startDate": "2010-12",
+            "endDate": "2010-09",
+            "summary": "",
+            "highlights": [
+                "Designed and delivered practical curricula and teaching plans for five classes of varying levels of English proficiency.",
+                "Incorporated material from internet research, popular teaching manuals, and previous experience into lesson plans."
             ]
         }
     ],

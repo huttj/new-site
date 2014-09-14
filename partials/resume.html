@@ -31,9 +31,15 @@
                 <h3>{{job.position}} - <a href="{{job.website}}">{{job.company}}</a></h3>
                 <h4 style="font-style: italic;">{{ job.startDate | asDate | date:'MMMM yyyy' }} - {{ job.endDate != 'Present' ? (job.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
                 <p>{{ job.summary }}</p>
-                <h4 class="ui header">Highlights</h4>
+                <h4 class="ui header">Highlights:</h4>
                 <ul>
-                    <li ng-repeat="highlight in job.highlights">{{ highlight._value || highlight }}</li>
+                    <li ng-repeat="highlight in job.highlights">
+                        <span ng-if="!highlight.value">{{ highlight }}</span>
+                        <span ng-if="highlight.value">{{ highlight.value }}</span>
+                        <ol>
+                            <li ng-repeat="subhighlight in highlight.data">{{ subhighlight }}</li>
+                        </ol>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -51,7 +57,7 @@
 
                 <h4 style="font-style: italic;">{{ school.startDate | asDate | date:'MMMM yyyy' }} - {{ school.endDate != 'Present' ? (school.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
                 <p>{{ school.studyType ? school.studyType + ' in ' + school.area : school.area }}</p>
-                <h4 class="ui header">Courses</h4>
+                <h4 class="ui header">Courses:</h4>
                 <ul>
                     <li ng-repeat="course in school.courses">{{ course._value || course }}</li>
                 </ul>
@@ -60,7 +66,7 @@
     </div>
 
     <div class="skills">
-        <div class="ui three column doubling grid">
+        <div class="ui four column doubling grid">
             <div class="row">
                 <div class="column">
                     <h2 class="ui header">Skills</h2>
