@@ -1,0 +1,30 @@
+{
+  "name": "joshuathehutt.com",
+  "version": "0.0.1",
+  "authors": [
+    "joshuahutt <joshua@huttj.com>"
+  ],
+  "description": "Home page, blog, and portfolio of Joshua Hutt.",
+  "main": "index.html",
+  "keywords": [
+    "joshuahutt",
+    "huttj",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "homepage": "joshuathehutt.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.24",
+    "angular-route": "~1.2.24",
+    "semantic-ui": "~0.19.2",
+    "angular-sanitize": "~1.2.24"
+  }
+}

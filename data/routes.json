@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "name": "Home",
+        "shortName": "home",
+        "icon": "home"
+    },
+    {
+        "id": 1,
+        "name": "Portfolio",
+        "shortName": "portfolio",
+        "icon": "briefcase"
+    },
+    {
+        "id": 2,
+        "name": "Résumé",
+        "shortName": "resume",
+        "icon": "text file outline"
+    },
+    {
+        "id": 3,
+        "name": "Blog",
+        "shortName": "blog",
+        "icon": "book"
+    }
+]

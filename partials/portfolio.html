@@ -1,0 +1,41 @@
+<div class="portfolio sixteen wide column grid">
+    <h1 class="ui header">Portfolio</h1>
+
+   <!--For each category-->
+   <div class="ui three column grid" ng-repeat="category in data">
+
+       <!--Category name-->
+       <div class="sixteen wide column">
+           <h2 class="ui header">{{ category.name }}</h2>
+       </div>
+
+       <!--if subcategory exists-->
+       <div class="wide column subcategory" ng-repeat="subcategory in category.data" ng-if="category.data[0].type == 'subcategory'">
+           <h2>{{subcategory.name}}</h2>
+           <div ng-repeat="item in subcategory.data">
+
+                <h3><a href="{{item.link}}">{{ item.name }}</a></h3>
+                <h4 style="font-style: italic;">{{ item.dateStarted ? item.dateStarted + ' -' : ''}} {{ item.dateCompleted }}</h4>
+                <a href="{{item.link}}">
+                    <div class="img" ng-if="item.picture" style="background-image: url('img/portfolio/{{ item.picture }}')" >
+                        <!--<img ng-src="img/portfolio/{{ item.picture }}" alt="" class="img-left"/>-->
+                    </div>
+                </a>
+                <p>{{ item.description }}</p>
+           </div>
+       </div>
+
+       <!--otherwise, get straight into items-->
+       <div class="wide column subcategory" ng-repeat="item in category.data" ng-if="category.data[0].type == 'item'">
+           <h3><a href="{{item.link}}">{{ item.name }}</a></h3>
+           <h4 style="font-style: italic;">{{ item.dateStarted ? item.dateStarted + ' -' : ''}} {{ item.dateCompleted }}</h4>
+           <a href="{{item.link}}">
+               <div class="img" ng-if="item.picture" style="background-image: url('img/portfolio/{{ item.picture }}')" >
+                   <!--<img ng-src="img/portfolio/{{ item.picture }}" alt="" class="img-left"/>-->
+               </div>
+           </a>
+           <p>{{ item.description }}</p>
+       </div>
+
+   </div>
+</div>

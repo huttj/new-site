@@ -1,0 +1,13 @@
+Just over a year ago, I set up this website, posted a few portfolio items, blog entries, resumes and pictures. And then, almost as suddenly, I disappeared. (But I have been working hard the whole time!)
+
+For the past five and a half months, I have been working at Avanade, in their Seattle office. I was brought on as a Technical Writing Intern, but in actuality, I was given sole ownership of the documentation for ACA Accelerate, an enterprise-scale desktop migration automation platform.
+
+From these humble beginnings, I began by researching the software’s usage and implementation at customer organizations of widely varying scales. I quickly built up my knowledge of the platform, as well as my understanding of the nature of desktop transformation projects. I took the initiative to acquire, learn, and use MadCap Flare, and I produced high-quality HTML5 documentation for the various roles and interfaces involved in the platform. (I also suspect that I have become one of the leading submitters of bug reports and feature requests in MadCap history.)
+
+And then, suddenly, just as I had nearly finished settling into the perfect cadence, I was met with a surprise–in planning the next version of the software, the core architecture was to be revitalized, and the methodology revisited. And, of course, I was invited to participate in both of those efforts, front row center.
+
+I had an awesome time brainstorming, voicing concerns, and sharing my perspective during the meetings, and I helped to collect and refine the feature list, putting it in the perspective of the project methodology and the user interface of the previous version of the software. I prepared supporting artifacts and RACI matrices, and helped drive key discussions.
+
+And that is pretty much where I am today. I am currently working on finalizing a key element of what will ultimately drive the RBAC model behind the platform, and we are having a rather important meeting tomorrow to get the sign-off needed to move forward with the development effort. My next steps include offering my input on the core project methodology, an effort which I have approached with a strong focus on injecting rigor and specificity into the methodology and its requirements for our software. My biggest goal is to improve the quality and depth of interaction between the project personnel, who drive our delivery, and the development team(s), who create our product–and I am making some good headway.
+
+Tune in next week when I share my experience as a member of the UX Subdiscipline group and developer of the SCS UX Design Pattern Library!

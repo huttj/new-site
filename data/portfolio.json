@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Web Development",
+        "type": "category",
+        "data": [
+            {
+                "name": "Swippl",
+                "type": "item",
+                "description": "Swipe for a new picture.",
+                "link": "http://www.swippl.com",
+                "picture": "swippl.png",
+                "dateStarted": "March 2014",
+                "dateCompleted": "Present"
+            },
+            {
+                "name": "Explore Consulting Front Page",
+                "type": "item",
+                "description": "In my search for a job that fits in with my career goals, I reached out to Explore Consulting, to see if I might be a good fit for their Web Design Internship. I spoke with one of their recruiters, who mentioned that it would be helpful if I could redesign their front page. So, I began to put something together, using the Twitter Bootstrap framework, only to realize that I would be fighting it a lot of the way. So, I scrapped that, and started to put together something from scratch. What I accomplished is what you see above. The proudest part, for me, is the globe at the bottom, which was a little bit of a challenge to engineer. I used the Sticky plugin to do it, but I actually had to figure out the code to make the DIV stick to the bottom. It was really exciting when I got it. For this page, I’d like to make it tighter and more “shiny,” like theirs, but I’m not sure how much more time I want to put into it. (Note: Since it was just a mock-up, I worked exclusively in Chrome. I may return to it in the future to make it work in other browsers.)",
+                "link": "http://joshuahutt.com/explore/",
+                "picture": "explore.png",
+                "dateCompleted": "March 2013"
+            }
+        ]
+    },
+    {
+        "name": "Writing",
+        "type": "category",
+        "data": [
+            {
+                "name": "Articles",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "How to Write Research Papers in Microsoft Word 2010",
+                        "description": "While working at SEAL, I had frequent opportunities for involvement with various STREAM Tools business development efforts. One such opportunity involved writing an instructional article for the Principal Investigators Association, an organization aimed at assisting researchers with their managerial and administrative obligations. I drafted the article mostly from scratch, and had two of the other writers help me to review and edit it. The goal of the article was to show the reader a little about the time-saving functions of Microsoft Word 2010, of which many users are unaware. This article, along with several other STREAM Tools events and products, was the the impetus for the book, How to Write Research Papers in Microsoft Word 2010, which I am currently working to finalize.",
+                        "link": "http://principalinvestigators.org/no-115-how-to-write-research-papers-in-microsoft-word-2010/",
+                        "picture": "hwrpmw.png",
+                        "dateCompleted": "September 2012"
+                    }
+                ]
+            },
+            {
+                "name": "Books",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "Creating Research and Scientific Documents Using Microsoft Word",
+                        "type": "item",
+                        "description": "While working for Professor Mamishev at the Sensors, Energy, and Automation Laboratory (SEAL), I had the opportunity to ghostwrite a hands-on how-to book called Creating Research and Scientific Documents Using Microsoft Word. Over the course of two years, I worked to distill and translate the broad and numerous concepts from the STREAM Tools writing methodology into a practical and focused handbook of the most high-impact techniques. The specific aim of the book is to persuade and equip authors in the scientific sphere to more effectively leverage Word 2013 in their technical writing workflows, but the principles are highly accessible to all users of Microsoft Word.\nIn the course of preparing the book for publication, I designed and redesigned the layout, handled the initial typesetting, and added screenshots and graphical embellishments. I also rewrote and adapted several selections from an existing STREAM Tools manuscript, and painstakingly documented and tested (and sometimes re-documented, as my own processes improved) a catalog of step-by-step techniques and general guidelines for designing technical documents in Word 2013.\nFor me, my involvement in this project made for a transformative experience, and I am grateful for the opportunity to work together with the highly talented and motivated colleagues who made it so.",
+                        "link": "http://www.amazon.com/Creating-Research-Scientific-Documents-Microsoft/dp/0735670447/",
+                        "picture": "crsdumw.jpg",
+                        "dateStarted": "November 2011",
+                        "dateCompleted": "March 2013"
+                    }
+                ]
+            },
+            {
+                "name": "Press Releases",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "UW Dietary Recorder Offers Phone-Based Laser-Assisted Weight Loss",
+                        "description": "While working for Professor Mamishev at SEAL, I had the opportunity to draft and publish two press releases announcing the development of two very different but very important technologies. The first was a dietary measurement tool which improves and automates the tracking power of electronic food logging systems.",
+                        "link": "http://huttj.com/wp-content/uploads/2012/08/PressRelease-DDRS.pdf",
+                        "picture": "udroplwl.png",
+                        "dateCompleted": "November 2012"
+                    },
+                    {
+                        "name": "UW Prosthetic Sensing Array Gives “Feeling” to Artificial Limbs",
+                        "description": "While working for Professor Mamishev at SEAL, I had the opportunity to draft and publish two press releases announcing the development of two very different but very important technologies. The second is a prosthetic liner that measures all of the critical aspects of a prosthetic’s fit, helping to improve the comfort and quality of artificial limbs. I recommend viewing the PDF versions, which include additional images as well as improved formatting.",
+                        "link": "http://huttj.com/wp-content/uploads/2012/08/PressRelease-SuperLeg.pdf",
+                        "picture": "upsagfal.png",
+                        "dateCompleted": "November 2012"
+                    }
+                ]
+            }
+        ]
+    }
+]

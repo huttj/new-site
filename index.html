@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="joshuathehutt">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Joshua the Hutt</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="bower_components/semantic-ui/build/packaged/css/semantic.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body ng-controller="MainCtrl" ng-keyup="keyPress($event)" class="ui page grid">
+
+
+
+    <h1 class="ui header" style="padding-top: 16px;">
+        <a href="#/home" ng-click="setPage('home')"><img src="img/logo-801.png" alt="" style="height: 2em; padding-right: .25em;"/></a>
+        <div class="content">
+            <a href="#/home" ng-click="setPage('home')">Joshua Hutt</a>
+            <div class="sub header">Technical Writer, Developer</div>
+        </div>
+    </h1>
+
+
+    <div class="ui menu">
+        <a ng-repeat="page in pageList | orderBy: page.id : reverse" class="item" ng-class="{active: isActive(page)}" ng-click="setPage(page)" href="#/{{page.shortName}}"><i class="icon {{ page.icon }}"></i> <span>{{page.name}}</span></a>
+
+        <!--<a class="item" ng-class="{active: isActive('home')}" ng-click="setPage('home')" href="#">Home</a>-->
+        <!--<a class="item" ng-class="{active: isActive('resume')}" ng-click="setPage('resume')" href="#resume">Résumé</a>-->
+    </div>
+
+    <div ng-view class="ui grid"></div>
+
+    <div class="ui grid">
+        <div class="sixteen wide column">
+            <p style="text-align: center; font-style: italic; color: #999;">Copyright &copy; {{ getDate() | date:'yyyy' }}, Joshua Hutt</p>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

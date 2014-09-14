@@ -1,0 +1,133 @@
+{
+    "basics": {
+        "name": "Joshua Hutt",
+        "label": "Technical Writer",
+        "picture": "http://www.gravatar.com/avatar/f12264dd60439474861eb588f5472bac.png",
+        "email": "joshua@huttj.com",
+        "phone": "(206) 486-4807",
+        "website": "http://joshuahutt.com",
+        "summary": "",
+        "location": {
+            "address": "1800 S Jackson St #203",
+            "postalCode": "WA 98144",
+            "city": "Seattle",
+            "countryCode": "US",
+            "region": "Washington"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "joshuahutt",
+                "url": "https://github.com/huttj/",
+                "tags": [
+                    "carl"
+                ]
+            },
+            {
+                "network": "Twitter",
+                "username": "joshuahutt",
+                "url": "https://twitter.com/joshuahutt"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Avanade",
+            "position": "User Assistance Lead",
+            "website": "http://www.avanade.com",
+            "startDate": "2013-4-01",
+            "endDate": "Present",
+            "summary": "Avanade is ",
+            "highlights": [
+                {
+                    "_value": "my name",
+                    "tags": ["carl"]
+                },
+                "Blah"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "CoderDojo",
+            "position": "Teacher",
+            "website": "http://coderdojo.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Global movement of free coding clubs for young people.",
+            "highlights": [
+                "Awarded 'Teacher of the Month'"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Washington",
+            "area": "International Studies, Mathematics",
+            "studyType": "Bachelor of Arts",
+            "startDate": "2007-09-26",
+            "endDate": "2013-03-01",
+            "gpa": "3.56",
+            "courses": [
+                "",
+                ""
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "",
+            "date": "",
+            "awarder": "",
+            "summary": ""
+        }
+    ],
+    "publications": [
+        {
+            "name": "",
+            "publisher": "",
+            "releaseDate": "2014-10-01",
+            "website": "",
+            "summary": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "AngularJS",
+                "KnockoutJS",
+                "NodeJS",
+                "SQL"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Mandarin Chinese",
+            "fluency": "Advanced"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Reading"
+        },
+        {
+            "name": "Weight Training"
+        }
+    ],
+    "references": [
+        {
+            "name": "",
+            "reference": ""
+        }
+    ]
+}
