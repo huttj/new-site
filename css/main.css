@@ -23,19 +23,25 @@ p {
     margin: 0 0 1em 0 !important;
 }
 
-.subcategory > div {
-    margin-bottom: 2em;
-}
-
 .portfolio .img,
 .blog .img {
     width: 100%;
-    height: 18em;
+    height: 36em;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     border-radius: 4px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
 }
+
+.blog .img {
+    height: 18em;
+}
+
+/*.portfolio .one .img {*/
+    /*float: left;*/
+    /*width: 55%;*/
+    /*height: 18em;*/
+/*}*/
 
 .portfolio img.img-right,
 .blog img.img-right{
@@ -47,6 +53,21 @@ p {
 .blog img.img-left {
     float: left;
     padding: 0 1em .5em 0;
+}
+
+.portfolio h3.ui.header {
+    margin-bottom: .25em;
+}
+
+.portfolio-item {
+    margin-bottom: 26px !important;
+}
+
+.portfolio-item .column:first-child {
+    margin-bottom: .25em;
+}
+.portfolio-item .column {
+    margin-top: 0;
 }
 
 a {
@@ -95,4 +116,21 @@ hr {
 
 .resume h2.header {
     color: #777777;
+}
+
+.ui.header {
+    font-weight: 500;
+}
+
+.resume h3, .resume h3.header {
+    color: #333;
+    font-weight: 500;
+}
+
+.intro * {
+    text-align: center;
+}
+
+.intro {
+    margin-top: 10vh !important;
 }

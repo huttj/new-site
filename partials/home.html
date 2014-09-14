@@ -1,7 +1,13 @@
-<div class="eight wide column">
+<div class="eight wide column intro">
     <h1 class="ui header">{{ data.headline }}</h1>
-    <h2>{{ data.subheading }}</h2>
+    <h2 class="ui header" style="font-style: italic; font-weight: 600; color: #D95C5C; margin-top: 0;">{{ data.subheading }}</h2>
     <p>{{ data.message}}</p>
+    <a href="mailto:joshua@huttj.com">
+        <div class="ui animated fade button primary" style="margin: 1em 25%; width: 50%;">
+            <div class="visible content" style="color: #fff">Get in touch!</div>
+            <div class="hidden content" style="color: #fff">Let's share ideas!</div>
+        </div>
+    </a>
 </div>
 <div class="eight wide column">
     <img ng-src="{{ data.picture }}" alt=""/>
