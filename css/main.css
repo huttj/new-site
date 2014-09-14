@@ -92,3 +92,7 @@ hr {
 .menu.ui .item:hover * {
     color: #3491dc !important;
 }
+
+.resume h2.header {
+    color: #777777;
+}
