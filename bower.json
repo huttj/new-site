@@ -25,6 +25,7 @@
     "angular": "~1.2.24",
     "angular-route": "~1.2.24",
     "semantic-ui": "~0.19.2",
-    "angular-sanitize": "~1.2.24"
+    "angular-sanitize": "~1.2.24",
+    "showdown": "~0.3.1"
   }
 }
