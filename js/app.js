@@ -63,6 +63,8 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize']).
         return function(items, field, reverse) {
             if (!items) return items;
             items.sort(function (a, b) {
+                if (a[field] == 'Present' && b[field] != 'Present') return 1;
+                if (b[field] == 'Present') return -1;
                 return ((new Date(a[field])) > (new Date(b[field])) ? 1 : -1);
             });
             if(reverse) items.reverse();
@@ -222,41 +224,5 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize']).
         $scope.setPage($location.path().replace('/', ''));
         $scope.getDate = function() {
             return (new Date());
-        };
-    }).
-
-//    controller('HomeCtrl', function($scope, DataSvc) {
-//        DataSvc.getData('home').then(function(result) {
-//            $scope.data = result.data;
-//            // $scope.data.subheading = $scope.data.subheading[Math.round(Math.random())];
-//        })
-//    }).
-//
-//    controller('PortfolioCtrl', function($scope, DataSvc) {
-//        DataSvc.getData('portfolio').then(function(result) {
-//            $scope.data = result.data;
-//            // $scope.data.subheading = $scope.data.subheading[Math.round(Math.random())];
-//        })
-//    }).
-//
-//
-//    controller('ResumeCtrl', function($scope, DataSvc) {
-//        DataSvc.getData('resume').then(function(result) {
-//            $scope.data = result.data;
-//        })
-//    }).
-
-    directive('markdown', function () {
-        var converter = new Showdown.converter();
-        return {
-            restrict: 'A',
-            link: function parse(scope, element, attrs) {
-                  if (scope == undefined || typeof scope.content == 'undefined') {
-                      setTimeout(parse.bind(this, scope, element, attrs), 100);
-                  } else {
-                      var htmlText = converter.makeHtml(scope.content);
-                      element.html(htmlText);
-                  }
-            }
         };
     });

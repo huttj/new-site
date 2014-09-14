@@ -1,10 +1,18 @@
-<div class="sixteen wide column">
-    <h1 class="ui header">Blog</h1>
-    <h2 class="ui header">{{ data.title }}</h2>
-    <h4 style="font-style: italic;">{{ data.datePublished | asDate | date:'MMMM dd, yyyy' }}</h4>
-    <div ng-bind-html="content"></div>
-    <hr/>
-    <div class="sixteen wide column">
-        <p><span style="font-weight: bold; font-size: 1.05em;">Filed under:</span> <span ng-repeat="tag in data.tags">{{ tag }}{{$last ? ' ' : ', '}}</span></p>
+<div class="ui grid one stackable column blog">
+    <div class="row">
+        <div class="column">
+            <h1 class="ui header">Blog</h1>
+            <h2 class="ui header">{{ data.title }}</h2>
+        </div>
+    </div>
+    <div class="thirteen wide column">
+
+        <h4 style="font-style: italic;">{{ data.datePublished | asDate | date:'MMMM dd, yyyy' }}</h4>
+        <div ng-bind-html="content"></div>
+        <hr/>
+    </div>
+    <div class="three wide column">
+        <p style="font-weight: bold; font-size: 1.05em; margin-top: -1em;">Filed under:</p>
+        <p><span ng-repeat="tag in data.tags">{{ tag }}{{$last ? ' ' : ', '}}</span></p>
     </div>
 </div>

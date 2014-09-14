@@ -134,5 +134,11 @@ hr {
 }
 
 .intro {
-    margin-top: 10vh !important;
+    margin-top: 8vh !important;
+}
+
+@media screen and (max-width: 999px) {
+    .intro {
+        margin-top: 0 !important;
+    }
 }

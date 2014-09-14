@@ -74,6 +74,20 @@
     ],
     "education": [
         {
+            "institution": "Self-Study",
+            "area": "Business, Software Development, and Web Design",
+            "studyType": "",
+            "startDate": "2013-03-01",
+            "endDate": "Present",
+            "courses": [
+                "AngularJS",
+                "NodeJS",
+                "Business Analysis",
+                "Consulting",
+                "SQL Server 2012"
+            ]
+        },
+        {
             "institution": "University of Washington",
             "area": "International Studies, Minors in Math and Applied Math",
             "studyType": "BA",
@@ -109,7 +123,7 @@
     "skills": [
         {
             "name": "Web Development",
-            "level": "Intermediate",
+            "level": "7",
             "keywords": [
                 "HTML",
                 "CSS",
@@ -122,7 +136,7 @@
         },
         {
             "name": "Technical Writing",
-            "level": "Intermediate",
+            "level": "7",
             "keywords": [
                 "Microsoft Word",
                 "MadCap Flare",
@@ -133,7 +147,7 @@
         },
         {
             "name": "Teaching",
-            "level": "Intermediate",
+            "level": "5",
             "keywords": [
                 "One-on-one training",
                 "Web-based training",
