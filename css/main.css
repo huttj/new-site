@@ -125,6 +125,8 @@ hr {
 .resume h3, .resume h3.header {
     color: #333;
     font-weight: 500;
+    font-size: 130%;
+    margin-bottom: .33em;
 }
 
 .intro * {
