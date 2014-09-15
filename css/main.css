@@ -224,6 +224,10 @@ hr {
 }
 
 
+.resume div:last-child {
+    margin-bottom: .5rem;
+}
+
 .resume .basics {
     margin-bottom: -1rem;
 }
@@ -333,5 +337,13 @@ hr {
     .ui.grid > .column.tags {
         margin: 0 0 1.5rem 0 !important;
         padding: 0 !important;
+    }
+    .post.ui.grid > .column.tags {
+        margin: 0 0 2rem 0 !important;
+        padding-top: 1rem !important;
+    }
+
+    .resume div:last-child {
+        margin-bottom: .75rem;
     }
 }
