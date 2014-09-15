@@ -97,6 +97,17 @@ li {
     margin-top: 0;
 }
 
+.resume .basics {
+    margin-bottom: -1rem;
+}
+
+.resume > img {
+    right: 0;
+    max-width: 8rem;
+    position: absolute;
+    padding-top: 2.5rem;
+}
+
 .item-description p br {
     line-height: 2em;
 }
@@ -259,6 +270,7 @@ hr {
     .menu i {
         display: none;
     }
+<<<<<<< HEAD
 
     .resume .basics {
         margin-bottom: 0;
@@ -267,4 +279,6 @@ hr {
     .resume .profiles {
         margin-top: 0;
     }
+=======
+>>>>>>> a96966f8d212be0b40c4515fd42ca29432c98729
 }
