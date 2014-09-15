@@ -170,6 +170,18 @@ hr {
     margin-bottom: .33em;
 }
 
+
+.resume .basics {
+    margin-bottom: -1rem;
+}
+
+.resume > img {
+    right: 0;
+    max-width: 8rem;
+    position: absolute;
+    padding-top: 2.5rem;
+}
+
 .intro * {
     text-align: center;
 }
@@ -243,5 +255,16 @@ hr {
 
     .portfolio .portfolio-item .nine.wide.column {
         padding-top: 0 !important;
+    }
+    .menu i {
+        display: none;
+    }
+
+    .resume .basics {
+        margin-bottom: 0;
+    }
+    
+    .resume .profiles {
+        margin-top: 0;
     }
 }
