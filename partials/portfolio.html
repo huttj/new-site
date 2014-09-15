@@ -3,10 +3,10 @@
 
    <!--For each category-->
    <div class="ui stackable grid">
-       <div class="three wide column floated right">
-           <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Categories <a href="#/portfolio" ng-show="'' | tagSet">[X]</a></h3>
+       <div class="three wide column floated right categories">
+           <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Categories <a href="#/portfolio" ng-show="'' | tagSet"><sup>[X]</sup></a></h3>
            <ul>
-               <li ng-repeat="category in data">
+               <li ng-repeat="category in data" class="category">
                    <a href="#/portfolio?category={{category.name|encodeUri}}" class="{{ [category.name, 'category'] | isSelected }}">{{ category.name }}</a>
                    <ul>
                        <li ng-repeat="subcategory in category.data"><a href="#/portfolio?subcategory={{subcategory.name|encodeUri}}" class="{{ [subcategory.name, 'subcategory'] | isSelected }}">{{ subcategory.name }}</a></li>

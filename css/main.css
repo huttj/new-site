@@ -164,4 +164,18 @@ hr {
     .intro {
         margin-top: 0 !important;
     }
+    .portfolio div.categories {
+        margin-top: -.5em !important;
+        width: 100% !important;
+        float: left !important;
+    }
+    .portfolio div.categories > ul {
+        padding-left: 0;
+    }
+    .portfolio li.category {
+        margin-right: 1em;
+        display: inline-block;
+        float: left;
+    }
 }
+
