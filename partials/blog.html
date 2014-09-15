@@ -1,13 +1,32 @@
 <div class="blog">
     <h1 class="ui header">Blog</h1>
-    <div class="ui three column doubling grid">
-        <div ng-repeat="post in data | orderByDate:'datePublished':true" class="column">
-            <h3 class="ui header"><a href="#/blog/{{ post.shortName }}">{{ post.title }}</a></h3>
-            <p style="font-style: italic;">{{ post.datePublished | asDate | date:'MMMM dd, yyyy' }}</p>
-            <a href="#/blog/{{ post.shortName }}">
-                <div style="background-image: url('img/blog/{{post.shortName}}.jpg')" alt="{{post.title}}" class="img"/>
-            </a>
-            <p>{{ post.content }}</p>
+
+    <div class="ui stackable grid">
+        <div class="ui fourteen wide column">
+            <div class="ui three column doubling grid">
+                <div ng-repeat="post in data | blogFilter | orderByDate:'datePublished':true" class="column">
+                    <h3 class="ui header"><a href="#/blog/{{ post.shortName }}">{{ post.title }}</a></h3>
+
+                    <p style="font-style: italic;">{{ post.datePublished | asDate | date:'MMMM dd, yyyy' }}</p>
+                    <a href="#/blog/{{ post.shortName }}">
+                        <div style="background-image: url('img/blog/{{post.shortName}}.jpg')" alt="{{post.title}}"
+                             class="img"/>
+                    </a>
+
+                    <p>{{ post.content }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="ui two wide column">
+            <div class="ui one column grid">
+                <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Tags <a href="#/blog" ng-show="'' | tagSet">[X]</a></h3>
+
+                <p class="column">
+                <span ng-repeat="tag in data | blogFilter | getTags | orderBy:'toString()'">
+                    <a href="#/blog?tag={{tag}}" class="{{ [tag, 'tag'] | isSelected }}">{{ tag }}</a>{{$last ? ' ' : ', '}}
+                </span>
+                </p>
+            </div>
         </div>
     </div>
 </div>

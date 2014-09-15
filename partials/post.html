@@ -13,6 +13,6 @@
     </div>
     <div class="three wide column">
         <p style="font-weight: bold; font-size: 1.05em; margin-top: -1em;">Filed under:</p>
-        <p><span ng-repeat="tag in data.tags">{{ tag }}{{$last ? ' ' : ', '}}</span></p>
+        <p><span ng-repeat="tag in data.tags"><a href="#/blog?tag={{tag}}">{{ tag }}</a>{{$last ? ' ' : ', '}}</span></p>
     </div>
 </div>

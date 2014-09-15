@@ -1,24 +1,86 @@
 [
     {
-        "name": "Web Development",
+        "name": "Programming",
         "type": "category",
         "data": [
             {
-                "name": "Swippl",
-                "type": "item",
-                "description": "Swipe for a new picture.",
-                "link": "http://www.swippl.com",
-                "picture": "swippl.png",
-                "dateStarted": "March 2014",
-                "dateCompleted": "Present"
+                "name": "Web Dev",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "Swippl",
+                        "type": "item",
+                        "description": "Swipe for a new picture.",
+                        "link": "http://www.swippl.com",
+                        "picture": "swippl.png",
+                        "dateStarted": "March 2014",
+                        "dateCompleted": "Present"
+                    }
+                ]
             },
             {
-                "name": "Explore Consulting Front Page",
-                "type": "item",
-                "description": "In my search for a job that fits in with my career goals, I reached out to Explore Consulting, to see if I might be a good fit for their Web Design Internship. I spoke with one of their recruiters, who mentioned that it would be helpful if I could redesign their front page. So, I began to put something together, using the Twitter Bootstrap framework, only to realize that I would be fighting it a lot of the way. So, I scrapped that, and started to put together something from scratch. What I accomplished is what you see above. The proudest part, for me, is the globe at the bottom, which was a little bit of a challenge to engineer. I used the Sticky plugin to do it, but I actually had to figure out the code to make the DIV stick to the bottom. It was really exciting when I got it. For this page, I’d like to make it tighter and more “shiny,” like theirs, but I’m not sure how much more time I want to put into it. (Note: Since it was just a mock-up, I worked exclusively in Chrome. I may return to it in the future to make it work in other browsers.)",
-                "link": "http://joshuahutt.com/explore/",
-                "picture": "explore.png",
-                "dateCompleted": "March 2013"
+                "name": "Web Design",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "Web Copilots",
+                        "type": "item",
+                        "description": "Web Copilots is a web design and social media group I started with a colleague. Our mission is to build powerful web presences for all of the small and medium businesses in Seattle—one business at a time.",
+                        "link": "http://www.webcopilots.com",
+                        "picture": "webcopilots.png",
+                        "dateStarted": "March 2014",
+                        "dateCompleted": "April 2014"
+                    },
+                    {
+                        "name": "Explore Consulting Front Page",
+                        "type": "item",
+                        "description": "In my search for a job that fits in with my career goals, I reached out to Explore Consulting, to see if I might be a good fit for their Web Design Internship. I spoke with one of their recruiters, who mentioned that it would be helpful if I could redesign their front page. So, I began to put something together, using the Twitter Bootstrap framework, only to realize that I would be fighting it a lot of the way. So, I scrapped that, and started to put together something from scratch. What I accomplished is what you see above. The proudest part, for me, is the globe at the bottom, which was a little bit of a challenge to engineer. I used the Sticky plugin to do it, but I actually had to figure out the code to make the DIV stick to the bottom. It was really exciting when I got it. For this page, I’d like to make it tighter and more “shiny,” like theirs, but I’m not sure how much more time I want to put into it. (Note: Since it was just a mock-up, I worked exclusively in Chrome. I may return to it in the future to make it work in other browsers.)",
+                        "link": "http://joshuahutt.com/explore/",
+                        "picture": "explore.png",
+                        "dateCompleted": "March 2013"
+                    },
+                    {
+                        "name": "The SEAL Website",
+                        "type": "item",
+                        "description": "While working in the Electrical Engineering Department of the University of Washington, I was tasked with updating the [SEAL website](img/portfolio/oldseal.png) to include recent news items and publications. Despite the fact that site was created in an antiquated version of [Microsoft Publisher](http://stackoverflow.com/questions/3879956/how-was-this-website-made-whats-frontpage-5-0), I managed to update the relevant parts. After creating my own site and the site for Real Sort, I decided to try making a simple PHP-based site from scratch. I couldn't use a CMS like WordPress or [GetSimple](http://get-simple.info/) because the university's webserver did not offer databases, and its PHP was out of date. <br/>So, I wrote a basic framework of my own with PHP, using the what I learned modifying WordPress installations and themes. To make it simple to update and maintain, I used a file reading script to parse plain text files and output the pages of the site. Though it probably is not the ideal approach, it works and it is darn easy to modify. I did this for the whole site, including the “Publications” section, which has special code to specify the type of colored marker that appears for each entry. The student section has optional entries for email, resume, and homepage, and the links section looks for delineations of different categories within the text file. All in all, I'm proud of what I made! <br/>(Note: The lab now has a new webmaster, who has [updated the site](http://www.ee.washington.edu/research/seal/index.html). So far, I like the look of it.)",
+                        "link": "",
+                        "picture": "seal.png",
+                        "dateCompleted": "August 2012"
+                    },
+                    {
+                        "name": "Real Sort",
+                        "type": "item",
+                        "description": "When my mom began her big move to Oregon, she told me about her idea for a small business. She wanted to take everything she had learned about organization and home management and turn it into a unique consultancy that focuses on customer-defined organizational goals. I helped finalize her business card and got a sense of the design she wanted, and I searched for a base theme that would complement it. We chose the [Adapt theme](http://www.wpexplorer.com/adapt-free-responsive-wordpress-theme), by AJ Clarke. <br/>I did an extensive amount of customization to get the look just right. I learned some PHP while fixing the page titles and page templates, and I worked out how to make an expanding menu in pure CSS. I also handled all of the domain and hosting management, as well as the email and script configuration. And, of course, what I am most proud of is that I maintained the adaptive quality of the site. It was a wonderful experience, despite being grueling at times. If I were to do it over, I would probably manage the code a little better, though I’m planning a few rewrites for the near future.",
+                        "link": "http://www.realsort.org",
+                        "picture": "rs.png",
+                        "dateStarted": "June 2012",
+                        "dateCompleted": "July 2012"
+                    }
+                ]
+            },
+            {
+                "name": "Experiments",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "Video Comments",
+                        "type": "item",
+                        "description": "A tool to create comments on videos. The comments are displayed during subsequent views, at the same timestamp at which they were left.",
+                        "link": "https://cdn.rawgit.com/huttj/video-comments/e7b986cc5c88be9912ce8b05209dd6ed8fde35b7/list.html",
+                        "picture": "vc.png",
+                        "dateStarted": "",
+                        "dateCompleted": "September 2014"
+                    },
+                    {
+                        "name": "Vertical Panels",
+                        "type": "item",
+                        "description": "A plugin to display block objects in a columnar layout, like the new Windows Modern interfaces.",
+                        "link": "https://cdn.rawgit.com/huttj/vertical-panels/9dc7b1c06358777f3a75a3bc5996a20cea7ff429/demo/random-demo.html",
+                        "picture": "vcp.png",
+                        "dateStarted": "",
+                        "dateCompleted": "June 2014"
+                    }
+                ]
             }
         ]
     },
@@ -32,7 +94,7 @@
                 "data": [
                     {
                         "name": "How to Write Research Papers in Microsoft Word 2010",
-                        "description": "While working at SEAL, I had frequent opportunities for involvement with various STREAM Tools business development efforts. One such opportunity involved writing an instructional article for the Principal Investigators Association, an organization aimed at assisting researchers with their managerial and administrative obligations. I drafted the article mostly from scratch, and had two of the other writers help me to review and edit it. The goal of the article was to show the reader a little about the time-saving functions of Microsoft Word 2010, of which many users are unaware. This article, along with several other STREAM Tools events and products, was the the impetus for the book, How to Write Research Papers in Microsoft Word 2010, which I am currently working to finalize.",
+                        "description": "While working at SEAL, I had frequent opportunities for involvement with various STREAM Tools business development efforts. One such opportunity involved writing an instructional article for the Principal Investigators Association, an organization aimed at assisting researchers with their managerial and administrative obligations. <br/>I drafted the article mostly from scratch, and had two of the other writers help me to review and edit it. The goal of the article was to show the reader a little about the time-saving functions of Microsoft Word 2010, of which many users are unaware. <br/>This article, along with several other STREAM Tools events and products, was the the impetus for the book, [Creating Research and Scientific Documents Using Microsoft Word](http://www.amazon.com/Creating-Research-Scientific-Documents-Microsoft/dp/0735670447/), which was published late 2013.",
                         "link": "http://principalinvestigators.org/no-115-how-to-write-research-papers-in-microsoft-word-2010/",
                         "picture": "hwrpmw.png",
                         "dateCompleted": "September 2012"
@@ -46,7 +108,7 @@
                     {
                         "name": "Creating Research and Scientific Documents Using Microsoft Word",
                         "type": "item",
-                        "description": "While working for Professor Mamishev at the Sensors, Energy, and Automation Laboratory (SEAL), I had the opportunity to ghostwrite a hands-on how-to book called Creating Research and Scientific Documents Using Microsoft Word. Over the course of two years, I worked to distill and translate the broad and numerous concepts from the STREAM Tools writing methodology into a practical and focused handbook of the most high-impact techniques. The specific aim of the book is to persuade and equip authors in the scientific sphere to more effectively leverage Word 2013 in their technical writing workflows, but the principles are highly accessible to all users of Microsoft Word.\nIn the course of preparing the book for publication, I designed and redesigned the layout, handled the initial typesetting, and added screenshots and graphical embellishments. I also rewrote and adapted several selections from an existing STREAM Tools manuscript, and painstakingly documented and tested (and sometimes re-documented, as my own processes improved) a catalog of step-by-step techniques and general guidelines for designing technical documents in Word 2013.\nFor me, my involvement in this project made for a transformative experience, and I am grateful for the opportunity to work together with the highly talented and motivated colleagues who made it so.",
+                        "description": "While working for Professor Mamishev at the Sensors, Energy, and Automation Laboratory (SEAL), I had the opportunity to ghostwrite a hands-on how-to book called Creating Research and Scientific Documents Using Microsoft Word. <br/>Over the course of two years, I worked to distill and translate the broad and numerous concepts from the STREAM Tools writing methodology into a practical and focused handbook of the most high-impact techniques. The specific aim of the book is to persuade and equip authors in the scientific sphere to more effectively leverage Word 2013 in their technical writing workflows, but the principles are highly accessible to all users of Microsoft Word. <br/>In the course of preparing the book for publication, I designed and redesigned the layout, handled the initial typesetting, and added screenshots and graphical embellishments. I also rewrote and adapted several selections from an existing STREAM Tools manuscript, and painstakingly documented and tested (and sometimes re-documented, as my own processes improved) a catalog of step-by-step techniques and general guidelines for designing technical documents in Word 2013. <br/>For me, my involvement in this project made for a transformative experience, and I am grateful for the opportunity to work together with the highly talented and motivated colleagues who made it so.",
                         "link": "http://www.amazon.com/Creating-Research-Scientific-Documents-Microsoft/dp/0735670447/",
                         "picture": "crsdumw.jpg",
                         "dateStarted": "November 2011",
@@ -60,17 +122,63 @@
                 "data": [
                     {
                         "name": "UW Dietary Recorder Offers Phone-Based Laser-Assisted Weight Loss",
-                        "description": "While working for Professor Mamishev at SEAL, I had the opportunity to draft and publish two press releases announcing the development of two very different but very important technologies. The first was a dietary measurement tool which improves and automates the tracking power of electronic food logging systems.",
+                        "description": "While working for Professor Mamishev at SEAL, I had the opportunity to draft and publish two press releases announcing the development of two very different but very important technologies. <br/>This press release was about a dietary measurement tool which improves and automates the tracking power of electronic food logging systems.",
                         "link": "http://huttj.com/wp-content/uploads/2012/08/PressRelease-DDRS.pdf",
                         "picture": "udroplwl.png",
                         "dateCompleted": "November 2012"
                     },
                     {
                         "name": "UW Prosthetic Sensing Array Gives “Feeling” to Artificial Limbs",
-                        "description": "While working for Professor Mamishev at SEAL, I had the opportunity to draft and publish two press releases announcing the development of two very different but very important technologies. The second is a prosthetic liner that measures all of the critical aspects of a prosthetic’s fit, helping to improve the comfort and quality of artificial limbs. I recommend viewing the PDF versions, which include additional images as well as improved formatting.",
+                        "description": "While working for Professor Mamishev at SEAL, I had the opportunity to draft and publish two press releases announcing the development of two very different but very important technologies. <br/>This press release is about a prosthetic liner that measures all of the critical aspects of a prosthetic’s fit, helping to improve the comfort and quality of artificial limbs. I recommend viewing the PDF versions, which include additional images as well as improved formatting.",
                         "link": "http://huttj.com/wp-content/uploads/2012/08/PressRelease-SuperLeg.pdf",
                         "picture": "upsagfal.png",
                         "dateCompleted": "November 2012"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Media",
+        "type": "category",
+        "data": [
+            {
+                "name": "Posters",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "STREAM Tools Business Plan Competition Poster",
+                        "description": "This poster was one I was called upon to design and present at the 2011 Business Plan Competition, put on by the University of Washington’s Foster School of Business. It is probably clear that I used the old poster from 2010 as a model for this one. This was for several reasons. I liked the look of the old poster, and I thought it struck a good balance between being colorful and professional-looking. Properly reusing old templates and material is a primary focus of STREAM Tools, so I wanted to support it in practice. And, most importantly, I didn’t have a lot of time–just a week from planning to printing–so I needed something that wouldn’t take a lot of design effort.",
+                        "link": "",
+                        "picture": "stbpcp.png",
+                        "dateCompleted": "November 2011"
+                    },
+                    {
+                        "name": "Regenerative Braking",
+                        "description": "This is a poster I designed in a Human-Centered Design Engineering class, Introduction to Technical Writing. I learned a lot in that class about proofreading (it is important to do it at least twice, but more if you can spare it), as well as good, clear design.",
+                        "link": "",
+                        "picture": "rgbp.png",
+                        "dateCompleted": "October 2010"
+                    }
+                ]
+            },
+            {
+                "name": "Video",
+                "type": "subcategory",
+                "data": [
+                    {
+                        "name": "Carlson Civic Fellowship Interview",
+                        "description": "",
+                        "link": "https://www.youtube.com/watch?v=baWxfiGXX5M",
+                        "picture": "ccfi.png",
+                        "dateCompleted": "April 2011"
+                    },
+                    {
+                        "name": "The Ripples of Leadership",
+                        "description": "With two creative and dedicated classmates, I worked to find and recruit the help of three excellent people (one of whom was not available at the time), to tell their stories about service and leadership. <br/>My efforts included scripting and conducting the interviews, writing and recording the voiceover, and designing the video effects and organization. My classmates, Katy and Chelsay helped immensely with the collaboration, both during the brainstorming and planning phase, as well as during the filming, when things got hectic. With their efforts, we were able to produce a video that is practical, fit the time constraints, and delivers a cohesive message. <br/>Though I watch the video now and notice its many flaws (perhaps the most disappointing being the stuffy nose with which I did the recording), I look back on the experience as overwhelmingly positive. I gained many tangible skills related to video production, from scripting and planning to recording and post-production. And, perhaps more importantly, I learned a lot about leadership, and about being a leader in a team with no predetermined hierarchy.",
+                        "link": "https://www.youtube.com/watch?v=sdfnvjDpS3c",
+                        "picture": "trol.png",
+                        "dateCompleted": "October 2010"
                     }
                 ]
             }

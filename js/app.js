@@ -1,7 +1,7 @@
 /**
  * Created by joshua.hutt on 9/11/2014.
  */
-angular.module('joshuathehutt', ['ngRoute', 'ngSanitize']).
+angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
 
     config(function($routeProvider, $locationProvider) {
 
@@ -53,9 +53,97 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize']).
         }
     }).
 
+    // A dirty, dirty hack
+    filter('tagSet', function($routeParams) {
+        return function() {
+            return $routeParams.tag != undefined || $routeParams.subcategory != undefined || $routeParams.category != undefined;
+        }
+    }).
+
+    filter('isSelected', function($routeParams) {
+        return function(data) {
+            return ($routeParams[data[1]] == data[0]) ? 'selected' : '';
+        }
+    }).
+
+    filter('portfolioCategoryFilter', function($routeParams) {
+        var findIndex = function(key, value) {
+            return function(prev, curr, index, list) {
+                // To keep from having to pass in a -1 in each reduce() call
+                prev = typeof prev != 'number' ? prev[key] == value ? index - 1 : -1 : prev;
+                return prev != -1 ? prev : curr[key] == value ? index : -1 ;
+            }
+        }
+
+        return function(portfolio) {
+            if (portfolio == undefined || ($routeParams.category == undefined && $routeParams.subcategory == undefined)) return portfolio;
+
+            var filtered = [];
+
+            filtered = portfolio.reduce(function(previous, current) {
+                if  (
+                        (!$routeParams.category || current.name == $routeParams.category) &&
+                        (!$routeParams.subcategory || !!~current.data.reduce(findIndex('name', $routeParams.subcategory)))
+                    ) {
+                        previous.push(current);
+                    }
+                return previous;
+            }, []);
+
+            return filtered.length > 0 ? filtered : undefined;
+
+        }
+    }).
+
+    filter('portfolioSubcategoryFilter', function($routeParams) {
+        return function(subcategory) {
+            if (subcategory == undefined || $routeParams.subcategory == undefined) return subcategory;
+
+            var filtered = [];
+
+            filtered = subcategory.reduce(function(previous, current) {
+                if (current.name == $routeParams.subcategory) previous.push(current);
+                return previous;
+            }, []);
+
+            return filtered.length > 0 ? filtered : undefined;
+
+        }
+    }).
+
+    filter('blogFilter', function($routeParams) {
+        return function(posts) {
+            if ($routeParams.tag == undefined || posts == undefined) return posts;
+            return posts.reduce(function(previous, current) {
+               if (!!~current.tags.indexOf($routeParams.tag)) previous.push(current);
+               return previous;
+            }, []);
+        }
+    }).
+
+    filter('toMarkdown', function(MarkdownSvc) {
+        return function(data) {
+            return MarkdownSvc.convert(data);
+        }
+    }).
+
     filter("asDate", function () {
         return function (input) {
             return new Date(input);
+        }
+    }).
+
+    filter('getTags', function() {
+        return function(posts) {
+
+            var tags = [];
+            if (!posts) return tags;
+            for (var i = 0; i < posts.length; i++) {
+                for (var j = 0; j < posts[i].tags.length; j++) {
+                    if (!~tags.indexOf(posts[i].tags[j])) tags.push(posts[i].tags[j]);
+                }
+            }
+            return tags;
         }
     }).
 
