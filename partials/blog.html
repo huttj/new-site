@@ -2,7 +2,7 @@
     <h1 class="ui header">Blog</h1>
 
     <div class="ui stackable grid">
-        <div class="ui fourteen wide column">
+        <div class="ui thirteen wide column">
             <div class="ui three column doubling grid">
                 <div ng-repeat="post in data | blogFilter | orderByDate:'datePublished':true" class="column">
                     <h3 class="ui header"><a href="#/blog/{{ post.shortName }}">{{ post.title }}</a></h3>
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="ui two wide column tags">
+        <div class="ui three wide column tags">
             <div class="ui one column grid">
                 <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Tags <sup><a href="#/blog" ng-show="'' | tagSet">[X]</a></sup></h3>
 
