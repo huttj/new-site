@@ -17,8 +17,7 @@ body {
 }
 
 .intro {
-    margin-left: 4.5%;
-    margin-right: -4.5%;
+    padding: 0 0 0 7% !important;
 }
 
 .home.ui.grid > .column.featured-image {
@@ -267,6 +266,12 @@ hr {
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .intro {
+        margin-top: 1vw !important;
+    }
+}
+
 @media screen and (max-width: 999px) {
     .intro {
         margin-top: 0 !important;
@@ -296,6 +301,10 @@ hr {
     .resume .profiles {
         margin-top: 0 !important;
     }
+
+    .intro {
+        padding: 0 5% !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -313,5 +322,16 @@ hr {
     }
     .menu i {
         display: none;
+    }
+
+    .resume > img {
+        right: 0;
+        max-width: 8rem;
+        position: relative;
+        margin: 1rem 0 0 0;
+    }
+    .ui.grid > .column.tags {
+        margin: 0 0 1.5rem 0 !important;
+        padding: 0 !important;
     }
 }
