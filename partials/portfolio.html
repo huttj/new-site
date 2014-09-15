@@ -3,8 +3,8 @@
 
    <!--For each category-->
    <div class="ui stackable grid">
-       <div class="three wide column floated right categories">
-           <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Categories <sup><a href="#/portfolio" ng-show="'' | tagSet">[X]</a></sup></h3>
+       <div class="three wide column categories floated left">
+           <h3 class="ui header" style="margin-bottom: -.25em;">Categories <sup><a href="#/portfolio" ng-show="'' | tagSet">[X]</a></sup></h3>
            <ul>
                <li ng-repeat="category in data" class="category">
                    <a href="#/portfolio?category={{category.name|encodeUri}}" class="{{ [category.name, 'category'] | isSelected }}">{{ category.name }}</a>
@@ -18,8 +18,7 @@
            <div ng-repeat="category in data | portfolioCategoryFilter">
 
                <!--Category name-->
-               <h2 class="ui header" style="margin: 0 0 .5em 0; font-weight: 500; font-size: 1.9rem">{{ category.name
-                   }}</h2>
+               <h2 class="ui header" style="margin: 0 0 .5em 0; font-weight: 500; font-size: 1.9rem">{{ category.name}}</h2>
 
                <!--if subcategory exists-->
                <div class="subcategory" ng-repeat="subcategory in category.data | portfolioSubcategoryFilter"> <!--ng-if="category.data[0].type == 'subcategory'"-->
@@ -66,7 +65,7 @@
                        <!--<a href="{{item.link}}">-->
                            <!--<div class="img" ng-if="item.picture"-->
                                 <!--style="background-image: url('img/portfolio/{{ item.picture }}')">-->
-                               <!--<!--<img ng-src="img/portfolio/{{ item.picture }}" alt="" class="img-left"/>-->-->
+                               <!--<!--<img ng-src="img/portfolio/{{ item.picture }}" alt="" class="img-left"/>-->
                            <!--</div>-->
                        <!--</a>-->
                    <!--</div>-->

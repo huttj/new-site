@@ -1,7 +1,7 @@
-<div style="position: relative;">
+<div style="position: relative;" class="resume">
     <h1 class="ui header">Résumé</h1>
 
-    <img style="right: 0; max-width: 160px; position: absolute;" src="{{data.basics.picture}}" alt=""/>
+    <img style="right: 0; max-width: 8rem; position: absolute; padding-top: 1rem;" src="{{data.basics.picture}}" alt=""/>
 
     <div class="basics ui two column doubling grid">
         <div class="column">
@@ -45,6 +45,32 @@
         </div>
     </div>
 
+
+    <div class="volunteer">
+        <div class="ui two column doubling grid">
+            <div class="row">
+                <div class="column">
+                    <h2 class="ui header">Volunteering</h2>
+                </div>
+            </div>
+            <div ng-repeat="engagement in data.volunteer | orderByDate:'endDate':true" class="column">
+                <h3>{{engagement.position}} - <a href="{{engagement.website}}">{{engagement.organization}}</a></h3>
+                <h4 style="font-style: italic;">{{ engagement.startDate | asDate | date:'MMMM yyyy' }} - {{ engagement.endDate != 'Present' ? (engagement.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
+                <p>{{ engagement.summary }}</p>
+                <h4 class="ui header">Highlights:</h4>
+                <ul>
+                    <li ng-repeat="highlight in engagement.highlights">
+                        <span ng-if="!highlight.value">{{ highlight }}</span>
+                        <span ng-if="highlight.value">{{ highlight.value }}</span>
+                        <ol>
+                            <li ng-repeat="subhighlight in highlight.data">{{ subhighlight }}</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <div class="education">
         <div class="ui two column doubling grid">
             <div class="row">
@@ -59,7 +85,7 @@
                 <p>{{ school.studyType ? school.studyType + ' in ' + school.area : school.area }}</p>
                 <h4 class="ui header">Courses:</h4>
                 <ul>
-                    <li ng-repeat="course in school.courses">{{ course._value || course }}</li>
+                    <li ng-repeat="course in school.courses">{{ course }}</li>
                 </ul>
             </div>
         </div>

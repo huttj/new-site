@@ -98,18 +98,60 @@
                 "Designed and delivered practical curricula and teaching plans for five classes of varying levels of English proficiency.",
                 "Incorporated material from internet research, popular teaching manuals, and previous experience into lesson plans."
             ]
+        },
+        {
+            "company": "University of Washington",
+            "position": "Nanotech Research Assistant",
+            "website": "http://depts.washington.edu/nlab/",
+            "startDate": "2009-11",
+            "endDate": "2010-06",
+            "summary": "",
+            "highlights": [
+                "Researched current developments in fluid dynamics, wrote article summaries, and provided citations for journal articles.",
+                "Performed laboratory experiments and data analysis; created, revised, and documented methods as needed.",
+                "Participated in weekly meetings, prepared and presented detailed reports, and maintained strict confidentiality."
+            ]
+        },
+        {
+            "company": "Self-Employed",
+            "position": "Independent Landscaper",
+            "location": "Port Townsend, WA",
+            "website": "",
+            "startDate": "2009-08",
+            "endDate": "2010-06",
+            "summary": "For the two summers after I returned from China, and during the weekends when I could return home, I ran a landscaping business in Port Townsend, WA.",
+            "highlights": [
+                "Advertised through persuasive newspaper ads, strategically placed signage along high-traffic routes, and personal networking.",
+                "Built and maintained a steady a network of clientele, regularly negotiating rate increases of up to 50%.",
+                "Provided and revised estimates, tested and revised service offerings, and selectively included sub-contracts as needed."
+            ]
+        },
+        {
+            "company": "Bailey-Boushay House",
+            "position": "Carlson Civic Fellow",
+            "website": "http://www.bailey-boushay.org/",
+            "startDate": "2008-01",
+            "endDate": "2008-06",
+            "summary": "The Bailey-Boushay House provides exceptional care to people with HIV disease, promoting their health, well-being and functional independence.",
+            "highlights": [
+                "Redesigned the volunteer intake process at the facility from the ground up, which included developing a clear flowchart-guided process, a document management system, and support documentation for new and existing managers.",
+                "Oversaw office administration and devised and implemented a filing system to reduce a persistent backlog of paperwork."
+            ]
         }
+
     ],
     "volunteer": [
         {
-            "organization": "CoderDojo",
-            "position": "Teacher",
-            "website": "http://coderdojo.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Global movement of free coding clubs for young people.",
+            "organization": "Chinese Information and Service Center",
+            "position": "English Tutor",
+            "website": "http://cisc-seattle.org/",
+            "startDate": "2010-01",
+            "endDate": "2010-06",
+            "summary": "CISC helps Chinese and other Asian immigrants throughout King County achieve success in their new community by providing information, referral, advocacy, social, and support services.",
             "highlights": [
-                "Awarded 'Teacher of the Month'"
+                "Taught elderly patrons of the Sunshine Garden Senior Day-Care, working with bilingual students to teach native speakers of Cantonese.",
+                "Prepared lessons from stories found online and from personal experience.",
+                "Organized and led annual tour group to the University of Washington."
             ]
         }
     ],
@@ -136,11 +178,20 @@
             "endDate": "2013-03-01",
             "gpa": "3.56",
             "courses": [
-                "Physics",
-                "Chinese",
-                "Calculus",
+                "Chinese (I-IV)",
+                "Java programming (I & II)",
+                "Scientific Computing",
+                "Technical Communication",
                 "Statistics",
-                "Anthropology"
+                "Linear Algebra",
+                "Calculus (I, II, & III)",
+                "Calculus of Complex Variables"
+            ],
+            "highlights": [
+                "Conducted contingent valuation surveys and environmental research in two of China’s most polluted cities.",
+                "Audited Entrepreneurship class (ENTRE 540) at the Foster School of Business.",
+                "Named on Dean’s List for outstanding study, both at the UW (2012) and at Sichuan University (2010).",
+                "Worked in the University Machine Shop (2010) and conducted Nanofluidics (2009-10) and Cilia experiments (2007-08)."
             ]
         }
     ],
