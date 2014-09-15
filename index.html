@@ -22,7 +22,7 @@
         <a ng-repeat="page in pageList | orderBy: page.id : reverse" class="item" ng-class="{active: isActive(page)}" ng-click="setPage(page)" href="#/{{page.shortName}}"><i class="icon {{ page.icon }}"></i> <span>{{page.name}}</span></a>
     </div>
 
-    <div ng-view style="padding: 1rem 0 0 0"></div>
+    <div ng-view class="main-view"></div>
 
     <div class="ui grid">
         <div class="sixteen wide column">

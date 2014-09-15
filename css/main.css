@@ -1,7 +1,47 @@
+body {
+    background: #fafafa;
+    background-image: url('img/cream_dust.png');
+}
+
+.main-view {
+    margin-top: 1.5rem;
+    background: #ffffff;
+    padding: 2rem 2.5rem 0;
+    border-radius: 4px;
+    /* border: 1px solid #ddd; */
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    position: relative;
+}
+
+.intro {
+    margin-left: 4.5%;
+    margin-right: -4.5%;
+}
+
+.home.ui.grid > .column.featured-image {
+    position: relative;
+    bottom: 0;
+    margin-bottom: -5px;
+    vertical-align: bottom;
+    width: 50%;
+}
+
+.home.ui.grid > .column.featured-image img {
+    margin: 0 15%;
+    width: 70%;
+    bottom: 0;
+    position: relative;
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
     color: #555;
 }
+
+
 
 h2 {
     margin: 0 0 .75em 0;
@@ -102,10 +142,13 @@ li {
 }
 
 .resume > img {
-    right: 0;
+    right: .25rem;
     max-width: 8rem;
     position: absolute;
-    padding-top: 2.5rem;
+    padding: 0;
+    margin-top: 2.25rem;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
 }
 
 .item-description p br {
@@ -186,19 +229,12 @@ hr {
     margin-bottom: -1rem;
 }
 
-.resume > img {
-    right: 0;
-    max-width: 8rem;
-    position: absolute;
-    padding-top: 2.5rem;
-}
-
 .intro * {
     text-align: center;
 }
 
 .intro {
-    margin-top: 8vh !important;
+    margin-top: 3vw !important;
 }
 
 .portfolio ul {
