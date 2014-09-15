@@ -9,8 +9,8 @@
 
                     <p style="font-style: italic;">{{ post.datePublished | asDate | date:'MMMM dd, yyyy' }}</p>
                     <a href="#/blog/{{ post.shortName }}">
-                        <div style="background-image: url('img/blog/{{post.shortName}}.jpg')" alt="{{post.title}}"
-                             class="img"/>
+                        <!--<div style="background-image: url('img/blog/{{post.shortName}}.jpg')" alt="{{post.title}}" class="img"/>-->
+                        <img src="img/blog/{{post.shortName}}.jpg" alt="{{post.title}}" class="img"/>
                     </a>
 
                     <p>{{ post.content }}</p>
@@ -19,7 +19,7 @@
         </div>
         <div class="ui two wide column">
             <div class="ui one column grid">
-                <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Tags <a href="#/blog" ng-show="'' | tagSet">[X]</a></h3>
+                <h3 class="ui header" style="margin-top: 1em; margin-bottom: -.5em;">Tags <sup><a href="#/blog" ng-show="'' | tagSet">[X]</a></sup></h3>
 
                 <p class="column">
                 <span ng-repeat="tag in data | blogFilter | getTags | orderBy:'toString()'">

@@ -30,11 +30,7 @@ li {
 
 .portfolio .img,
 .blog .img {
-    width: 100%;
-    height: 32em;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
+    max-width: 100%;
     border-radius: 4px;
 
     /*width: 100%;*/
@@ -45,8 +41,27 @@ li {
     /*box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);*/
 }
 
-.blog .img {
+.portfolio div.img,
+.blog div.img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    height: 32em;
+}
+
+.portfolio img.img,
+.blog img.img {
+    max-height: 32em;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+}
+
+
+.blog div.img {
     height: 18em;
+}
+
+.blog img.img {
+    max-height: 18em;
 }
 
 /*.portfolio .one .img {*/
@@ -86,11 +101,11 @@ li {
     line-height: 2em;
 }
 
-a {
+a, div:not(.menu) a i {
     color: #225f9b;
     text-decoration: none;
 }
-a:hover {
+a:hover, a:hover i {
     color: #3491dc;
 }
 
@@ -179,3 +194,8 @@ hr {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .portfolio .ui.stackable.grid > div.categories.column:first-child {
+        margin-top: -.5em !important;
+    }
+}

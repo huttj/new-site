@@ -13,7 +13,7 @@
         <div class="profiles column">
             <h2 class="ui header">Profiles</h2>
             <ul>
-                <li ng-repeat="profile in data.basics.profiles"><a href="{{profile.url}}">{{ profile.network }}</a></li>
+                <li ng-repeat="profile in data.basics.profiles"><a href="{{profile.url}}"><i class="{{profile.network|lowercase}} sign icon"></i>{{ profile.network }}</a></li>
             </ul>
         </div>
 
