@@ -3,4 +3,4 @@ new-site
 
 A new personal site, built with Angular.
 
-#### [View Site](https://cdn.rawgit.com/huttj/new-site/1fadc570d254b9117c53d295753df2e3e383d15e/index.html)
+#### [View Site](https://cdn.rawgit.com/huttj/new-site/da68f283b9853b06524203e45c5f9bf3a20e038c/index.html)
