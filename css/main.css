@@ -252,6 +252,14 @@ hr {
     .ui.stackable.grid.portfolio-item {
         margin-bottom: 1rem !important;
     }
+
+    .resume .basics {
+        margin-bottom: 0 !important;
+    }
+
+    .resume .profiles {
+        margin-top: 0 !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -269,13 +277,5 @@ hr {
     }
     .menu i {
         display: none;
-    }
-
-    .resume .basics {
-        margin-bottom: 0;
-    }
-    
-    .resume .profiles {
-        margin-top: 0;
     }
 }
