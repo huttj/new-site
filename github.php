@@ -69,6 +69,10 @@ for ($i=0; $i < count($removedFiles); $i++) {
 }
 
 // ToDo: Error handling and proper updated list
-echo 'Files updated/added: ' . implode(', ', $changedFiles);
-echo 'Files removed/added: ' . implode(', ', $removedFiles);
+if (strlen(implode(', ', $changedFiles))>0) {
+    echo 'Files updated/added: ' . implode(', ', $changedFiles) . ' ';
+}
+if (strlen(implode(', ', $removedFiles))>0) {
+    echo 'Files removed/added: ' . implode(', ', $removedFiles);
+}
 ?>
