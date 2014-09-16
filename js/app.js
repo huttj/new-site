@@ -331,19 +331,24 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
     }).
 
     directive('safeSrc', function() {
+        var data = {},
+            ext = ['png', 'jpg', 'svg'];
+
         return {
             link: function(scope, element, attrs) {
+
                 var el = element[0];
                 el.style.visibility = 'hidden';
                 el.onload = function() {
                     el.style.visibility = 'visible';
+                    if (!data[src]) data[src] = src + '.' + ext[i-1];
                 };
 
                 var src = (attrs.ngSrc || attrs.src).split('.')[0],
-                    ext = ['png', 'jpg', 'svg'],
                     i = 0;
 
                 element.bind('error', function() {
+                    if (data[src]) return attrs.$set('ngSrc', data[src]);
                     if (i < ext.length) {
                         setNext();
                     } else {
