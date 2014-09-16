@@ -51,7 +51,15 @@ body {
     color: #555;
 }
 
+code, code * {
+    font-family: Consolas, "Courier New", "Source Sans Pro";
+}
 
+.hljs {
+    border-radius: 4px;
+    background: #fafafa;
+    padding: 1.5em 2em;
+}
 
 h2 {
     margin: 0 0 .75em 0;
@@ -159,6 +167,11 @@ li {
     margin-top: 2.25rem;
     border-radius: 4px;
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+}
+
+.blog h4.post-date {
+    font-style: italic;
+    margin: 0 0 2em;
 }
 
 .item-description p br {

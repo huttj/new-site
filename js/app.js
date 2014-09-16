@@ -22,10 +22,10 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
 
                         $scope.data = post;
 
-                    })
+                    });
                     DataSvc.getBlogEntry(shortName).then(function (result) {
-                        $scope.content = MarkdownSvc.convert(result.data);
-                    })
+                        $scope.content = MarkdownSvc.convertAndHighlight(result.data);
+                    });
                 }
             }).
             when('/:shortName?', {
@@ -49,6 +49,21 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
         return {
             convert: function(markdown) {
                 return converter.makeHtml(markdown);
+            },
+            convertAndHighlight: function(markdown) {
+                var frag = document.createElement('div');
+                frag.innerHTML = converter.makeHtml(markdown);
+                var codeBlocks = frag.getElementsByTagName('code');
+                for (var i = 0, len = codeBlocks.length; i<len; i++) {
+                    hljs.highlightBlock(codeBlocks[i]);
+                }
+                return frag.innerHTML;
+            },
+            highlightAuto: function (code) {
+                return hljs.highlightAuto(code).value;
+            },
+            highlight: function (name, code, ignore_illegals) {
+                return hljs.highlight(name, code, ignore_illegals).value;
             }
         }
     }).

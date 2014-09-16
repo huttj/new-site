@@ -7,7 +7,7 @@
     </div>
     <div class="thirteen wide column">
 
-        <h4 style="font-style: italic;">{{ data.datePublished | asDate | date:'MMMM dd, yyyy' }}</h4>
+        <h4 class="post-date">{{ data.datePublished | asDate | date:'MMMM dd, yyyy' }}</h4>
         <div ng-bind-html="content"></div>
         <hr/>
     </div>
