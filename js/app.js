@@ -328,4 +328,33 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
         $scope.getDate = function() {
             return (new Date());
         };
+    }).
+
+    directive('safeSrc', function() {
+        return {
+            link: function(scope, element, attrs) {
+                var el = element[0];
+                el.style.visibility = 'hidden';
+                el.onload = function() {
+                    el.style.visibility = 'visible';
+                };
+
+                var src = (attrs.ngSrc || attrs.src).split('.')[0],
+                    ext = ['png', 'jpg', 'svg'],
+                    i = 0;
+
+                element.bind('error', function() {
+                    if (i < ext.length) {
+                        setNext();
+                    } else {
+                        attrs.$set('ngSrc', 'http://i.imgur.com/Q6Vp8Au.jpg')
+                    }
+                });
+
+                function setNext() {
+                    attrs.$set('ngSrc', src + '.' + ext[i]);
+                    i++;
+                }
+            }
+        }
     });
