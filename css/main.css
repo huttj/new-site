@@ -16,8 +16,14 @@ body {
     position: relative;
 }
 
+.intro * {
+    text-align: center;
+}
+
 .intro {
+    margin-top: 2vw !important;
     padding: 0 0 0 7% !important;
+    zoom: 1.25;
 }
 
 .home.ui.grid > .column.featured-image {
@@ -29,8 +35,13 @@ body {
 }
 
 .home.ui.grid > .column.featured-image img {
-    margin: 0 15%;
-    width: 70%;
+    /*margin: 0 15%;*/
+    /*width: 70%;*/
+    /*bottom: 0;*/
+    /*position: relative;*/
+
+    margin: 0 0 0 7.5%;
+    width: 26em;
     bottom: 0;
     position: relative;
 }
@@ -232,14 +243,6 @@ hr {
     margin-bottom: -1rem;
 }
 
-.intro * {
-    text-align: center;
-}
-
-.intro {
-    margin-top: 3vw !important;
-}
-
 .portfolio ul {
     padding-left: 1.5em;
 }
@@ -272,7 +275,12 @@ hr {
 
 @media screen and (max-width: 1150px) {
     .intro {
-        margin-top: 1vw !important;
+        margin-top: 5vw !important;
+        padding-left: 6% !important;
+        zoom: 1;
+    }
+    .home.ui.grid > .column.featured-image img {
+        width: 23em !important;
     }
 }
 
@@ -280,6 +288,7 @@ hr {
     .intro {
         margin-top: 0 !important;
     }
+
     .portfolio .ui.stackable.grid > div.categories.left.floated.column:first-child {
         margin-top: -.25em !important;
         /*width: 100% !important;*/
@@ -308,6 +317,11 @@ hr {
 
     .intro {
         padding: 0 5% !important;
+    }
+    .home.ui.grid > .column.featured-image img {
+        width: 70% !important;
+        padding: 0%;
+        margin: 2% 15% 0;
     }
 }
 
