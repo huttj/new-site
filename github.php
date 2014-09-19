@@ -43,7 +43,7 @@ for ($i = 0; $i < count($changedFiles); $i++) {
              if (!file_exists($path . $the_file[$j])) {
                  mkdir($path . $the_file[$j]);
              }
-             $path += $the_file[$j] . '/';
+             $path = $path . $the_file[$j] . '/';
         }
     }
 
@@ -51,11 +51,8 @@ for ($i = 0; $i < count($changedFiles); $i++) {
     // copy($githubUrl . $changedFiles[$i], $changedFiles[$i]);
 
     // Set the output stream, and the source url
-    echo $changedFiles[$i];
-
     $out = fopen($changedFiles[$i],"wb");
     $url = $githubUrl . $changedFiles[$i];
-
 
     // Curls for the girls! Er...
     $ch = curl_init();
