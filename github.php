@@ -51,6 +51,8 @@ for ($i = 0; $i < count($changedFiles); $i++) {
     // copy($githubUrl . $changedFiles[$i], $changedFiles[$i]);
 
     // Set the output stream, and the source url
+    echo $changedFiles[$i];
+
     $out = fopen($changedFiles[$i],"wb");
     $url = $githubUrl . $changedFiles[$i];
 

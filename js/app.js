@@ -1,7 +1,7 @@
 /**
  * Created by joshua.hutt on 9/11/2014.
  */
-angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
+angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri']).
 
     config(function($routeProvider, $locationProvider) {
 
@@ -37,6 +37,8 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri']).
                     var shortName = $routeParams.shortName ? $routeParams.shortName : 'home';
                     DataSvc.getData(shortName).then(function (result) {
                         $scope.data = result.data;
+                    }).catch(function(e) {
+                        $location.redirectTo('/home'); // Todo: Make this work
                     });
                 }
             });
