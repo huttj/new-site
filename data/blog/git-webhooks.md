@@ -52,7 +52,7 @@ So, long story short, I wrote this script:
                  if (!file_exists($path . $the_file[$j])) {
                      mkdir($path . $the_file[$j]);
                  }
-                 $path += $the_file[$j] . '/';
+                 $path = $path . $the_file[$j] . '/';
             }
         }
     
@@ -73,8 +73,17 @@ So, long story short, I wrote this script:
         curl_close($ch);
     }
     
+    for ($i=0; $i < count($removedFiles); $i++) {
+        unlink($removedFiles[$i]);
+    }
+    
     // ToDo: Error handling and proper updated list
-    echo 'Files updated/added: ' . implode(', ', $changedFiles);
+    if (strlen(implode(', ', $changedFiles))>0) {
+        echo 'Files updated/added: ' . implode(', ', $changedFiles) . ' ';
+    }
+    if (strlen(implode(', ', $removedFiles))>0) {
+        echo 'Files removed/added: ' . implode(', ', $removedFiles);
+    }
 
 It takes the output from one of GitHub's posts, finds the updated files, and cURLs them into the appropriate locations. A bit rudimentary, but it works.
 
