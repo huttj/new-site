@@ -41,5 +41,15 @@
             "php",
             "web development"
         ]
+    },
+    {
+        "title": "A project in Flask and PostgreSQL",
+        "shortName": "flask-and-postgres",
+        "datePublished": "September, 22, 2014",
+        "tags": [
+            "flask",
+            "postgres",
+            "web development"
+        ]
     }
 ]
