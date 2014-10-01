@@ -10,7 +10,7 @@
                     <p style="font-style: italic;">{{ post.datePublished | asDate | date:'MMMM dd, yyyy' }}</p>
                     <a href="#/blog/{{ post.shortName }}">
                         <!--<div style="background-image: url('img/blog/{{post.shortName}}.jpg')" alt="{{post.title}}" class="img"/>-->
-                        <img ng-src="img/blog/{{post.shortName}}" alt="{{post.title}}" class="img" safe-src />
+                        <img safe-src="img/blog/{{post.shortName}}" alt="{{post.title}}" class="img"/>
                     </a>
 
                     <p>{{ post.content }}</p>

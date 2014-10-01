@@ -3,7 +3,7 @@
  */
 angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri']).
 
-    config(function($routeProvider, $locationProvider) {
+    config(function($routeProvider) {
 
         $routeProvider.
             when('/blog/:post', {
@@ -90,14 +90,12 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                 prev = typeof prev != 'number' ? prev[key] == value ? index - 1 : -1 : prev;
                 return prev != -1 ? prev : curr[key] == value ? index : -1 ;
             }
-        }
+        };
 
         return function(portfolio) {
             if (portfolio == undefined || ($routeParams.category == undefined && $routeParams.subcategory == undefined)) return portfolio;
 
-            var filtered = [];
-
-            filtered = portfolio.reduce(function(previous, current) {
+            var filtered = portfolio.reduce(function(previous, current) {
                 if  (
                         (!$routeParams.category || current.name == $routeParams.category) &&
                         (!$routeParams.subcategory || !!~current.data.reduce(findIndex('name', $routeParams.subcategory)))
@@ -116,9 +114,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         return function(subcategory) {
             if (subcategory == undefined || $routeParams.subcategory == undefined) return subcategory;
 
-            var filtered = [];
-
-            filtered = subcategory.reduce(function(previous, current) {
+            var filtered = subcategory.reduce(function(previous, current) {
                 if (current.name == $routeParams.subcategory) previous.push(current);
                 return previous;
             }, []);
@@ -195,29 +191,36 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         // should guess at standard path + shortName
         var _pageList = [
             {
-                id: 0,
-                name: "Home",
-                shortName: "home",
-                icon: "home"
+                "id": 0,
+                "name": "Home",
+                "shortName": "home",
+                "icon": "home"
             },
             {
-                id: 1,
-                name: "Portfolio",
-                shortName: "portfolio",
-                icon: "briefcase"
+                "id": 1,
+                "name": "Portfolio",
+                "shortName": "portfolio",
+                "icon": "briefcase"
             },
             {
-                id: 2,
-                name: "Résumé",
-                shortName: "resume",
-                icon: "text file outline"
+                "id": 2,
+                "name": "Résumé",
+                "shortName": "resume",
+                "icon": "text file outline"
             },
             {
-                id: 3,
-                name: "Blog",
-                shortName: "blog",
-                icon: "book"
+                "id": 3,
+                "name": "Blog",
+                "shortName": "blog",
+                "icon": "book"
             }
+//            ,
+//            {
+//                "id": 4,
+//                "name": "Profile",
+//                "shortName": "profile",
+//                "icon": "user"
+//            }
         ];
 
         var _pagesByShortName = _pageList.reduce(function(memo, n, i) {
@@ -252,11 +255,11 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         var getBlogEntry = function(permalink) {
             if (blogData[permalink]) return blogData[permalink];
             return blogData[permalink] = $http.get(rootPath + 'data/blog/' + permalink + '.md');
-        }
+        };
 
         var getTemplateUrl = function(shortName) {
             return _pagesByShortName[shortName].templateUrl || 'partials/' + shortName + '.html';
-        }
+        };
 
         var getShortNames = function() {
             return _pageList.sort(function(a, b) {
@@ -264,7 +267,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
             }).map(function (n) {
                 return n.shortName;
             })
-        }
+        };
 
         return {
             getData: getData,
@@ -281,11 +284,10 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
     controller('MainCtrl', function ($scope, DataSvc, $location) {
 
         var find = function(key, value) {
-            return function(prev, curr, index, list) {
-
+            return function(prev, curr) {
                 return prev[key] == value ? prev : curr;
             }
-        }
+        };
 
         var _currentPage = "",
             _pageList    = DataSvc.getPageList(),
@@ -312,16 +314,16 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                     e.preventDefault();
                     var prev = _currentPage.id - 1;
                     if (!~prev) prev = _pageList.length - 1;
-                    goToPage(_pageList[prev])
+                    goToPage(_pageList[prev]);
                     break;
                 case 39: // right
                     e.preventDefault();
                     var next = _currentPage.id + 1;
                     if (next == _pageList.length) next = 0;
-                    goToPage(_pageList[next])
+                    goToPage(_pageList[next]);
                     break;
             }
-        }
+        };
 
         $scope.isActive = isActive;
         $scope.setPage  = setPage;
@@ -332,6 +334,13 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         };
     }).
 
+    /* Special function to allow inferred thumbnail urls
+     * based on blog entry shortnames. Each entry has a
+     * corresponding thumbnail with the same shortname,
+     * in the images directory. This directive cycles
+     * through extensions, finding and saving the correct
+     * one for each image.
+     * */
     directive('safeSrc', function() {
         var data = {},
             ext = ['png', 'jpg', 'svg'];
@@ -339,28 +348,36 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         return {
             link: function(scope, element, attrs) {
 
-                var el = element[0];
-                el.style.visibility = 'hidden';
-                el.onload = function() {
-                    el.style.visibility = 'visible';
-                    if (!data[src]) data[src] = src + '.' + ext[i-1];
-                };
+                if (data[attrs.safeSrc]) {
+                    attrs.$set('src', data[attrs.safeSrc]);
 
-                var src = (attrs.ngSrc || attrs.src).split('.')[0],
-                    i = 0;
+                } else {
 
-                element.bind('error', function() {
-                    if (data[src]) return attrs.$set('ngSrc', data[src]);
-                    if (i < ext.length) {
-                        setNext();
-                    } else {
-                        attrs.$set('ngSrc', 'http://i.imgur.com/Q6Vp8Au.jpg')
+                    var el = element[0];
+                    el.style.visibility = 'hidden';
+                    el.onload = function () {
+                        el.style.visibility = 'visible';
+                        if (!data[attrs.safeSrc]) data[attrs.safeSrc] = src + '.' + ext[i - 1];
+                    };
+
+                    var src = (attrs.safeSrc).split('.')[0],
+                        i = 0;
+
+                    element.bind('error', function () {
+                        if (data[src]) return attrs.$set('src', data[src]);
+                        if (i < ext.length) {
+                            setNext();
+                        } else {
+                            attrs.$set('src', 'http://i.imgur.com/Q6Vp8Au.jpg')
+                        }
+                    });
+
+                    function setNext() {
+                        attrs.$set('src', src + '.' + ext[i]);
+                        i++;
                     }
-                });
 
-                function setNext() {
-                    attrs.$set('ngSrc', src + '.' + ext[i]);
-                    i++;
+                    setNext();
                 }
             }
         }
