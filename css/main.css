@@ -236,6 +236,11 @@ hr {
     font-weight: 500;
 }
 
+.ui.header .sub.header {
+    font-size: 1.25rem;
+    transform: matrix(.8, 0, 0, 1, -38, 1);
+}
+
 .resume h3, .resume h3.header {
     color: #333;
     font-weight: 500;
@@ -403,4 +408,19 @@ hr {
     .blog.post hr {
         display: none;
     }
+}
+
+blockquote .source {
+    float: right;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.blog > div > div::after,
+.blog > div > div > blockquote::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
