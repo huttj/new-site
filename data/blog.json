@@ -4,9 +4,7 @@
         "shortName": "motivation",
         "datePublished": "August 22, 2012",
         "tags": [
-            "life",
-            "motivation",
-            "productivity"
+            "journal"
         ]
     },
     {
@@ -24,11 +22,7 @@
         "datePublished": "September, 17, 2013",
         "tags": [
             "business",
-            "documentation",
-            "html5",
-            "software development",
-            "user assistance",
-            "networking"
+            "work"
         ]
     },
     {
@@ -36,10 +30,8 @@
         "shortName": "git-webhooks",
         "datePublished": "September, 16, 2014",
         "tags": [
-            "git",
-            "github",
-            "php",
-            "web development"
+            "web development",
+            "projects"
         ]
     },
     {
@@ -47,9 +39,17 @@
         "shortName": "flask-and-postgres",
         "datePublished": "September, 22, 2014",
         "tags": [
-            "flask",
-            "postgres",
-            "web development"
+            "web development",
+            "projects"
+        ]
+    },
+    {
+        "title": "Helping a friend with a startup",
+        "shortName": "startup",
+        "datePublished": "September, 30, 2014",
+        "tags": [
+            "business",
+            "projects"
         ]
     }
 ]
