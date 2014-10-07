@@ -18,8 +18,8 @@ Today, I came across an question on Quora that reminded me of this experience, a
 
 I hope it can be as useful to someone as the other content on Quora has been for me.
 
-[Ramit Sethi]:(http://www.iwillteachyoutoberich.com)
-[CopyBlogger]:(http://www.copyblogger.com)
-[reddit]:(http://www.reddit.com/r/entrepreneur)
-[Quora]:(https://www.quora.com/)
-[Me, on Quora]:(http://www.quora.com/Im-21-and-I-have-a-couple-of-ideas-for-making-my-own-startup-but-I-dont-have-a-lot-of-money-to-invest-What-should-I-do/answer/Joshua-Hutt?share=1)
+[Ramit Sethi]:http://www.iwillteachyoutoberich.com
+[CopyBlogger]:http://www.copyblogger.com
+[reddit]:http://www.reddit.com/r/entrepreneur
+[Quora]:https://www.quora.com/
+[Me, on Quora]:http://www.quora.com/Im-21-and-I-have-a-couple-of-ideas-for-making-my-own-startup-but-I-dont-have-a-lot-of-money-to-invest-What-should-I-do/answer/Joshua-Hutt?share=1
