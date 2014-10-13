@@ -142,7 +142,8 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
 
     filter("asDate", function () {
         return function (input) {
-            return new Date(input);
+            var date = new Date(input);
+            return isNaN(date) ? new Date() : date;
         }
     }).
 
@@ -158,19 +159,6 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
             }
             return tags;
         }
-    }).
-
-    filter("orderByDate", function () {
-        return function(items, field, reverse) {
-            if (!items) return items;
-            items.sort(function (a, b) {
-                if (a[field] == 'Present' && b[field] != 'Present') return 1;
-                if (b[field] == 'Present') return -1;
-                return ((new Date(a[field])) > (new Date(b[field])) ? 1 : -1);
-            });
-            if(reverse) items.reverse();
-            return items;
-        };
     }).
 
     service('DataSvc', function($http, $location, $q) {

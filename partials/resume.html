@@ -27,7 +27,7 @@
                     <h2 class="ui header">Work</h2>
                 </div>
             </div>
-            <div ng-repeat="job in data.work | orderByDate:'endDate':true" class="column">
+            <div ng-repeat="job in data.work | orderBy:'asDate':true" class="column">
                 <h3>{{job.position}} - <a href="{{job.website}}">{{job.company}}</a></h3>
                 <h4 style="font-style: italic;">{{ job.startDate | asDate | date:'MMMM yyyy' }} - {{ job.endDate != 'Present' ? (job.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
                 <p>{{ job.summary }}</p>
@@ -53,7 +53,7 @@
                     <h2 class="ui header">Volunteering</h2>
                 </div>
             </div>
-            <div ng-repeat="engagement in data.volunteer | orderByDate:'endDate':true" class="column">
+            <div ng-repeat="engagement in data.volunteer | orderBy:'asDate':true" class="column">
                 <h3>{{engagement.position}} - <a href="{{engagement.website}}">{{engagement.organization}}</a></h3>
                 <h4 style="font-style: italic;">{{ engagement.startDate | asDate | date:'MMMM yyyy' }} - {{ engagement.endDate != 'Present' ? (engagement.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
                 <p>{{ engagement.summary }}</p>
@@ -78,7 +78,7 @@
                     <h2 class="ui header">Education</h2>
                 </div>
             </div>
-            <div ng-repeat="school in data.education | orderByDate:'endDate':true" class="column">
+            <div ng-repeat="school in data.education | orderBy:'asDate':true" class="column">
                 <h3>{{school.institution}}</h3>
 
                 <h4 style="font-style: italic;">{{ school.startDate | asDate | date:'MMMM yyyy' }} - {{ school.endDate != 'Present' ? (school.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
