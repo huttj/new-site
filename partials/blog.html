@@ -4,7 +4,7 @@
     <div class="ui stackable grid">
         <div class="ui thirteen wide column">
             <div class="ui three column doubling grid">
-                <div ng-repeat="post in data | blogFilter | orderByDate:'datePublished':true" class="column">
+                <div ng-repeat="post in (data | blogFilter:true)" class="column">
                     <h3 class="ui header"><a href="#/blog/{{ post.shortName }}">{{ post.title }}</a></h3>
 
                     <p style="font-style: italic;">{{ post.datePublished | asDate | date:'MMMM dd, yyyy' }}</p>

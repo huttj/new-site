@@ -125,12 +125,18 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
     }).
 
     filter('blogFilter', function($routeParams) {
-        return function(posts) {
-            if ($routeParams.tag == undefined || posts == undefined) return posts;
+        return function(posts, reverse) {
+            if (posts == undefined) return posts;
+            if ($routeParams.tag == undefined) return posts.sort(blogSort);
             return posts.reduce(function(previous, current) {
                if (!!~current.tags.indexOf($routeParams.tag)) previous.push(current);
                return previous;
-            }, []);
+            }, []).sort(blogSort);
+
+            function blogSort (a, b) {
+                reverse = reverse ? -1 : 1;
+                return (new Date(a.datePublished)) - (new Date(b.datePublished)) * reverse;
+            }
         }
     }).
 
@@ -140,10 +146,23 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         }
     }).
 
-    filter("asDate", function () {
+    filter('asDate', function () {
         return function (input) {
             var date = new Date(input);
             return isNaN(date) ? new Date() : date;
+        }
+    }).
+
+
+    filter('resumeSort', function(asDateFilter) {
+        return function(posts, reverse) {
+            if (!posts) return posts;
+            return posts.sort(function (a, b) {
+                if (reverse ){
+                    return asDateFilter(b.endDate) - asDateFilter(a.endDate);
+                }
+                return asDateFilter(a.endDate) - asDateFilter(b.endDate);
+            });
         }
     }).
 
