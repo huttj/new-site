@@ -84,7 +84,7 @@
                         "name": "Swipe Directive",
                         "type": "item",
                         "description": "An update of the Swippl directive from scratch. Swipe and fling the images left and right to see new ones! <br/> Features paralax, springgy images, card-like stack spreading behavior, and dynamic image loading. <br/> *Note: Sample images are from the front page of [imgur](http://www.imgur.com)&mdash;some may be not work-friendly.*",
-                        "link": "https://cdn.rawgit.com/huttj/swipe-directive/839b1f7e5d5f786678cc76078cfde4e84972f195/index.html",
+                        "link": "https://cdn.rawgit.com/huttj/swipe-directive/45814cdbeed2662a506189515b6e4a44f37106d6/index.html",
                         "picture": "sd.png",
                         "dateStarted": "",
                         "dateCompleted": "October 2014"
