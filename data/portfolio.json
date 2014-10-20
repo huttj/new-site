@@ -8,6 +8,15 @@
                 "type": "subcategory",
                 "data": [
                     {
+                        "name": "Cerca",
+                        "type": "item",
+                        "description": "A location-based mobile app built with Flask, PostgreSQL, Angular, and SocketIO. <br/> It supports real-time updates of users' locations, real-time push notifications on a per-user basis, and more.",
+                        "link": "#/portfolio",
+                        "picture": "cerca.png",
+                        "dateStarted": "August 2014",
+                        "dateCompleted": "Present"
+                    },
+                    {
                         "name": "Swippl",
                         "type": "item",
                         "description": "Swipe for a new picture.",
@@ -20,7 +29,7 @@
                         "name": "SCS UX Design Pattern Library",
                         "type": "item",
                         "description": "The UX Design Pattern Library is a reference and educational resource for my department at Avanade: Software and Cloud Services (SCS). I built the library as a front-end interface for a SharePoint list that the UX group (myself included) could add to and curate through SharePoint. The goal was to incorporate multiple SharePoint services--the list, message board, and more--into a single, cohesive interface that would be easy to search and browse. <br/>To expand on the usability and discoverability of the items in the library, I added 'tags' in a later revision. This allows us to define a tag list and hierarchy, and then tag any item in the library with the appropriate tags. Users can browse the library using the tags, either by drilling down in the hierarchy, or by moving laterally to related tags.",
-                        "link": "",
+                        "link": "#/portfolio",
                         "picture": "sudpl.png",
                         "dateStarted": "August 2013",
                         "dateCompleted": "February 2014"
@@ -71,6 +80,15 @@
                 "name": "Experiments",
                 "type": "subcategory",
                 "data": [
+                    {
+                        "name": "Swipe Directive",
+                        "type": "item",
+                        "description": "An update of the Swippl directive from scratch. Swipe and fling the images left and right to see new ones! <br/> Features paralax, springgy images, card-like stack spreading behavior, and dynamic image loading. <br/> *Note: Sample images are from the front page of [imgur](http://www.imgur.com)&mdash;some may be not work-friendly.*",
+                        "link": "https://cdn.rawgit.com/huttj/swipe-directive/c0fb87be62339c4cd5b3b3d178e3fde30c297033/index.html",
+                        "picture": "sd.png",
+                        "dateStarted": "",
+                        "dateCompleted": "October 2014"
+                    },
                     {
                         "name": "Video Comments",
                         "type": "item",
