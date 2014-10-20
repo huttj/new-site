@@ -124,7 +124,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         }
     }).
 
-    filter('blogFilter', function($routeParams) {
+    filter('blogFilter', function($routeParams, asDateFilter) {
         return function(posts, reverse) {
             if (posts == undefined) return posts;
             if ($routeParams.tag == undefined) return posts.sort(blogSort);
@@ -135,7 +135,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
 
             function blogSort (a, b) {
                 reverse = reverse ? -1 : 1;
-                return (new Date(a.datePublished)) - (new Date(b.datePublished)) * reverse;
+                return (asDateFilter(a.datePublished) - asDateFilter(b.datePublished)) * reverse;
             }
         }
     }).
@@ -158,10 +158,9 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         return function(posts, reverse) {
             if (!posts) return posts;
             return posts.sort(function (a, b) {
-                if (reverse ){
-                    return asDateFilter(b.endDate) - asDateFilter(a.endDate);
-                }
-                return asDateFilter(a.endDate) - asDateFilter(b.endDate);
+                // If reverse is provided (and true), use it to flip the sign of the comparison
+                reverse = reverse ? -1 : 1;
+                return (asDateFilter(a.endDate) - asDateFilter(b.endDate)) * reverse;
             });
         }
     }).
