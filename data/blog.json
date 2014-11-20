@@ -51,5 +51,14 @@
             "business",
             "projects"
         ]
+    },
+    {
+        "title": "Moving from Python to Node",
+        "shortName": "moving-to-node",
+        "datePublished": "November 19, 2014",
+        "tags": [
+            "web development",
+            "projects"
+        ]
     }
 ]
