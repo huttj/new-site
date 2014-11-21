@@ -10,7 +10,7 @@
                     {
                         "name": "Cerca",
                         "type": "item",
-                        "description": "A location-based mobile app built with Flask, PostgreSQL, Angular, and SocketIO. <br/> It supports real-time updates of users' locations, real-time push notifications on a per-user basis, and more.",
+                        "description": "A location-based mobile app built with NodeJS, PostgreSQL, Ionic/Angular, and SocketIO. <br/> It supports real-time updates of users' locations, real-time push notifications on a per-user basis, and more.",
                         "link": "#/portfolio",
                         "picture": "cerca.png",
                         "dateStarted": "August 2014",
