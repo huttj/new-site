@@ -164,6 +164,8 @@
             "endDate": "Present",
             "courses": [
                 "AngularJS",
+                "Cordova/PhoneGap",
+                "Ionic Framework",
                 "NodeJS",
                 "Business Analysis",
                 "Consulting",
@@ -217,13 +219,10 @@
             "name": "Web Development",
             "level": "7",
             "keywords": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "AngularJS",
-                "KnockoutJS",
-                "NodeJS",
-                "SQL"
+                "HTML, CSS, JavaScript",
+                "NodeJS, SocketIO, Flask",
+                "Angular, Knockout, Ionic",
+                "T-SQL, PostgreSQL, MySQL"
             ]
         },
         {
@@ -243,7 +242,8 @@
             "keywords": [
                 "One-on-one training",
                 "Web-based training",
-                "Developing training materials"
+                "Developing training materials",
+                "Business training"
             ]
         }
     ],
