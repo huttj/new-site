@@ -11,7 +11,7 @@
                         "name": "Cerca",
                         "type": "item",
                         "description": "A location-based mobile app built with NodeJS, PostgreSQL, Ionic/Angular, and SocketIO. <br/> It supports real-time updates of users' locations, real-time push notifications on a per-user basis, and more.",
-                        "link": "#/portfolio",
+                        "link": "http://app.getcerca.com/",
                         "picture": "cerca.png",
                         "dateStarted": "August 2014",
                         "dateCompleted": "Present"
@@ -20,7 +20,7 @@
                         "name": "Swippl",
                         "type": "item",
                         "description": "Swipe for a new picture.",
-                        "link": "http://www.swippl.com",
+                        "link": "javascript:alert('Swippl is currently down for maintenance.');",
                         "picture": "swippl.png",
                         "dateStarted": "March 2014",
                         "dateCompleted": "Present"
@@ -29,7 +29,7 @@
                         "name": "SCS UX Design Pattern Library",
                         "type": "item",
                         "description": "The UX Design Pattern Library is a reference and educational resource for my department at Avanade: Software and Cloud Services (SCS). I built the library as a front-end interface for a SharePoint list that the UX group (myself included) could add to and curate through SharePoint. The goal was to incorporate multiple SharePoint services--the list, message board, and more--into a single, cohesive interface that would be easy to search and browse. <br/>To expand on the usability and discoverability of the items in the library, I added 'tags' in a later revision. This allows us to define a tag list and hierarchy, and then tag any item in the library with the appropriate tags. Users can browse the library using the tags, either by drilling down in the hierarchy, or by moving laterally to related tags.",
-                        "link": "#/portfolio",
+                        "link": "javascript:void(0);",
                         "picture": "sudpl.png",
                         "dateStarted": "August 2013",
                         "dateCompleted": "February 2014"
@@ -38,7 +38,7 @@
                         "name": "The SEAL Website",
                         "type": "item",
                         "description": "While working in the Electrical Engineering Department of the University of Washington, I was tasked with updating the [SEAL website](img/portfolio/oldseal.png) to include recent news items and publications. Despite the fact that site was created in an antiquated version of [Microsoft Publisher](http://stackoverflow.com/questions/3879956/how-was-this-website-made-whats-frontpage-5-0), I managed to update the relevant parts. After creating my own site and the site for Real Sort, I decided to try making a simple PHP-based site from scratch. I couldn't use a CMS like WordPress or [GetSimple](http://get-simple.info/) because the university's webserver did not offer database access, and its PHP installation was several versions out of date. <br/>So, I wrote a basic framework of my own with PHP, using the what I learned modifying WordPress installations and themes. To make it simple to update and maintain, I used a file reading script to parse plain text files and output the pages of the site. I did this for the whole site, including the “Publications” section, which has special code to specify the type of colored marker that appears for each entry. The student section has optional entries for email, resume, and homepage, and the links section looks for delineations of different categories within the text file. <br/>(Note: The lab now has a new webmaster, who has [updated the site](http://www.ee.washington.edu/research/seal/index.html). So far, I like the look of it.)",
-                        "link": "",
+                        "link": "javascript:void(0);",
                         "picture": "seal.png",
                         "dateCompleted": "August 2012"
                     }

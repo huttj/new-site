@@ -22,5 +22,12 @@
         "name": "Blog",
         "shortName": "blog",
         "icon": "book"
+    },
+    {
+        "id": 4,
+        "name": "Profile",
+        "shortName": "profile",
+        "icon": "male"
     }
+
 ]

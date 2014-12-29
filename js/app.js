@@ -3,7 +3,9 @@
  */
 angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri']).
 
-    config(function($routeProvider) {
+    config(function($routeProvider, $compileProvider) {
+
+        $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|javascript):/);
 
         $routeProvider.
             when('/blog/:post', {
