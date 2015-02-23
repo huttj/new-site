@@ -11,7 +11,7 @@
                         "name": "Cerca",
                         "type": "item",
                         "description": "A location-based mobile app built with NodeJS, PostgreSQL, Ionic/Angular, and SocketIO. <br/> It supports real-time updates of users' locations, real-time push notifications on a per-user basis, and more.",
-                        "link": "http://app.getcerca.com/",
+                        "link": "http://launch.getcerca.com/",
                         "picture": "cerca.png",
                         "dateStarted": "August 2014",
                         "dateCompleted": "Present"
