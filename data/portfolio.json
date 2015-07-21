@@ -8,6 +8,15 @@
                 "type": "subcategory",
                 "data": [
                     {
+                        "name": "Photo Tracker",
+                        "type": "item",
+                        "description": "A tool to track anything with private, locally-stored photos. Built with AngularJS and the Ionic Framework.",
+                        "link": "https://github.com/huttj/photo-tracker",
+                        "picture": "photo-tracker.png",
+                        "dateStarted": "July 2015",
+                        "dateCompleted": "Present"
+                    },
+                    {
                         "name": "Cerca",
                         "type": "item",
                         "description": "A location-based mobile app built with NodeJS, PostgreSQL, Ionic/Angular, and SocketIO. <br/> It supports real-time updates of users' locations, real-time push notifications on a per-user basis, and more.",
