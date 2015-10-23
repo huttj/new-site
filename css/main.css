@@ -147,6 +147,7 @@ li {
 .portfolio-item .column:first-child {
     margin-bottom: .25em;
 }
+
 .portfolio-item .column {
     margin-top: 0;
 }
@@ -248,9 +249,17 @@ hr {
     margin-bottom: .33em;
 }
 
-
 .resume div:last-child {
     margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 999px) {
+    .work .column .column div {
+        margin-bottom: 3rem;
+    }
+    .resume .work .column .column div:last-child {
+        margin-bottom: 1rem;
+    }
 }
 
 .resume .basics {

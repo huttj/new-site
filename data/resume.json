@@ -157,6 +157,18 @@
     ],
     "volunteer": [
         {
+            "organization": "NodeSchool",
+            "position": "JavaScript Mentor",
+            "website": "http://nodeschool.io/",
+            "startDate": "2015-05",
+            "endDate": "Present",
+            "summary": "NodeSchool is an open source project run by volunteers with two goals: to create high quality programming curriculum and to host community learning events.",
+            "highlights": [
+                "Teaching and mentoring budding programmers of various levels of development.",
+                "Sharing information about the workshops and programs with potential students and mentors."
+            ]
+        },
+        {
             "organization": "Chinese Information and Service Center",
             "position": "English Tutor",
             "website": "http://cisc-seattle.org/",
@@ -178,7 +190,9 @@
             "startDate": "2013-03-01",
             "endDate": "Present",
             "courses": [
-                "AngularJS",
+                "MEAN.js",
+                "Meteor",
+                "Angular",
                 "Cordova/PhoneGap",
                 "Ionic Framework",
                 "NodeJS",
@@ -202,7 +216,8 @@
                 "Statistics",
                 "Linear Algebra",
                 "Calculus (I, II, & III)",
-                "Calculus of Complex Variables"
+                "Calculus of Complex Variables",
+                "Leadership Development"
             ],
             "highlights": [
                 "Conducted contingent valuation surveys and environmental research in two of China’s most polluted cities.",
@@ -232,12 +247,13 @@
     "skills": [
         {
             "name": "Web Development",
-            "level": "7",
+            "level": "8",
             "keywords": [
                 "HTML, CSS, JavaScript",
-                "NodeJS, SocketIO, Flask",
-                "Angular, Knockout, Ionic",
-                "T-SQL, PostgreSQL, MySQL"
+                "NodeJS, SocketIO, Meteor",
+                "Angular, Ionic, Knockout",
+                "PostgreSQL, T-SQL, MySQL",
+                "RethinkDB, MongoDB, Redis"
             ]
         },
         {
@@ -253,12 +269,12 @@
         },
         {
             "name": "Teaching",
-            "level": "5",
+            "level": "6",
             "keywords": [
                 "One-on-one training",
                 "Web-based training",
                 "Developing training materials",
-                "Business training"
+                "Business mentorship"
             ]
         }
     ],

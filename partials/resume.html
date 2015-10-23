@@ -1,19 +1,19 @@
 <div style="position: relative;" class="resume">
     <h1 class="ui header">Résumé</h1>
 
-    <img ng-src="{{data.basics.picture}}" alt=""/>
+    <img ng-src="{{::data.basics.picture}}" alt=""/>
 
     <div class="basics ui two column doubling grid">
         <div class="column">
-            <h2 style="margin-bottom: .15em; color: #3491dc;" class="ui header" ng-bind="data.basics.name"></h2>
+            <h2 style="margin-bottom: .15em; color: #3491dc;" class="ui header" ng-bind="::data.basics.name"></h2>
             <h3 style="margin: .15em 0 .25em; font-style: italic; font-weight: 600; color: #777;" class="ui header" ng-bind="data.basics.label"></h3>
-            <p style="margin-top: .2em"><a href="mailto:{{data.basics.email}}?subject=Your Resume" ng-bind="data.basics.email"></a></p>
+            <p style="margin-top: .2em"><a href="mailto:{{::data.basics.email}}?subject=Your Resume" ng-bind="data.basics.email"></a></p>
         </div>
 
         <div class="profiles column">
             <h2 class="ui header">Profiles</h2>
             <ul>
-                <li ng-repeat="profile in data.basics.profiles"><a href="{{profile.url}}"><i class="{{profile.network|lowercase}} sign icon"></i><span ng-bind="profile.network"></a></li>
+                <li ng-repeat="profile in data.basics.profiles"><a href="{{::profile.url}}"><i class="{{::profile.network|lowercase}} sign icon"></i><span ng-bind="::profile.network"></a></li>
             </ul>
         </div>
 
@@ -27,8 +27,16 @@
                     <h2 class="ui header">Work</h2>
                 </div>
             </div>
-            <div ng-repeat="job in (data.work | resumeSort:true)" class="column">
-                <h3><span ng-bind="job.position"></span> - <a href="{{job.website}}" ng-bind="job.company"></a></h3>
+
+            <div class="column">
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="$index % 2 == 0"></div>
+			</div>            
+			<div class="column">
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="$index % 2 == 1"></div>
+            </div>
+
+            <script type="text/ng-template" id="/job.html">
+                <h3><span ng-bind="::job.position"></span> - <a href="{{::job.website}}" ng-bind="::job.company"></a></h3>
                 <h4 style="font-style: italic;"><span ng-bind="job.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="job.endDate != 'Present' ? (job.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
                 <p ng-bind="job.summary"></p>
                 <h4 class="ui header">Highlights:</h4>
@@ -41,7 +49,7 @@
                         </ol>
                     </li>
                 </ul>
-            </div>
+            </script>
         </div>
     </div>
 
@@ -82,7 +90,7 @@
                 <h3 ng-bind="school.institution"></h3>
 
                 <h4 style="font-style: italic;"><span ng-bind="school.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="school.endDate != 'Present' ? (school.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
-                <p ng-bind="{{ school.studyType ? school.studyType + ' in ' + school.area : school.area"></p>
+                <p ng-bind="school.studyType ? school.studyType + ' in ' + school.area : school.area"></p>
                 <h4 class="ui header">Courses:</h4>
                 <ul>
                     <li ng-repeat="course in school.courses" ng-bind="course"></li>
@@ -92,7 +100,7 @@
     </div>
 
     <div class="skills">
-        <div class="ui four column doubling grid">
+        <div class="ui three column doubling grid">
             <div class="row">
                 <div class="column">
                     <h2 class="ui header">Skills</h2>
