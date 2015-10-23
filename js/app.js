@@ -1,14 +1,14 @@
 /**
  * Created by joshua.hutt on 9/11/2014.
  */
-angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri']).
+angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri'])
 
-    config(function($routeProvider, $compileProvider) {
+    .config(function($routeProvider, $compileProvider) {
 
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|javascript):/);
 
-        $routeProvider.
-            when('/blog/:post', {
+        $routeProvider
+            .when('/blog/:post', {
                 templateUrl: 'partials/post.html',
                 controller: function($scope, DataSvc, $routeParams, MarkdownSvc) {
                     var shortName = $routeParams.post;
@@ -29,25 +29,27 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                         $scope.content = MarkdownSvc.convertAndHighlight(result.data);
                     });
                 }
-            }).
-            when('/:shortName?', {
+            })
+            .when('/:shortName?', {
                 templateUrl: function (params) {
                     var shortName = params.shortName ? params.shortName : 'home';
                     return 'partials/' + shortName + '.html';
                 },
                 controller: function ($scope, DataSvc, $routeParams) {
-                    var shortName = $routeParams.shortName ? $routeParams.shortName : 'home';
-                    DataSvc.getData(shortName).then(function (result) {
-                        $scope.data = result.data;
-                    }).catch(function(e) {
-                        $location.redirectTo('/home'); // Todo: Make this work
-                    });
+                    var shortName = $routeParams.shortName || 'home';
+                    DataSvc.getData(shortName)
+                        .then(function (result) {
+                            $scope.data = result.data;
+                        })
+                        .catch(function(e) {
+                            $location.redirectTo('/home'); // Todo: Make this work
+                        });
                 }
             });
 
-    }).
+    })
 
-    service('MarkdownSvc', function() {
+    .service('MarkdownSvc', function() {
         var converter = new Showdown.converter();
 
         return {
@@ -70,22 +72,22 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                 return hljs.highlight(name, code, ignore_illegals).value;
             }
         }
-    }).
+    })
 
     // A dirty, dirty hack
-    filter('tagSet', function($routeParams) {
+    .filter('tagSet', function($routeParams) {
         return function() {
             return $routeParams.tag != undefined || $routeParams.subcategory != undefined || $routeParams.category != undefined;
         }
-    }).
+    })
 
-    filter('isSelected', function($routeParams) {
+    .filter('isSelected', function($routeParams) {
         return function(data) {
             return ($routeParams[data[1]] == data[0]) ? 'selected' : '';
         }
-    }).
+    })
 
-    filter('portfolioCategoryFilter', function($routeParams) {
+    .filter('portfolioCategoryFilter', function($routeParams) {
         var findIndex = function(key, value) {
             return function(prev, curr, index, list) {
                 // To keep from having to pass in a -1 in each reduce() call
@@ -110,9 +112,9 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
             return filtered.length > 0 ? filtered : undefined;
 
         }
-    }).
+    })
 
-    filter('portfolioSubcategoryFilter', function($routeParams) {
+    .filter('portfolioSubcategoryFilter', function($routeParams) {
         return function(subcategory) {
             if (subcategory == undefined || $routeParams.subcategory == undefined) return subcategory;
 
@@ -124,9 +126,9 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
             return filtered.length > 0 ? filtered : undefined;
 
         }
-    }).
+    })
 
-    filter('blogFilter', function($routeParams, asDateFilter) {
+    .filter('blogFilter', function($routeParams, asDateFilter) {
         return function(posts, reverse) {
             if (posts == undefined) return posts;
             if ($routeParams.tag == undefined) return posts.sort(blogSort);
@@ -140,23 +142,22 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                 return (asDateFilter(a.datePublished) - asDateFilter(b.datePublished)) * reverse;
             }
         }
-    }).
+    })
 
-    filter('toMarkdown', function(MarkdownSvc) {
+    .filter('toMarkdown', function(MarkdownSvc) {
         return function(data) {
             return MarkdownSvc.convert(data);
         }
-    }).
+    })
 
-    filter('asDate', function () {
+    .filter('asDate', function () {
         return function (input) {
             var date = new Date(input);
             return isNaN(date) ? new Date() : date;
         }
-    }).
+    })
 
-
-    filter('resumeSort', function(asDateFilter) {
+    .filter('resumeSort', function(asDateFilter) {
         return function(posts, reverse) {
             if (!posts) return posts;
             return posts.sort(function (a, b) {
@@ -165,9 +166,9 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                 return (asDateFilter(a.endDate) - asDateFilter(b.endDate)) * reverse;
             });
         }
-    }).
+    })
 
-    filter('getTags', function() {
+    .filter('getTags', function() {
         return function(posts) {
 
             var tags = [];
@@ -179,9 +180,9 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
             }
             return tags;
         }
-    }).
+    })
 
-    service('DataSvc', function($http, $location, $q) {
+    .service('DataSvc', function($http, $location, $q) {
 
         // Get the current path, without the file (index.html) or hash
         var rootPath = $location.absUrl();
@@ -286,10 +287,10 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                 return _pageList;
             }
         }
-    }).
+    })
 
     // ToDo: Use left/right keypresses to navigate between adjacent pages
-    controller('MainCtrl', function ($scope, DataSvc, $location) {
+    .controller('MainCtrl', function ($scope, DataSvc, $location) {
 
         var find = function(key, value) {
             return function(prev, curr) {
@@ -340,7 +341,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
         $scope.getDate = function() {
             return (new Date());
         };
-    }).
+    })
 
     /* Special function to allow inferred thumbnail urls
      * based on blog entry shortnames. Each entry has a
@@ -349,7 +350,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
      * through extensions, finding and saving the correct
      * one for each image.
      * */
-    directive('safeSrc', function() {
+    .directive('safeSrc', function() {
         var data = {},
             ext = ['png', 'jpg', 'svg'];
 
@@ -376,7 +377,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                         if (i < ext.length) {
                             setNext();
                         } else {
-                            attrs.$set('src', 'http://i.imgur.com/Q6Vp8Au.jpg')
+                            attrs.$set('src', 'http://i.imgur.com/Q6Vp8Au.jpg');
                         }
                     });
 

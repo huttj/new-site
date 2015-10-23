@@ -5,15 +5,15 @@
 
     <div class="basics ui two column doubling grid">
         <div class="column">
-            <h2 style="margin-bottom: .15em; color: #3491dc;" class="ui header">{{data.basics.name}}</h2>
-            <h3 style="margin: .15em 0 .25em; font-style: italic; font-weight: 600; color: #777;" class="ui header">{{data.basics.label}}</h3>
-            <p style="margin-top: .2em"><a href="mailto:{{data.basics.email}}?subject=Your Resume">{{data.basics.email}}</a></p>
+            <h2 style="margin-bottom: .15em; color: #3491dc;" class="ui header" ng-bind="data.basics.name"></h2>
+            <h3 style="margin: .15em 0 .25em; font-style: italic; font-weight: 600; color: #777;" class="ui header" ng-bind="data.basics.label"></h3>
+            <p style="margin-top: .2em"><a href="mailto:{{data.basics.email}}?subject=Your Resume" ng-bind="data.basics.email"></a></p>
         </div>
 
         <div class="profiles column">
             <h2 class="ui header">Profiles</h2>
             <ul>
-                <li ng-repeat="profile in data.basics.profiles"><a href="{{profile.url}}"><i class="{{profile.network|lowercase}} sign icon"></i>{{ profile.network }}</a></li>
+                <li ng-repeat="profile in data.basics.profiles"><a href="{{profile.url}}"><i class="{{profile.network|lowercase}} sign icon"></i><span ng-bind="profile.network"></a></li>
             </ul>
         </div>
 
@@ -28,16 +28,16 @@
                 </div>
             </div>
             <div ng-repeat="job in (data.work | resumeSort:true)" class="column">
-                <h3>{{job.position}} - <a href="{{job.website}}">{{job.company}}</a></h3>
-                <h4 style="font-style: italic;">{{ job.startDate | asDate | date:'MMMM yyyy' }} - {{ job.endDate != 'Present' ? (job.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
-                <p>{{ job.summary }}</p>
+                <h3><span ng-bind="job.position"></span> - <a href="{{job.website}}" ng-bind="job.company"></a></h3>
+                <h4 style="font-style: italic;"><span ng-bind="job.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="job.endDate != 'Present' ? (job.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
+                <p ng-bind="job.summary"></p>
                 <h4 class="ui header">Highlights:</h4>
                 <ul>
                     <li ng-repeat="highlight in job.highlights">
-                        <span ng-if="!highlight.value">{{ highlight }}</span>
-                        <span ng-if="highlight.value">{{ highlight.value }}</span>
+                        <span ng-if="!highlight.value" ng-bind="highlight"></span>
+                        <span ng-if="highlight.value" ng-bind="highlight.value"></span>
                         <ol>
-                            <li ng-repeat="subhighlight in highlight.data">{{ subhighlight }}</li>
+                            <li ng-repeat="subhighlight in highlight.data" ng-bind="subhighlight"></li>
                         </ol>
                     </li>
                 </ul>
@@ -54,16 +54,16 @@
                 </div>
             </div>
             <div ng-repeat="engagement in (data.volunteer | resumeSort:true)" class="column">
-                <h3>{{engagement.position}} - <a href="{{engagement.website}}">{{engagement.organization}}</a></h3>
-                <h4 style="font-style: italic;">{{ engagement.startDate | asDate | date:'MMMM yyyy' }} - {{ engagement.endDate != 'Present' ? (engagement.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
-                <p>{{ engagement.summary }}</p>
+                <h3><span ng-bind="engagement.position"></span> - <a href="{{engagement.website}}" ng-bind="engagement.organization"></a></h3>
+                <h4 style="font-style: italic;"><span ng-bind="engagement.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="engagement.endDate != 'Present' ? (engagement.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
+                <p ng-bind="engagement.summary"></p>
                 <h4 class="ui header">Highlights:</h4>
                 <ul>
                     <li ng-repeat="highlight in engagement.highlights">
-                        <span ng-if="!highlight.value">{{ highlight }}</span>
-                        <span ng-if="highlight.value">{{ highlight.value }}</span>
+                        <span ng-if="!highlight.value" ng-bind="highlight"></span>
+                        <span ng-if="highlight.value" ng-bind="highlight.value"></span>
                         <ol>
-                            <li ng-repeat="subhighlight in highlight.data">{{ subhighlight }}</li>
+                            <li ng-repeat="subhighlight in highlight.data" ng-bind="subhighlight"></li>
                         </ol>
                     </li>
                 </ul>
@@ -79,13 +79,13 @@
                 </div>
             </div>
             <div ng-repeat="school in (data.education | resumeSort:true)" class="column">
-                <h3>{{school.institution}}</h3>
+                <h3 ng-bind="school.institution"></h3>
 
-                <h4 style="font-style: italic;">{{ school.startDate | asDate | date:'MMMM yyyy' }} - {{ school.endDate != 'Present' ? (school.endDate | asDate | date:'MMMM yyyy') : 'Present' }}</h4>
-                <p>{{ school.studyType ? school.studyType + ' in ' + school.area : school.area }}</p>
+                <h4 style="font-style: italic;"><span ng-bind="school.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="school.endDate != 'Present' ? (school.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
+                <p ng-bind="{{ school.studyType ? school.studyType + ' in ' + school.area : school.area"></p>
                 <h4 class="ui header">Courses:</h4>
                 <ul>
-                    <li ng-repeat="course in school.courses">{{ course }}</li>
+                    <li ng-repeat="course in school.courses" ng-bind="course"></li>
                 </ul>
             </div>
         </div>
@@ -99,13 +99,12 @@
                 </div>
             </div>
             <div ng-repeat="skill in data.skills | orderBy:'level':true" class="column">
-                <h3 class="ui header">{{ skill.name }}</h3>
+                <h3 class="ui header" ng-bind="skill.name"></h3>
                 <ul>
-                    <li ng-repeat="keyword in skill.keywords | orderBy:'toString()'">{{ keyword }}</li>
+                    <li ng-repeat="keyword in skill.keywords | orderBy:'toString()'" ng-bind="keyword"></li>
                 </ul>
             </div>
         </div>
-
     </div>
 </div>
-{{ data }}
+<!-- {{ data }} -->

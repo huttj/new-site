@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="google-site-verification" content="olf5rk8rYODNcUs2FoI9PXZZq_wC7XqbYy5wPtmPF8E" /> 
-    <title>Joshua Hutt | Technical Writer, Software Developer</title>
+    <title>Joshua Hutt | Entrepreneur, Software Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="bower_components/semantic-ui/build/packaged/css/semantic.css"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css">
@@ -16,19 +16,19 @@
         <a href="#/home" ng-click="setPage('home')"><img src="img/logo-801.png" alt="" style="height: 2em; padding-right: .25em;"/></a>
         <div class="content">
             <a href="#/home" ng-click="setPage('home')">Joshua Hutt</a>
-            <div class="sub header">Technical Writer, Software Developer</div>
+            <div class="sub header">Entrepreneur, Software Developer</div>
         </div>
     </h1>
 
     <div class="ui menu">
-        <a ng-repeat="page in pageList | orderBy: page.id : reverse" class="item" ng-class="{active: isActive(page)}" ng-click="setPage(page)" href="#/{{page.shortName}}"><i class="icon {{ page.icon }}"></i> <span>{{page.name}}</span></a>
+        <a ng-repeat="page in pageList | orderBy: page.id : reverse" class="item" ng-class="{active: isActive(page)}" ng-click="setPage(page)" href="#/{{page.shortName}}"><i class="icon {{ page.icon }}"></i> <span ng-bind="page.name"></span></a>
     </div>
 
     <div ng-view class="main-view"></div>
 
     <div class="ui grid">
         <div class="sixteen wide column">
-            <p style="text-align: center; font-style: italic; color: #999;">Copyright &copy; {{ getDate() | date:'yyyy' }}, Joshua Hutt</p>
+            <p style="text-align: center; font-style: italic; color: #999;">Copyright &copy; <span ng-bind="getDate() | date:'yyyy'">2015</span>, Joshua Hutt</p>
         </div>
     </div>
     <script>
