@@ -22,12 +22,12 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.24",
-    "angular-route": "~1.2.24",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
     "semantic-ui": "~0.19.2",
-    "angular-sanitize": "~1.2.24",
+    "angular-sanitize": "~1.4.7",
     "showdown": "~0.3.1",
     "angular-encode-uri": "~1.0.0",
-    "angularitics": "~0.16.5"
+    "angularitics": "~0.20.1"
   }
 }
