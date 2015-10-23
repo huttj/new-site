@@ -36,8 +36,8 @@ body {
 }
 
 .home.ui.grid > .column.featured-image img {
-    margin: 0 0 0 9%;
-    width: 30em;
+    margin: 0;
+    width: 90%;
     bottom: 0;
     position: relative;
 }
@@ -246,9 +246,14 @@ hr {
     font-weight: 500;
 }
 
+
+.ui.header .content {
+	margin-right: -100%;
+}
+
 .ui.header .sub.header {
     font-size: 1.25rem;
-    transform: matrix(.8, 0, 0, 1, -38, 1);
+    transform: matrix(.785, 0, 0, 1, -38, 1);
 }
 
 .resume h3, .resume h3.header {
@@ -294,6 +299,9 @@ hr {
 }
 
 @media screen and (max-width: 1280px) {
+	.home.ui.grid > .column.featured-image img {
+	    margin: 0 0 0 8%;
+	}
     .portfolio div.categories > ul {
         padding-left: 0;
     }
