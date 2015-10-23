@@ -430,6 +430,20 @@ hr {
     }
 }
 
+
+
+@media only screen and (max-width: 600px) {
+	body {
+		zoom: .9;
+	}
+	.ui.header {
+		overflow-x: hidden;
+	}
+	.main-view {
+		padding: .875rem 1.25rem 0;
+	}
+}
+
 @media only screen and (min-width: 767px) {
     .blog.post hr {
         display: none;
