@@ -233,6 +233,15 @@ hr {
     color: #666;
 }
 
+.resume .ui.grid > .row:first-child {
+    margin-bottom: .5rem;
+    box-shadow: 0 13px 0px -12px #F2F2F2;
+}
+
+.resume .ui.grid > .row:first-child .column {
+    margin-bottom: .125rem;
+}
+
 .ui.header {
     font-weight: 500;
 }
