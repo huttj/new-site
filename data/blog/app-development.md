@@ -1,0 +1,1 @@
+It has been nearly seven months since my last blog post, and in that time, I developed, deployed, and published my first mobile app, [Cerca](http://getcerca.com).

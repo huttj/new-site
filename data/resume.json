@@ -1,7 +1,7 @@
 {
     "basics": {
         "name": "Joshua Hutt",
-        "label": "Technical Writer, Software Developer",
+        "label": "Entrepreneur, Software Developer",
         "picture": "http://www.gravatar.com/avatar/f12264dd60439474861eb588f5472bac?s=500.png",
         "email": "joshua@huttj.com",
         "phone": "(206) 486-4807",
@@ -33,6 +33,21 @@
         ]
     },
     "work": [
+        {
+            "company": "Cerca LLC",
+            "position": "Lead Developer",
+            "website": "http://www.getcerca.com",
+            "startDate": "2014-11-01",
+            "endDate": "Present",
+            "summary": "Cerca is realtime, location-based mobile app built to help friends get together.",
+            "highlights": [
+                "Designing and developing a real-time mobile application, with Ionic, Node, and PostgreSQL, deploying to AWS.",
+                "Supporting, mentoring, and teaching a junior developer in the areas of system design and architecture, JavaScript gotchas and best practices, as well as feature design, scoping, and implementation.",
+                "Researching, learning, and adopting new technologies whenever possible.",
+                "Researching user experience, and troubleshooting and resolving errors identified by user feedback.",
+                "Setting delivery dates, prioritizing development tasks, and deploying to the app stores on a regular cadence."
+            ]
+        },
         {
             "company": "Avanade",
             "position": "User Assistance Lead",
