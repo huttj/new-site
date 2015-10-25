@@ -14,26 +14,21 @@
             "countryCode": "US",
             "region": "Washington"
         },
-        "profiles": [
-            {
-                "network": "GitHub",
-                "username": "huttj",
-                "url": "https://github.com/huttj/"
-            },
-            {
-                "network": "LinkedIn",
-                "username": "169900357",
-                "url": "https://www.linkedin.com/profile/view?id=169900357"
-            },
-            {
-                "network": "Twitter",
-                "username": "joshuahutt",
-                "url": "https://twitter.com/joshuahutt"
-            }
-        ]
+        "profiles": [{
+            "network": "GitHub",
+            "username": "huttj",
+            "url": "https://github.com/huttj/"
+        }, {
+            "network": "LinkedIn",
+            "username": "169900357",
+            "url": "https://www.linkedin.com/profile/view?id=169900357"
+        }, {
+            "network": "Twitter",
+            "username": "joshuahutt",
+            "url": "https://twitter.com/joshuahutt"
+        }]
     },
-    "work": [
-        {
+    "work": [{
             "company": "Cerca LLC (Side-Project)",
             "position": "Lead Developer",
             "website": "http://www.getcerca.com",
@@ -47,8 +42,7 @@
                 "Researching user experience, and troubleshooting and resolving errors identified by user feedback.",
                 "Setting delivery dates, prioritizing development tasks, and deploying to the app stores on a regular cadence."
             ]
-        },
-        {
+        }, {
             "company": "Avanade",
             "position": "User Assistance Lead",
             "website": "http://www.avanade.com",
@@ -63,8 +57,7 @@
                 "Taking ownership of the entire library of end-user and business consultant documentation for an enterprise software platform with a diverse customer base, including installation guides, user guides, customer demonstration guides, and UI documentation.",
                 "Working with a senior Technical Writer to develop a new, iterative strategy for company-wide software documentation."
             ]
-        },
-        {
+        }, {
             "company": "University of Washington",
             "position": "Technical Writer",
             "website": "http://www.ee.washington.edu",
@@ -75,10 +68,9 @@
                 "Redesigned and maintained the website for the Sensors, Energy, and Automation Laboratory (SEAL), creating a light-weight, flat-file framework in PHP, styled with adaptive and mobile-friendly CSS.",
                 "Wrote and published press releases and news articles, wrote a Microsoft Word 2010 instructional book, edited multi-million dollar research proposals, technical journal articles, and Ph.D. dissertations, and edited two non-fiction books.",
                 "Led public relations efforts, including drafting publicity articles, arranging book publication and an author event at the UW, and securing and coordinating a KING 5 TV news segment for the Dietary Data Recording System.",
-                "Created a business plan, a marketing plan, and various products for the STREAM Tools business venture.",
+                "Created a business plan, a marketing plan, and various products for the STREAM Tools business venture."
             ]
-        },
-        {
+        }, {
             "company": "Real Sort",
             "position": "Web Designer & Business Consultant",
             "website": "http://www.realsort.org",
@@ -91,8 +83,7 @@
                 "Created additional custom-branded physical documents, including business cards, customer intake forms, and questionnaires.",
                 "Worked with the customer to develop and revise a business plan, marketing materials, and a three-tier service offering."
             ]
-        },
-        {
+        }, {
             "company": "Minhang High School (China)",
             "position": "High School English Teacher",
             "website": "http://mhzx.mhedu.sh.cn/",
@@ -103,8 +94,7 @@
                 "Designed and delivered practical curricula and teaching plans for five classes of varying levels of English proficiency.",
                 "Incorporated material from internet research, popular teaching manuals, and previous experience into lesson plans."
             ]
-        },
-        {
+        }, {
             "company": "University of Washington",
             "position": "Nanotech Research Assistant",
             "website": "http://depts.washington.edu/nlab/",
@@ -117,8 +107,7 @@
                 "Researched current developments in fluid dynamics, wrote article summaries, and provided citations for journal articles.",
                 "Participated in weekly meetings, prepared and presented detailed reports, and maintained strict confidentiality.",
             ]
-        },
-        {
+        }, {
             "company": "Self-Employed",
             "position": "Independent Landscaper",
             "location": "Port Townsend, WA",
@@ -131,8 +120,7 @@
                 "Built and maintained a steady network of clientele, regularly negotiating rate increases of up to 50%.",
                 "Provided and revised estimates, tested and revised service offerings, and selectively included sub-contracts as needed."
             ]
-        },
-        {
+        }, {
             "company": "Bailey-Boushay House",
             "position": "Carlson Civic Fellow",
             "website": "http://www.bailey-boushay.org/",
@@ -146,151 +134,129 @@
         }
 
     ],
-    "volunteer": [
-        {
-            "organization": "NodeSchool",
-            "position": "JavaScript Mentor",
-            "website": "http://nodeschool.io/",
-            "startDate": "2015-05",
-            "endDate": "Present",
-            "summary": "NodeSchool is an open source project run by volunteers with two goals: to create high quality programming curriculum and to host community learning events.",
-            "highlights": [
-                "Teaching and mentoring budding programmers of various levels of development.",
-                "Sharing information about the workshops and programs with potential students and mentors."
-            ]
-        },
-        {
-            "organization": "Chinese Information and Service Center",
-            "position": "English Tutor",
-            "website": "http://cisc-seattle.org/",
-            "startDate": "2010-01",
-            "endDate": "2010-06",
-            "summary": "CISC helps Chinese and other Asian immigrants throughout King County achieve success in their new community by providing information, referral, advocacy, social, and support services.",
-            "highlights": [
-                "Taught elderly patrons of the Sunshine Garden Senior Day-Care, working with bilingual students to teach native speakers of Cantonese.",
-                "Prepared lessons from stories found online and from personal experience.",
-                "Organized and led annual tour group to the University of Washington."
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Self-Study",
-            "area": "Business, Software Development, and Web Design",
-            "studyType": "",
-            "startDate": "2013-03-01",
-            "endDate": "Present",
-            "courses": [
-                "MEAN.js",
-                "Meteor",
-                "Angular",
-                "Cordova/PhoneGap",
-                "Ionic Framework",
-                "NodeJS",
-                "Business Analysis",
-                "Consulting",
-                "SQL Server 2012"
-            ]
-        },
-        {
-            "institution": "University of Washington",
-            "area": "International Studies, Minors in Math and Applied Math",
-            "studyType": "BA",
-            "startDate": "2007-09-26",
-            "endDate": "2013-03-01",
-            "gpa": "3.56",
-            "courses": [
-                "Chinese (I-IV)",
-                "Java programming (I & II)",
-                "Scientific Computing",
-                "Technical Communication",
-                "Statistics",
-                "Linear Algebra",
-                "Calculus (I, II, & III)",
-                "Calculus of Complex Variables",
-                "Leadership Development"
-            ],
-            "highlights": [
-                "Conducted contingent valuation surveys and environmental research in two of China’s most polluted cities.",
-                "Audited Entrepreneurship class (ENTRE 540) at the Foster School of Business.",
-                "Named on Dean’s List for outstanding study, both at the UW (2012) and at Sichuan University (2010).",
-                "Worked in the University Machine Shop (2010) and conducted Nanofluidics (2009-10) and Cilia experiments (2007-08)."
-            ]
-        }
-    ],
-    "awards": [
-        {
-            "title": "",
-            "date": "",
-            "awarder": "",
-            "summary": ""
-        }
-    ],
-    "publications": [
-        {
-            "name": "",
-            "publisher": "",
-            "releaseDate": "2014-10-01",
-            "website": "",
-            "summary": ""
-        }
-    ],
-    "skills": [
-        {
-            "name": "Web Development",
-            "level": "8",
-            "keywords": [
-                "HTML, CSS, JavaScript",
-                "NodeJS, SocketIO, Meteor",
-                "Angular, Ionic, Knockout",
-                "PostgreSQL, T-SQL, MySQL",
-                "RethinkDB, MongoDB, Redis"
-            ]
-        },
-        {
-            "name": "Technical Writing",
-            "level": "7",
-            "keywords": [
-                "Microsoft Word",
-                "MadCap Flare",
-                "Editing",
-                "Proofreading",
-                "Information Architecture"
-            ]
-        },
-        {
-            "name": "Teaching",
-            "level": "6",
-            "keywords": [
-                "One-on-one training",
-                "Web-based training",
-                "Developing training materials",
-                "Business mentorship"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "English",
-            "fluency": "Native speaker"
-        },
-        {
-            "language": "Mandarin Chinese",
-            "fluency": "Advanced"
-        }
-    ],
-    "interests": [
-        {
-            "name": "Reading"
-        },
-        {
-            "name": "Weight Training"
-        }
-    ],
-    "references": [
-        {
-            "name": "",
-            "reference": ""
-        }
-    ]
+    "volunteer": [{
+        "organization": "NodeSchool",
+        "position": "JavaScript Mentor",
+        "website": "http://nodeschool.io/",
+        "startDate": "2015-05",
+        "endDate": "Present",
+        "summary": "NodeSchool is an open source project run by volunteers with two goals: to create high quality programming curriculum and to host community learning events.",
+        "highlights": [
+            "Teaching and mentoring budding programmers of various levels of development.",
+            "Sharing information about the workshops and programs with potential students and mentors."
+        ]
+    }, {
+        "organization": "Chinese Information and Service Center",
+        "position": "English Tutor",
+        "website": "http://cisc-seattle.org/",
+        "startDate": "2010-01",
+        "endDate": "2010-06",
+        "summary": "CISC helps Chinese and other Asian immigrants throughout King County achieve success in their new community by providing information, referral, advocacy, social, and support services.",
+        "highlights": [
+            "Taught elderly patrons of the Sunshine Garden Senior Day-Care, working with bilingual students to teach native speakers of Cantonese.",
+            "Prepared lessons from stories found online and from personal experience.",
+            "Organized and led annual tour group to the University of Washington."
+        ]
+    }],
+    "education": [{
+        "institution": "Self-Study",
+        "area": "Business, Software Development, and Web Design",
+        "studyType": "",
+        "startDate": "2013-03-01",
+        "endDate": "Present",
+        "courses": [
+            "MEAN.js",
+            "Meteor",
+            "Angular",
+            "Cordova/PhoneGap",
+            "Ionic Framework",
+            "NodeJS",
+            "Business Analysis",
+            "Consulting",
+            "SQL Server 2012"
+        ]
+    }, {
+        "institution": "University of Washington",
+        "area": "International Studies, Minors in Math and Applied Math",
+        "studyType": "BA",
+        "startDate": "2007-09-26",
+        "endDate": "2013-03-01",
+        "gpa": "3.56",
+        "courses": [
+            "Chinese (I-IV)",
+            "Java programming (I & II)",
+            "Scientific Computing",
+            "Technical Communication",
+            "Statistics",
+            "Linear Algebra",
+            "Calculus (I, II, & III)",
+            "Calculus of Complex Variables",
+            "Leadership Development"
+        ],
+        "highlights": [
+            "Conducted contingent valuation surveys and environmental research in two of China’s most polluted cities.",
+            "Audited Entrepreneurship class (ENTRE 540) at the Foster School of Business.",
+            "Named on Dean’s List for outstanding study, both at the UW (2012) and at Sichuan University (2010).",
+            "Worked in the University Machine Shop (2010) and conducted Nanofluidics (2009-10) and Cilia experiments (2007-08)."
+        ]
+    }],
+    "awards": [{
+        "title": "",
+        "date": "",
+        "awarder": "",
+        "summary": ""
+    }],
+    "publications": [{
+        "name": "",
+        "publisher": "",
+        "releaseDate": "2014-10-01",
+        "website": "",
+        "summary": ""
+    }],
+    "skills": [{
+        "name": "Web Development",
+        "level": "8",
+        "keywords": [
+            "HTML, CSS, JavaScript",
+            "NodeJS, SocketIO, Meteor",
+            "Angular, Ionic, Knockout",
+            "PostgreSQL, T-SQL, MySQL",
+            "RethinkDB, MongoDB, Redis"
+        ]
+    }, {
+        "name": "Technical Writing",
+        "level": "7",
+        "keywords": [
+            "Microsoft Word",
+            "MadCap Flare",
+            "Editing",
+            "Proofreading",
+            "Information Architecture"
+        ]
+    }, {
+        "name": "Teaching",
+        "level": "6",
+        "keywords": [
+            "One-on-one training",
+            "Web-based training",
+            "Developing training materials",
+            "Business mentorship"
+        ]
+    }],
+    "languages": [{
+        "language": "English",
+        "fluency": "Native speaker"
+    }, {
+        "language": "Mandarin Chinese",
+        "fluency": "Advanced"
+    }],
+    "interests": [{
+        "name": "Reading"
+    }, {
+        "name": "Weight Training"
+    }],
+    "references": [{
+        "name": "",
+        "reference": ""
+    }]
 }
