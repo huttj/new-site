@@ -34,7 +34,7 @@
     },
     "work": [
         {
-            "company": "Cerca LLC",
+            "company": "Cerca LLC (Side-Project)",
             "position": "Lead Developer",
             "website": "http://www.getcerca.com",
             "startDate": "2014-11-01",
@@ -66,26 +66,16 @@
         },
         {
             "company": "University of Washington",
-            "position": "Assistant Technical Writer",
+            "position": "Technical Writer",
             "website": "http://www.ee.washington.edu",
             "startDate": "2011-01",
             "endDate": "2013-03",
             "summary": "During my last two years at school, I worked for professor Alexander Mamishev in the Electrical Engineering department.",
             "highlights": [
-                "Writing, editing, and publishing multi-million dollar research proposals, technical journal articles, Ph.D. dissertations, press releases, news articles, and three non-fiction books, including a Microsoft Word 2010 instructional book.",
-                {
-                    "value": "Leading public relations efforts at the Sensors, Energy, and Automation Laboratory (SEAL), including:",
-                    "data": [
-                        "Writing and disseminating SEAL-branded press releases based on successful research, articles, and grants;",
-                        "Drafting publicity articles for SEAL research and the STREAM Tools System;",
-                        "Analyzing potential target news outlets and organizations in the PNW and reaching out through cold-calling",
-                        "Arranging book publication and a corresponding author event at the UW’s University Book Store;",
-                        "Securing and coordinating a KING 5 TV news segment for the Dietary Data Recording System developed at SEAL"
-                    ]
-                },
-                "Creating a business plan, a marketing plan, and various products for the STREAM Tools business venture.",
-                "Adapting data from technical publications to create PowerPoint presentations, wall posters, and book manuscripts.",
-                "Updating, redesigning, and maintaining the SEAL website, including a creating a lightweight, PHP-based framework."
+                "Redesigned and maintained the website for the Sensors, Energy, and Automation Laboratory (SEAL), creating a light-weight, flat-file framework in PHP, styled with adaptive and mobile-friendly CSS.",
+                "Wrote and published press releases and news articles, wrote a Microsoft Word 2010 instructional book, edited multi-million dollar research proposals, technical journal articles, and Ph.D. dissertations, and edited two non-fiction books.",
+                "Led public relations efforts, including drafting publicity articles, arranging book publication and an author event at the UW, and securing and coordinating a KING 5 TV news segment for the Dietary Data Recording System.",
+                "Created a business plan, a marketing plan, and various products for the STREAM Tools business venture.",
             ]
         },
         {
@@ -99,7 +89,7 @@
                 "Worked with the customer to identify branding requirements and develop a unique and personal brand positioning.",
                 "Redesigned the visual elements of the customer’s website to complement established branding and meet customer expectations.",
                 "Created additional custom-branded physical documents, including business cards, customer intake forms, and questionnaires.",
-                "Worked with the customer to develop and revise a business plan, marketing materials, and a three-tiered service offering."
+                "Worked with the customer to develop and revise a business plan, marketing materials, and a three-tier service offering."
             ]
         },
         {
@@ -120,11 +110,12 @@
             "website": "http://depts.washington.edu/nlab/",
             "startDate": "2009-11",
             "endDate": "2010-06",
-            "summary": "",
+            "summary": "Dr. Chung's Nanomanufacturing Laboratory is focused on \"nanoengineering for low-cost, rapid diagnosis of diseases.\"",
             "highlights": [
-                "Researched current developments in fluid dynamics, wrote article summaries, and provided citations for journal articles.",
                 "Performed laboratory experiments and data analysis; created, revised, and documented methods as needed.",
-                "Participated in weekly meetings, prepared and presented detailed reports, and maintained strict confidentiality."
+                "Created experimental apparatus in the University's Machine Shop, according to SolidWorks models and blueprints."
+                "Researched current developments in fluid dynamics, wrote article summaries, and provided citations for journal articles.",
+                "Participated in weekly meetings, prepared and presented detailed reports, and maintained strict confidentiality.",
             ]
         },
         {
