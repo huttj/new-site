@@ -45,7 +45,7 @@ async function parseRecords(records) {
   const records   = [];
   const encrypted = [];
 
-  const progress = records.map(record => {
+  const progress = records.map(async function(record) {
 
     const parsed    = parseRecord(record);
     const decrypted = JSON.parse(await decrypt(parsed.payload));
