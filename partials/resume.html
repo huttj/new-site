@@ -29,10 +29,10 @@
             </div>
 
             <div class="column">
-            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="$index % 2 == 0"></div>
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="width > 978 ? $index % 2 == 0 : true"></div>
 			</div>            
-			<div class="column">
-            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="$index % 2 == 1"></div>
+			<div class="column" ng-if="width > 978">
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="width > 978 && $index % 2 == 1"></div>
             </div>
 
             <script type="text/ng-template" id="/job.html">

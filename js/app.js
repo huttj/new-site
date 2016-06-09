@@ -290,7 +290,19 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
     })
 
     // ToDo: Use left/right keypresses to navigate between adjacent pages
-    .controller('MainCtrl', function ($scope, DataSvc, $location) {
+    .controller('MainCtrl', function ($scope, DataSvc, $location, $window) {
+
+        $scope.width = $window.innerWidth;
+
+        var resizeTimeout;
+        angular.element($window).bind('resize', function(){
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(function() {
+                $scope.$apply(function () {
+                    $scope.width = $window.innerWidth;
+                });
+            }, 250);
+        });
 
         var find = function(key, value) {
             return function(prev, curr) {
