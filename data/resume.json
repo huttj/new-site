@@ -65,7 +65,7 @@
       "position": "Lead Developer",
       "website": "http://www.getcerca.com",
       "startDate": "2014-11-01",
-      "endDate": "Present",
+      "endDate": "2015-10-01",
       "summary": "Cerca is realtime, location-based mobile app built to help friends get together.",
       "highlights": [
         "Designing and developing a real-time mobile application, with Ionic, Node, and PostgreSQL, deploying to AWS.",
@@ -76,11 +76,25 @@
       ]
     },
     {
+      "company": "Gesto Technologies",
+      "position": "Software Developer",
+      "website": "http://www.gestotech.com",
+      "startDate": "2015-11-02",
+      "endDate": "2016-01-31",
+      "summary": "Gesto Technologies provides an all-in-one point-of-sale and loyalty platform for businesses in the hospitality, gaming, sports, and retail industries.",
+      "highlights": [
+        "Designed and developed an extensible promotions service, including a DSL for defining promotions, an efficient algorithm for optimizing the application of available promotions to orders, and an attractive admin interface for managing promotions.",
+        "Triaged and resolved bugs, production issues, and customer support requests during on-call rotation.",
+        "Worked to simplify and streamline development and deployment processes across the platform, improving both developer productivity as well as the speed and reliability of deployments.",
+        "Designed and developed a menu management tool in Angular, Express, and MongoDB, to improve the user experience of customer menu management, and to preserve the integrity of the menu data during updates."
+      ]
+    },
+    {
       "company": "Avanade",
       "position": "User Assistance Lead",
       "website": "http://www.avanade.com",
       "startDate": "2013-04-01",
-      "endDate": "Present",
+      "endDate": "2015-10-31",
       "summary": "Avanade is a business technology solutions and managed services provider with innovative insights and expertise in Microsoft technologies that helps customers realize results.",
       "highlights": [
         "Working closely with Technology Infrastructure (TI) developers, business consultants, product managers, and key product stakeholders to research and document enterprise requirements, user-stories, and product features, integrating the results into a core project methodology.",
