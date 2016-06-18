@@ -3,7 +3,9 @@
  */
 angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri'])
 
-    .config(function($routeProvider, $compileProvider) {
+    .config(function($locationProvider, $routeProvider, $compileProvider) {
+
+        $locationProvider.html5Mode(false).hashPrefix('!');
 
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|chrome-extension|javascript):/);
 
@@ -28,6 +30,23 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                     DataSvc.getBlogEntry(shortName).then(function (result) {
                         $scope.content = MarkdownSvc.convertAndHighlight(result.data);
                     });
+
+                    (function resetDisqus() {
+
+                        if (typeof window.DISQUS === 'undefined') {
+                            return setTimeout(resetDisqus, 100);
+                        }
+
+                        DISQUS.reset({
+                            reload: true,
+                            config: function () {
+                                this.page.identifier = 'blog--' + shortName;
+                                this.page.url = "http://joshuathehutt.com/#!/blog/" + shortName;
+                                console.log(this);
+                            }
+                        });
+
+                    })();
                 }
             })
             .when('/:shortName?', {
@@ -153,7 +172,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
     .filter('asDate', function () {
         return function (input) {
             var date = new Date(input);
-            return isNaN(date) ? new Date() : date;
+            return isNaN(+date) ? new Date() : date;
         }
     })
 

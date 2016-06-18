@@ -7,9 +7,9 @@
            <h3 class="ui header" style="margin-bottom: -.25em;">Categories <sup><a href="#/portfolio" ng-show="'' | tagSet">[X]</a></sup></h3>
            <ul>
                <li ng-repeat="category in data" class="category">
-                   <a href="#/portfolio?category={{category.name|encodeUri}}" class="{{ [category.name, 'category'] | isSelected }}" ng-bind="category.name"></a>
+                 <a href="#!/portfolio?category={{category.name|encodeUri}}" class="{{ [category.name, 'category'] | isSelected }}" ng-bind="category.name"></a>
                    <ul>
-                       <li ng-repeat="subcategory in category.data"><a href="#/portfolio?subcategory={{subcategory.name|encodeUri}}" class="{{ [subcategory.name, 'subcategory'] | isSelected }}" ng-bind="subcategory.name"></a></li>
+                       <li ng-repeat="subcategory in category.data"><a href="#!/portfolio?subcategory={{subcategory.name|encodeUri}}" class="{{ [subcategory.name, 'subcategory'] | isSelected }}" ng-bind="subcategory.name"></a></li>
                    </ul>
                </li>
            </ul>

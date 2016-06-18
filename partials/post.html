@@ -9,12 +9,13 @@
         <h4 class="post-date" ng-bind="data.datePublished | asDate | date:'MMMM dd, yyyy'"></h4>
         <div ng-bind-html="content"></div>
         <hr/>
+        <div id="disqus_thread"></div>
     </div>
     <div class="three wide column tags">
         <p style="font-weight: bold; font-size: 1.05em; margin-top: -1em;">Filed under:</p>
         <p>
             <span ng-repeat="tag in data.tags">
-                <a href="#/blog?tag={{tag}}" ng-bind="tag"></a>
+                <a href="#!/blog?tag={{tag}}" ng-bind="tag"></a>
                 <span ng-bind="$last ? ' ' : ', '"></span>
             </span>
         </p>

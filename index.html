@@ -13,22 +13,22 @@
 <body ng-controller="MainCtrl" ng-keyup="keyPress($event)" class="ui page grid">
 
     <h1 class="ui header" style="padding-top: 24px;">
-        <a href="#/home" ng-click="setPage('home')"><img src="img/logo-801.png" alt="" style="height: 2em; padding-right: .25em;"/></a>
+        <a href="#!/home" ng-click="setPage('home')"><img src="img/logo-801.png" alt="" style="height: 2em; padding-right: .25em;"/></a>
         <div class="content">
-            <a href="#/home" ng-click="setPage('home')">Joshua Hutt</a>
+            <a href="#!/home" ng-click="setPage('home')">Joshua Hutt</a>
             <div class="sub header">Entrepreneur, Software Developer</div>
         </div>
     </h1>
 
     <div class="ui menu">
-        <a ng-repeat="page in pageList | orderBy: page.id : reverse" class="item" ng-class="{active: isActive(page)}" ng-click="setPage(page)" href="#/{{page.shortName}}"><i class="icon {{ page.icon }}"></i> <span ng-bind="page.name"></span></a>
+        <a ng-repeat="page in pageList | orderBy: page.id : reverse" class="item" ng-class="{active: isActive(page)}" ng-click="setPage(page)" href="#!/{{page.shortName}}"><i class="icon {{ page.icon }}"></i> <span ng-bind="page.name"></span></a>
     </div>
 
     <div ng-view class="main-view"></div>
 
     <div class="ui grid">
         <div class="sixteen wide column">
-            <p style="text-align: center; font-style: italic; color: #999;">Copyright &copy; <span ng-bind="getDate() | date:'yyyy'">2015</span>, Joshua Hutt</p>
+            <p style="text-align: center; font-style: italic; color: #999;">Copyright &copy; <span ng-bind="getDate() | date:'yyyy'">2016</span>, Joshua Hutt</p>
         </div>
     </div>
     <script>
@@ -41,6 +41,19 @@
         ga('require', 'displayfeatures');
         ga('require', 'linkid', 'linkid.js');
     </script>
+
+    <script>
+        (function() {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+                    s = d.createElement('script');
+            s.src = '//joshuahutt.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>-->
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/semantic-ui/build/packaged/javascript/semantic.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -52,5 +65,6 @@
     <script src="bower_components/showdown/src/showdown.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
     <script src="js/app.js"></script>
+    <script id="dsq-count-scr" src="//joshuahutt.disqus.com/count.js" async></script>
 </body>
 </html>

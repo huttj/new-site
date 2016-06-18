@@ -1,8 +1,10 @@
 {
     "title": "Joshua the Hutt",
-    "headline": "Love technology?",
-    "subheading": "I do, too!",
-    "message": "I am an Entrepreneur and Software Developer, currently working at Avanade in Seattle.\nThis site hosts some of my work, my ideas, and my current resume. So, please take a look, and if you see something you like, drop me a line and let me know!",
+    "headline": "What's your business challenge?",
+    "subheading": "Let's solve it together.",
+    "message": "<p>I am an Entrepreneur and Software Developer, based in Seattle.</p><p>I build sleek web and mobile apps for startups, and scalable, serverless cloud apps for enterprises. I love a good business challenge — let me help with yours.</p>",
+    "button": "Email Me",
+    "buttonHover": "Let's Talk!",
     "callToAction": "Let's share ideas!",
     "picture": "img/profile-cutout-short.jpg"
 }

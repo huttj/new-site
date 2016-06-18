@@ -5,10 +5,10 @@
         <div class="ui thirteen wide column">
             <div class="ui three column doubling grid">
                 <div ng-repeat="post in (data | blogFilter:true)" class="column">
-                    <h3 class="ui header"><a href="#/blog/{{ post.shortName }}" ng-bind="post.title"></a></h3>
+                    <h3 class="ui header"><a href="#!/blog/{{ post.shortName }}" ng-bind="post.title"></a></h3>
 
                     <p style="font-style: italic;" ng-bind="post.datePublished | asDate | date:'MMMM dd, yyyy'"></p>
-                    <a href="#/blog/{{ post.shortName }}">
+                    <a href="#!/blog/{{ post.shortName }}">
                         <!--<div style="background-image: url('img/blog/{{post.shortName}}.jpg')" alt="{{post.title}}" class="img"/>-->
                         <img safe-src="img/blog/{{post.shortName}}" alt="{{post.title}}" class="img"/>
                     </a>
@@ -23,7 +23,7 @@
 
                 <p class="column">
                 <span ng-repeat="tag in data | blogFilter | getTags | orderBy:'toString()'">
-                    <a href="#/blog?tag={{tag}}" class="{{ [tag, 'tag'] | isSelected }}" ng-bind="tag"></a><span ng-bind="$last ? ' ' : ', '"></span>
+                    <a href="!#/blog?tag={{tag}}" class="{{ [tag, 'tag'] | isSelected }}" ng-bind="tag"></a><span ng-bind="$last ? ' ' : ', '"></span>
                 </span>
                 </p>
             </div>

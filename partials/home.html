@@ -2,11 +2,11 @@
     <div class="column intro">
         <h1 class="ui header" ng-bind="data.headline"></h1>
         <h2 class="ui header" style="font-style: italic; font-weight: 600; color: #D95C5C; margin-top: 0;" ng-bind="data.subheading"></h2>
-        <p ng-bind="data.message"></p>
+        <div ng-bind-html="data.message"></div>
         <a href="mailto:joshua@huttj.com">
             <div class="ui animated fade button primary" style="margin: 1em 25%; width: 50%;">
-                <div class="visible content" style="color: #fff">Get in touch!</div>
-                <div class="hidden content" style="color: #fff">Let's talk!</div>
+                <div class="visible content" style="color: #fff" ng-bind="data.button"></div>
+                <div class="hidden content" style="color: #fff" ng-bind="data.buttonHover"></div>
             </div>
         </a>
     </div>
