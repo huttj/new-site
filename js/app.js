@@ -42,7 +42,6 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
                             config: function () {
                                 this.page.identifier = 'blog--' + shortName;
                                 this.page.url = "http://joshuathehutt.com/#!/blog/" + shortName;
-                                console.log(this);
                             }
                         });
 
@@ -69,7 +68,7 @@ angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 
     })
 
     .service('MarkdownSvc', function() {
-        var converter = new Showdown.converter();
+        var converter = new showdown.Converter();
 
         return {
             convert: function(markdown) {
