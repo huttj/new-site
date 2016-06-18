@@ -1,9 +1,16 @@
 /**
  * Created by joshua.hutt on 9/11/2014.
  */
-angular.module('joshuathehutt', ['angulartics', 'angulartics.google.analytics', 'ngRoute', 'ngSanitize', 'rt.encodeuri'])
+angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri'])
 
-    .config(function($locationProvider, $routeProvider, $compileProvider) {
+    .config(function($locationProvider, $routeProvider, $compileProvider, $injector) {
+
+        try {
+            $injector.get('angulartics');
+            $injector.get('angulartics.google.analytics');
+        } catch (e) {
+            console.warn('Angulartics not available', e);
+        }
 
         $locationProvider.html5Mode(false).hashPrefix('!');
 
