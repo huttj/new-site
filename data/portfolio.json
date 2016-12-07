@@ -67,14 +67,6 @@
                         "dateCompleted": "April 2014"
                     },
                     {
-                        "name": "Explore Consulting Front Page",
-                        "type": "item",
-                        "description": "In my search for a job that fits in with my career goals, I reached out to Explore Consulting, to see if I might be a good fit for their Web Design Internship. I spoke with one of their recruiters, who mentioned that it would be helpful if I could redesign their front page. So, I began to put something together, using the Twitter Bootstrap framework, only to realize that I would be fighting it a lot of the way. So, I scrapped that, and started to put together something from scratch. What I accomplished is what you see above. The proudest part, for me, is the globe at the bottom, which was a little bit of a challenge to engineer. I used the Sticky plugin to do it, but I actually had to figure out the code to make the DIV stick to the bottom. It was really exciting when I got it. For this page, I’d like to make it tighter and more “shiny,” like theirs, but I’m not sure how much more time I want to put into it. (Note: Since it was just a mock-up, I worked exclusively in Chrome. I may return to it in the future to make it work in other browsers.)",
-                        "link": "http://joshuahutt.com/explore/",
-                        "picture": "explore.png",
-                        "dateCompleted": "March 2013"
-                    },
-                    {
                         "name": "Real Sort",
                         "type": "item",
                         "description": "When my mom began her big move to Oregon, she told me about her idea for a small business. She wanted to take everything she had learned about organization and home management and turn it into a unique consultancy that focuses on customer-defined organizational goals. I helped finalize her business card and got a sense of the design she wanted, and I searched for a base theme that would complement it. We chose the [Adapt theme](http://www.wpexplorer.com/adapt-free-responsive-wordpress-theme), by AJ Clarke. <br/>I did an extensive amount of customization to get the look just right. I learned some PHP while fixing the page titles and page templates, and I worked out how to make an expanding menu in pure CSS. I also handled all of the domain and hosting management, as well as the email and script configuration. And, of course, what I am most proud of is that I maintained the adaptive quality of the site. It was a wonderful experience, despite being grueling at times. If I were to do it over, I would probably manage the code a little better, though I’m planning a few rewrites for the near future.",
