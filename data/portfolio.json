@@ -8,6 +8,24 @@
                 "type": "subcategory",
                 "data": [
                     {
+                        "name": "GottaGoGov",
+                        "type": "item",
+                        "description": "GottaGoGov is a tool for travelers that follow federal and state government travel rules. It helps them find and keep track of their flights and per-diem rates during their travels. Built with Angular 2 and Ionic 2.",
+                        "link": "http://gottagogov.com",
+                        "picture": "gottagogov.png",
+                        "dateStarted": "September 2016",
+                        "dateCompleted": "Present"
+                    },
+                    {
+                        "name": "Grind Log Pro",
+                        "type": "item",
+                        "description": "Grind Log Pro is an easy and efficient tool for logging meat grinds and generating grind log reports based on the 2016 USDA protocol. It uses a live scanner to read grind and packing barcodes and generate a timestamped log of activity. Built with AngularJS and the Ionic Framework.",
+                        "link": "https://itunes.apple.com/us/app/grind-log-pro/id1177600850",
+                        "picture": "grindlogpro.png",
+                        "dateStarted": "",
+                        "dateCompleted": "November 2016"
+                    },
+                    {
                         "name": "Photo Tracker",
                         "type": "item",
                         "description": "A tool to track anything with private, locally-stored photos. Built with AngularJS and the Ionic Framework.",
@@ -81,6 +99,24 @@
                 "name": "Experiments",
                 "type": "subcategory",
                 "data": [
+                    {
+                        "name": "Tweet Map",
+                        "type": "item",
+                        "description": "This streams tweets from Twitter and places them on the map, based on the coordinates or city in the tweet. It was inspired by two friends: one wanted to map fashion trends in real-time, and the other wanted to see political sentiments by location, so I put together this proof-of-concept. It's pretty fun to pick a term and watch the tweets pop up.",
+                        "link": "https://github.com/huttj/tweet-stream-map",
+                        "picture": "tweetmap.png",
+                        "dateStarted": "",
+                        "dateCompleted": "December 2016"
+                    },
+                    {
+                        "name": "Soundcloud Graph",
+                        "type": "item",
+                        "description": "This uses the SoundCloud search and related tracks APIs to construct a network graph of songs. One of the attendees of the <a href=\"http://www.meetup.com/seattlejshackers\" target=\"_blank\">Seattle JS Hackers meetup</a> (of which I am an organizer) was working on a graph project using Spotify, D3, and React. After helping him work out a small bug, I decided to try my hand at a SoundCloud version.",
+                        "link": "https://github.com/huttj/soundcloud-graph",
+                        "picture": "soundcloud-graph.png",
+                        "dateStarted": "",
+                        "dateCompleted": "October 2016"
+                    },
                     {
                         "name": "Voronoi Clusters",
                         "type": "item",

@@ -3,8 +3,9 @@
 
    <!--For each category-->
    <div class="ui stackable grid">
+
        <div class="three wide column categories floated left">
-           <h3 class="ui header" style="margin-bottom: -.25em;">Categories <sup><a href="#/portfolio" ng-show="'' | tagSet">[X]</a></sup></h3>
+           <h3 class="ui header" style="margin-bottom: -.25em;">Categories <sup><a href="#!/portfolio" ng-show="'' | tagSet">[X]</a></sup></h3>
            <ul>
                <li ng-repeat="category in data" class="category">
                  <a href="#!/portfolio?category={{category.name|encodeUri}}" class="{{ [category.name, 'category'] | isSelected }}" ng-bind="category.name"></a>
@@ -14,6 +15,7 @@
                </li>
            </ul>
        </div>
+
        <div class="thirteen wide column floated left">
            <div ng-repeat="category in data | portfolioCategoryFilter" class="category">
 
