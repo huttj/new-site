@@ -44,15 +44,6 @@
                         "dateCompleted": "Present"
                     },
                     {
-                        "name": "Swippl",
-                        "type": "item",
-                        "description": "Swipe for a new picture.",
-                        "link": "javascript:alert('Swippl is currently down for maintenance.');",
-                        "picture": "swippl.png",
-                        "dateStarted": "March 2014",
-                        "dateCompleted": "Present"
-                    },
-                    {
                         "name": "SCS UX Design Pattern Library",
                         "type": "item",
                         "description": "The UX Design Pattern Library is a reference and educational resource for my department at Avanade: Software and Cloud Services (SCS). I built the library as a front-end interface for a SharePoint list that the UX group (myself included) could add to and curate through SharePoint. The goal was to incorporate multiple SharePoint services--the list, message board, and more--into a single, cohesive interface that would be easy to search and browse. <br/>To expand on the usability and discoverability of the items in the library, I added 'tags' in a later revision. This allows us to define a tag list and hierarchy, and then tag any item in the library with the appropriate tags. Users can browse the library using the tags, either by drilling down in the hierarchy, or by moving laterally to related tags.",
@@ -75,6 +66,24 @@
                 "name": "Front-End",
                 "type": "subcategory",
                 "data": [
+                    {
+                        "name": "Cadence Redesign",
+                        "type": "item",
+                        "description": "Cadance began as SeekPanda, a translation and interpreter matchmaker focused on Chinese and Asian markets. Having expanded to serve customers in every continent (except Antarctica) they sought to rebrand as Cadence. I redesigned their landing page, updated their color scheme, and made sure the rest of the site looked and worked great.",
+                        "link": "https://www.talkbusinessanywhere.com",
+                        "picture": "cadence-redesign.png",
+                        "dateStarted": "June 2016",
+                        "dateCompleted": "June 2016"
+                    },
+                    {
+                        "name": "Cadence Job Form",
+                        "type": "item",
+                        "description": "Cadence had outgrown their typeform-based job creation workflow, and they wanted to replace it with one that integrated directly with their application. I redesigned the form, including some helpful widgets and tools, and I helped integrate it with their \"smart-match\" tech on the backend.",
+                        "link": "https://www.talkbusinessanywhere.com/#/createjob",
+                        "picture": "cadence-jobform.png",
+                        "dateStarted": "April 2016",
+                        "dateCompleted": "April 2016"
+                    },
                     {
                         "name": "Web Copilots",
                         "type": "item",
