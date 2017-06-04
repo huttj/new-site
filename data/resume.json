@@ -34,11 +34,25 @@
   },
   "work": [
     {
+      "company": "PushPay",
+      "position": "Senior Software Developer",
+      "website": "http://www.pushpay.com",
+      "startDate": "2017-02-13",
+      "endDate": "Present",
+      "summary": "Pushpay improves sales and business processes by making payments simple.",
+      "highlights": [
+        "Maintaining and extending a powerful mobile app development suite, built in Node.js, React, and React Native.",
+        "Developing and integrating metrics into the platform, using StatsD and Librato.",
+        "Automating screenshot collection for applications developed on the platform to save a significant amount of time spent by implementation specialists.",
+        "Developing UI/UX improvements to improve the customer experience."
+      ]
+    },
+    {
       "company": "Maxsam Partners",
       "position": "Senior Software Developer",
       "website": "http://www.maxsampartners.com",
       "startDate": "2016-02-01",
-      "endDate": "Present",
+      "endDate": "2017-01-01",
       "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
         "Designing and implementing a scalable “serverless” application architecture for the near real-time replication of a monolithic SQL Server instance to DynamoDB, and near real-time publication of changed data, using AWS Lambda, S3, SNS, SQS, and API Gateway.",
@@ -53,7 +67,7 @@
       "position": "Workshop Instructor",
       "website": "http://www.galvanize.com",
       "startDate": "2016-04-18",
-      "endDate": "Present",
+      "endDate": "2016-09-01",
       "summary": "Galvanize is a technology school and co-working space that provides entrepreneurs and learners with life-changing opportunities for growth.",
       "highlights": [
         "Leading an introductory JavaScript class and coaching ten (10) students in the basics of HTML, CSS, and JavaScript.",

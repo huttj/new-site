@@ -8,6 +8,14 @@
                 "type": "subcategory",
                 "data": [
                     {
+                        "name": "Slack Export Viewer",
+                        "type": "item",
+                        "description": "Having run a Slack group for developers and entrepreneurs for more than two years, under the free plan, I accumulated quite a large backlog of messages that I would like to make accessible. I put together this simple interface for browsing and searching Slack backups. It makes messages accessible via channel, user, and search, and all messages are linked back to their original channel in context.",
+                        "link": "https://github.com/huttj/slack-export-viewer",
+                        "picture": "sev.png",
+                        "dateCompleted": "May 2017"
+                    },
+                    {
                         "name": "GottaGoGov",
                         "type": "item",
                         "description": "GottaGoGov is a tool for travelers that follow federal and state government travel rules. It helps them find and keep track of their flights and per-diem rates during their travels. Built with Angular 2 and Ionic 2.",
