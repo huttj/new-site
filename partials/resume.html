@@ -39,8 +39,8 @@
                 <h3><span ng-bind="::job.position"></span> - <a href="{{::job.website}}" ng-bind="::job.company"></a></h3>
                 <h4 style="font-style: italic;"><span ng-bind="job.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="job.endDate != 'Present' ? (job.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
                 <p ng-bind="job.summary"></p>
-                <h4 class="ui header">Highlights:</h4>
-                <ul>
+                <h4 class="ui header" ng-if="job.highlights.length">Highlights:</h4>
+                <ul ng-if="job.highlights.length">
                     <li ng-repeat="highlight in job.highlights">
                         <span ng-if="!highlight.value" ng-bind="highlight"></span>
                         <span ng-if="highlight.value" ng-bind="highlight.value"></span>

@@ -18,7 +18,7 @@
       {
         "network": "GitHub",
         "username": "huttj",
-        "url": "https://github.com/huttj/"
+        "url": "https://github.com/huttj"
       },
       {
         "network": "LinkedIn",
@@ -34,11 +34,20 @@
   },
   "work": [
     {
+      "company": "Stackline",
+      "position": "Senior Software Developer",
+      "website": "https://www.stackline.com/",
+      "startDate": "2017-08-07",
+      "endDate": "Present",
+      "summary": "Stackline transforms how brands manage online retail by providing mission critical tools for e-commerce.",
+      "highlights": []
+    },
+    {
       "company": "PushPay",
       "position": "Senior Software Developer",
       "website": "http://www.pushpay.com",
       "startDate": "2017-02-13",
-      "endDate": "Present",
+      "endDate": "2017-07-31",
       "summary": "Pushpay improves sales and business processes by making payments simple.",
       "highlights": [
         "Maintaining and extending a powerful mobile app development suite, built in Node.js, React, and React Native.",
@@ -202,6 +211,20 @@
   ],
   "volunteer": [
     {
+      "organization": "Seattle JS Hackers",
+      "position": "Organizer",
+      "website": "http://seattlejshackers.com",
+      "startDate": "2016-03",
+      "endDate": "Present",
+      "summary": "Seattle JS Hackers is an open and inclusive after-hours community of JavaScript hackers who learn and hack in JavaScript together.",
+      "highlights": [
+        "Organizing and hosting events at various locations in Seattle, including the most popular coding schools.",
+        "Mentoring new learners of JavaScript, offering advice, feedback, and resources to aid in their advancement.",
+        "Facilitating project ideation and collaboration among fellow JS Hackers.",
+        "Offering resume feedback, interview tips and techniques, and overall career guidance to junior developers looking to break into the field."
+      ]
+    },
+    {
       "organization": "NodeSchool",
       "position": "JavaScript Mentor",
       "website": "http://nodeschool.io/",
@@ -235,15 +258,19 @@
       "startDate": "2013-03-01",
       "endDate": "Present",
       "courses": [
+        "System Architecture",
+        "Marketing",
+        "React Native",
+        "React",
         "MEAN.js",
         "Meteor",
         "Angular",
         "Cordova/PhoneGap",
         "Ionic Framework",
-        "NodeJS",
+        "Node.js",
         "Business Analysis",
         "Consulting",
-        "SQL Server 2012"
+        "SQL"
       ]
     },
     {
@@ -319,7 +346,8 @@
         "One-on-one training",
         "Web-based training",
         "Developing training materials",
-        "Business mentorship"
+        "Junior developer mentoring",
+        "Entrepreneurial and business mentoring"
       ]
     }
   ],
@@ -334,12 +362,8 @@
     }
   ],
   "interests": [
-    {
-      "name": "Reading"
-    },
-    {
-      "name": "Weight Training"
-    }
+    { "name": "Reading" },
+    { "name": "Weight Training" }
   ],
   "references": [
     {

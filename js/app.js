@@ -177,7 +177,13 @@ angular.module('joshuathehutt', ['ngRoute', 'ngSanitize', 'rt.encodeuri', 'angul
 
     .filter('asDate', function () {
         return function (input) {
-            var date = new Date(input);
+
+            var date = new Date();
+
+            if (input === 'Present') {
+                return new Date(+date + (1000 * 60 * 60 * 24 * 365));
+            }
+            date = new Date(input);
             return isNaN(+date) ? new Date() : date;
         }
     })

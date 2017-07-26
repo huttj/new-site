@@ -8,6 +8,15 @@
                 "type": "subcategory",
                 "data": [
                     {
+                        "name": "CashMap Pro",
+                        "type": "item",
+                        "description": "CashMap helps you build your wealth by putting your cash to work 24/7. It offers a simple strategy that can save you thousands of dollars of interest on your mortgage, student loans, and more. It includes a free education section that explains the method and principles in detail, as well as an in-app purchase for unlocking full detail in each of the powerful Cash Maps. I built it in React Native, with MobX and ES7.",
+                        "link": "https://itunes.apple.com/us/app/cashmap-pro/id1228673169?mt=8",
+                        "picture": "cash.png",
+                        "dateStarted": "March 2017",
+                        "dateCompleted": "June 2017"
+                    },
+                    {
                         "name": "Slack Export Viewer",
                         "type": "item",
                         "description": "Having run a Slack group for developers and entrepreneurs for more than two years, under the free plan, I accumulated quite a large backlog of messages that I would like to make accessible. I put together this simple interface for browsing and searching Slack backups. It makes messages accessible via channel, user, and search, and all messages are linked back to their original channel in context.",
