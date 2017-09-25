@@ -40,7 +40,10 @@
       "startDate": "2017-08-07",
       "endDate": "Present",
       "summary": "Stackline transforms how brands manage online retail by providing mission critical tools for e-commerce.",
-      "highlights": []
+      "highlights": [
+        "Building a Vendor Data Collection service for retailer websites, which logs in and (1) runs, (2) pulls, (3) transforms, and (4) loads from sales and inventory reports. The Node.js service leverages AWS ECS/EC2, Lambda, S3, SQS, and SNS to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
+        "Building a Desktop Data Collector for collecting vendor data from the customer's own hardware, eliminating the need for sharing login credentials with clients. Developed with Electron/Node.js, React, and Webpack, it includes a UI for account management and job monitoring, as well as a 'headless Chrome' API integrated into Electron for orchestrating the report collection process."
+      ]
     },
     {
       "company": "PushPay",
@@ -50,10 +53,10 @@
       "endDate": "2017-07-31",
       "summary": "Pushpay improves sales and business processes by making payments simple.",
       "highlights": [
-        "Maintaining and extending a powerful mobile app development suite, built in Node.js, React, and React Native.",
-        "Developing and integrating metrics into the platform, using StatsD and Librato.",
-        "Automating screenshot collection for applications developed on the platform to save a significant amount of time spent by implementation specialists.",
-        "Developing UI/UX improvements to improve the customer experience."
+        "Maintained and extended a powerful mobile app development suite, built in Node.js, React, and React Native.",
+        "Developed and integrated metrics into the platform, using StatsD and Librato.",
+        "Automated screenshot collection for applications developed on the platform to save a significant amount of time spent by implementation specialists.",
+        "Developed UI/UX improvements to improve the customer experience."
       ]
     },
     {
