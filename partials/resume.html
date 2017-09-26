@@ -53,6 +53,31 @@
         </div>
     </div>
 
+    <div class="side-projects">
+        <div class="ui two column doubling grid">
+            <div class="row">
+                <div class="column">
+                    <h2 class="ui header">Side-Projects</h2>
+                </div>
+            </div>
+            <div ng-repeat="engagement in (data.sideProjects | resumeSort:true)" class="column">
+                <h3><span ng-bind="engagement.position"></span> - <a href="{{engagement.website}}" ng-bind="engagement.company"></a></h3>
+                <h4 style="font-style: italic;"><span ng-bind="engagement.startDate | asDate | date:'MMMM yyyy'"></span> - <span ng-bind="engagement.endDate != 'Present' ? (engagement.endDate | asDate | date:'MMMM yyyy') : 'Present'"></span></h4>
+                <p ng-bind="engagement.summary"></p>
+                <h4 class="ui header">Highlights:</h4>
+                <ul>
+                    <li ng-repeat="highlight in engagement.highlights">
+                        <span ng-if="!highlight.value" ng-bind="highlight"></span>
+                        <span ng-if="highlight.value" ng-bind="highlight.value"></span>
+                        <ol>
+                            <li ng-repeat="subhighlight in highlight.data" ng-bind="subhighlight"></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
     <div class="volunteer">
         <div class="ui two column doubling grid">
