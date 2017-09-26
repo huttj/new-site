@@ -28,7 +28,7 @@
                     {
                         "name": "Slack Export Viewer",
                         "type": "item",
-                        "description": "Having run a Slack group for developers and entrepreneurs for more than two years, under the free plan, I accumulated quite a large backlog of messages that I would like to make accessible. I put together this simple interface for browsing and searching Slack backups. It makes messages accessible via channel, user, and search, and all messages are linked back to their original channel in context.",
+                        "description": "Having run a Slack group for developers and entrepreneurs for more than two years, under the free plan, I accumulated quite a large backlog of messages that I wanted to make accessible. I put together this simple interface for browsing and searching Slack backups. It makes messages accessible via channel, user, and search, and all messages are linked back to their original channel in context.",
                         "link": "https://github.com/huttj/slack-export-viewer",
                         "picture": "sev.png",
                         "dateCompleted": "May 2017"

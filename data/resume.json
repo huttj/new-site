@@ -60,23 +60,61 @@
       ]
     },
     {
-      "company": "Maxsam Partners",
-      "position": "Senior Software Developer",
+      "company": "Maxsam Partners (CashMap)",
+      "position": "Principal Engineer (Contract)",
+      "website": "http://www.maxsampartners.com",
+      "startDate": "2017-03-01",
+      "endDate": "2017-06-01",
+      "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
+      "highlights": [
+        "Developed a cross-platform mobile application in ES6, with React Native and Redux.",
+        "Redesigned existing functionality from the original iPad app for mobile phones, introducing new levels of interactivity and instant feedback to improve the user experience.",
+        "Integrated in-app purchases and in-app subscriptions for unlocking premium content."
+      ]
+    },
+    {
+      "company": "GrindLogPro",
+      "position": "Lead Mobile Developer (Contract)",
+      "website": "http://www.grindlogpro.com",
+      "startDate": "2016-11-01",
+      "endDate": "2017-05-01",
+      "summary": "Grind Log Pro is an easy and efficient tool for logging meat grinds and generating grind log reports based on the 2016 USDA protocol. ",
+      "highlights": [
+        "Designed a mobile UI for the existing Grind Log Pro application, a tool to help grocery stores maintain compliance with the USDA regulations in a reliable, convenient, and consistent manner.",
+        "Upgraded and fixed bugs in existing application, adding error handling, improving security, and upgrading the login for mobile.",
+        "Included a real-time scanning feature to quickly and easily scan grind barcodes and enter the data into the app.",
+        "Published on the Apple App Store and the Google Play Store."
+      ]
+    },
+    {
+      "company": "Maxsam Partners (Apple LG)",
+      "position": "Senior Software Developer (Contract)",
       "website": "http://www.maxsampartners.com",
       "startDate": "2016-02-01",
       "endDate": "2017-01-01",
       "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
-        "Designing and implementing a scalable “serverless” application architecture for the near real-time replication of a monolithic SQL Server instance to DynamoDB, and near real-time publication of changed data, using AWS Lambda, S3, SNS, SQS, and API Gateway.",
-        "Implementing symmetric at-rest encryption for data stored in DynamoDB and SQS, using C#, NodeJS, and Amazon’s Key Management Service (KMS).",
-        "Delivering training to 25+ mid- and senior-level client personnel on AWS managed services and the solution architecture.",
-        "Driving cross-disciplinary collaboration on a fast-paced, agile Scrum team of developers, testers, and managers.",
-        "Mentoring and assisting other developers with code reviews, pair programming, and general development advice."
+        "Designed and developed user-friendly, and reusable front-end components in Adobe’s AEM (Adobe Experience Manager) platform, using Angular 1 and Sightly, for use by marketing personnel and other non-developers.",
+        "Automated the production of over 200 marketing pages for the rollout of a high-SEO marketing site on the AEM platform.",
+        "Produced landing experiences that secured a lucrative advertising deal with American Express."
+      ]
+    },
+    {
+      "company": "Cadence",
+      "position": "Senior Front-End Developer (Contract)",
+      "website": "https://www.cadencetranslate.com",
+      "startDate": "2016-04-01",
+      "endDate": "2016-06-01",
+      "summary": "Cadence is a leading provider of language services to the global business and investment community, and an innovator in real-time translation technology.",
+      "highlights": [
+        "Redesigned the landing page, updated the color scheme, and improved the look and feel of the rest of the site on mobile.",
+        "Redesigned the user intake form in ReactJS, included helpful widgets and tools to improve UX, and integrated the form with Cadence’s \"smart-match\" technology on the backend.",
+        "Integrated Intercom chat into the ReactJS application, using local storage to retain user session between visits."
       ]
     },
     {
       "company": "Galvanize",
-      "position": "Workshop Instructor",
+      "position": "Workshop Instructor (Contract)",
       "website": "http://www.galvanize.com",
       "startDate": "2016-04-18",
       "endDate": "2016-09-01",
@@ -87,18 +125,18 @@
       ]
     },
     {
-      "company": "Cerca LLC (Side-Project)",
-      "position": "Lead Developer",
-      "website": "http://www.getcerca.com",
-      "startDate": "2014-11-01",
-      "endDate": "2015-10-01",
-      "summary": "Cerca is realtime, location-based mobile app built to help friends get together.",
+      "company": "Maxsam Partners (TrueBlue)",
+      "position": "Senior Software Developer (Contract)",
+      "website": "http://www.maxsampartners.com",
+      "startDate": "2016-02-01",
+      "endDate": "2017-01-01",
+      "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
-        "Designing and developing a real-time mobile application, with Ionic, Node, and PostgreSQL, deploying to AWS.",
-        "Supporting, mentoring, and teaching a junior developer in the areas of system design and architecture, JavaScript gotchas and best practices, as well as feature design, scoping, and implementation.",
-        "Researching, learning, and adopting new technologies whenever possible.",
-        "Researching user experience, and troubleshooting and resolving errors identified by user feedback.",
-        "Setting delivery dates, prioritizing development tasks, and deploying to the app stores on a regular cadence."
+        "Designing and implementing a scalable “serverless” application architecture for the near real-time replication of a monolithic SQL Server instance to DynamoDB, and near real-time publication of changed data, using AWS Lambda, S3, SNS, SQS, and API Gateway.",
+        "Implementing symmetric at-rest encryption for data stored in DynamoDB and SQS, using C#, NodeJS, and Amazon’s Key Management Service (KMS).",
+        "Delivering training to 25+ mid- and senior-level client personnel on AWS managed services and the solution architecture.",
+        "Driving cross-disciplinary collaboration on a fast-paced, agile Scrum team of developers, testers, and managers.",
+        "Mentoring and assisting other developers with code reviews, pair programming, and general development advice."
       ]
     },
     {
@@ -208,7 +246,37 @@
       "summary": "The Bailey-Boushay House provides exceptional care to people with HIV disease, promoting their health, well-being and functional independence.",
       "highlights": [
         "Redesigned the volunteer intake process at the facility from the ground up, which included developing a clear flowchart-guided process, a document management system, and support documentation for new and existing managers.",
-        "Oversaw office administration and devised and implemented a filing system to reduce a persistent backlog of paperwork."
+        "Oversaw office administration and devised and implemented a filing system to reduce a persistent backlog of paperwork.",
+        "Assisted in meal prep and delivery for visitors and residents."
+      ]
+    }
+  ],
+  "sideProjects": [
+    {
+      "company": "GottaGoGov",
+      "position": "Lead Developer",
+      "website": "http://www.getcerca.com",
+      "startDate": "2016-09-01",
+      "endDate": "Present",
+      "summary": "GottaGoGov is a travel planning tool for travelers that follow GSA and State Department travel policy.",
+      "highlights": [
+        "Designing and developing an offline-first mobile application for travelers that follow federal and state government travel rules.",
+        "Developing multiple features that improve on the (dated) existing applications on the app stores, including: Per-diem comparison to help travelers identify the best rates in an area; Nearby flights to identify travel options; Airline preferences to highlight flights that will earn frequent flier points; A simple search mechanism to find flights and per-diem rates for any city; Travel time selection, to simplify the process by only showing the relevant data."
+      ]
+    },
+    {
+      "company": "Cerca LLC",
+      "position": "Lead Developer",
+      "website": "http://www.getcerca.com",
+      "startDate": "2014-11-01",
+      "endDate": "2015-10-01",
+      "summary": "Cerca is realtime, location-based mobile app built to help friends get together.",
+      "highlights": [
+        "Designing and developing a real-time mobile application, with Ionic, Node, and PostgreSQL, deploying to AWS.",
+        "Supporting, mentoring, and teaching a junior developer in the areas of system design and architecture, JavaScript gotchas and best practices, as well as feature design, scoping, and implementation.",
+        "Researching, learning, and adopting new technologies whenever possible.",
+        "Researching user experience, and troubleshooting and resolving errors identified by user feedback.",
+        "Setting delivery dates, prioritizing development tasks, and deploying to the app stores on a regular cadence."
       ]
     }
   ],
@@ -365,8 +433,12 @@
     }
   ],
   "interests": [
-    { "name": "Reading" },
-    { "name": "Weight Training" }
+    {
+      "name": "Reading"
+    },
+    {
+      "name": "Weight Training"
+    }
   ],
   "references": [
     {
