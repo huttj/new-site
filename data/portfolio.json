@@ -8,6 +8,15 @@
                 "type": "subcategory",
                 "data": [
                     {
+                        "name": "GottaGoGov",
+                        "type": "item",
+                        "description": "GottaGoGov is a tool for travelers that follow federal and state government travel rules. It helps them find and keep track of their flights and per-diem rates during their travels. Built with React and Cordova.",
+                        "link": "http://gottagogov.com",
+                        "picture": "gottagogov.png",
+                        "dateStarted": "September 2016",
+                        "dateCompleted": "Present"
+                    },
+                    {
                         "name": "Time Everything",
                         "type": "item",
                         "description": "Wanting to find out how long certain activities took me to complete (walking to the train station, making coffee), I built this app from scratch. It lets you run as many timers as you want, simultaneously, and it gives you some basic statistics about the times. Built and styled from scratch (including the clock and date picker widget), in React and Cordova.",
@@ -32,15 +41,6 @@
                         "link": "https://github.com/huttj/slack-export-viewer",
                         "picture": "sev.png",
                         "dateCompleted": "May 2017"
-                    },
-                    {
-                        "name": "GottaGoGov",
-                        "type": "item",
-                        "description": "GottaGoGov is a tool for travelers that follow federal and state government travel rules. It helps them find and keep track of their flights and per-diem rates during their travels. Built with Angular 2 and Ionic 2.",
-                        "link": "http://gottagogov.com",
-                        "picture": "gottagogov.png",
-                        "dateStarted": "September 2016",
-                        "dateCompleted": "Present"
                     },
                     {
                         "name": "Grind Log Pro",
