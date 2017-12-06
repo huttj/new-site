@@ -2,18 +2,10 @@
   "basics": {
     "name": "Joshua Hutt",
     "label": "Entrepreneur, Software Developer",
-    "picture": "http://www.gravatar.com/avatar/f12264dd60439474861eb588f5472bac?s=500.png",
+    "picture": "http://www.gravatar.com/avatar/f12264dd60439474861eb588f5472bac?s=512.png",
     "email": "joshua@huttj.com",
     "phone": "(206) 486-4807",
     "website": "http://joshuahutt.com",
-    "summary": "",
-    "location": {
-      "address": "1800 S Jackson St #203",
-      "postalCode": "WA 98144",
-      "city": "Seattle",
-      "countryCode": "US",
-      "region": "Washington"
-    },
     "profiles": [
       {
         "network": "GitHub",
@@ -34,15 +26,40 @@
   },
   "work": [
     {
+      "company": "Elevāt",
+      "position": "Senior Software Developer",
+      "website": "https://www.elevat-iot.com",
+      "startDate": "2017-11-06",
+      "endDate": "Present",
+      "summary": "Elevāt provides a complete lifecycle management solution for intelligent assets. It helps customers listen to their devices, make sense of all the chatter, and build insights that enable the best business decisions possible.",
+      "highlights": [
+        "Building a real-time IoT data collection and analysis platform on AWS with Node.js and React.",
+        "Improving the development process with Terraform, CI/CD integrations between GitHub and Shippable, and advocating for and instructing on best practices in Git and Gitflow.",
+        "Building a drop-in replacement for the AWS IoT Device Shadow service, to improve performance by leveraging Redis in a cluster configuration, and to offer improved, granular control seeding and caching on a signal, device, and organization level.",
+        "Building a rules engine and associated UI to enable customers to monitor and react to device measurements in near real-time, improving their visibility and insight into what’s happening in the field, facilitating preventative maintenance and efficiency tuning."
+      ]
+    },
+    {
+      "company": "Uber",
+      "position": "Senior Software Engineer (Contract)",
+      "website": "https://www.uber.com/",
+      "startDate": "2017-10-09",
+      "endDate": "Present",
+      "summary": "Uber is a global transportation and logistics company that specializes in passenger transport, food delivery, and more.",
+      "highlights": [
+        "Confidential. Working with Node, React, and React Native."
+      ]
+    },
+    {
       "company": "Stackline",
       "position": "Senior Software Developer",
       "website": "https://www.stackline.com/",
-      "startDate": "2017-08-07",
-      "endDate": "Present",
+      "startDate": "2017-07-31",
+      "endDate": "2017-09-25",
       "summary": "Stackline transforms how brands manage online retail by providing mission critical tools for e-commerce.",
       "highlights": [
-        "Building a Vendor Data Collection service for retailer websites, which logs in and (1) runs, (2) pulls, (3) transforms, and (4) loads from sales and inventory reports. The Node.js service leverages AWS ECS/EC2, Lambda, S3, SQS, and SNS to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
-        "Building a Desktop Data Collector for collecting vendor data from the customer's own hardware, eliminating the need for sharing login credentials with clients. Developed with Electron/Node.js, React, and Webpack, it includes a UI for account management and job monitoring, as well as a 'headless Chrome' API integrated into Electron for orchestrating the report collection process."
+        "Built a Vendor Data Collection service for retailer websites, which logs in and (1) runs, (2) pulls, (3) transforms, and (4) loads from sales and inventory reports. The Node.js service leverages AWS ECS/EC2, Lambda, S3, SQS, and SNS to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
+        "Built a Desktop Data Collector for collecting vendor data from the customer's own hardware, eliminating the need for sharing login credentials with clients. Developed with Electron/Node.js, React, and Webpack, it includes a UI for account management and job monitoring, as well as a 'headless Chrome' API integrated into Electron for orchestrating the report collection process."
       ]
     },
     {
@@ -255,7 +272,7 @@
     {
       "company": "GottaGoGov",
       "position": "Lead Developer",
-      "website": "http://www.getcerca.com",
+      "website": "http://www.gottagogov.com",
       "startDate": "2016-09-01",
       "endDate": "Present",
       "summary": "GottaGoGov is a travel planning tool for travelers that follow GSA and State Department travel policy.",
