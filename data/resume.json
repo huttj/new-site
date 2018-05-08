@@ -30,24 +30,14 @@
       "position": "Senior Software Developer",
       "website": "https://www.elevat-iot.com",
       "startDate": "2017-11-06",
-      "endDate": "Present",
+      "endDate": "2018-04-18",
       "summary": "Elevāt provides a complete lifecycle management solution for intelligent assets. It helps customers listen to their devices, make sense of all the chatter, and build insights that enable the best business decisions possible.",
       "highlights": [
-        "Building a real-time IoT data collection and analysis platform on AWS with Node.js and React.",
-        "Improving the development process with Terraform, CI/CD integrations between GitHub and Shippable, and advocating for and instructing on best practices in Git and Gitflow.",
-        "Building a drop-in replacement for the AWS IoT Device Shadow service, to improve performance by leveraging Redis in a cluster configuration, and to offer improved, granular control seeding and caching on a signal, device, and organization level.",
-        "Building a rules engine and associated UI to enable customers to monitor and react to device measurements in near real-time, improving their visibility and insight into what’s happening in the field, facilitating preventative maintenance and efficiency tuning."
-      ]
-    },
-    {
-      "company": "Uber",
-      "position": "Senior Software Engineer (Contract)",
-      "website": "https://www.uber.com/",
-      "startDate": "2017-10-09",
-      "endDate": "Present",
-      "summary": "Uber is a global transportation and logistics company that specializes in passenger transport, food delivery, and more.",
-      "highlights": [
-        "Confidential. Working with Node, React, and React Native."
+        "Working with a small team of four other developers to scale an add critical features to a real-time IoT data collection and analysis platform on built on AWS, with Node.js and AngularJS.",
+        "Building a drop-in replacement for the AWS IoT Device Shadow service to dramatically improve performance and initial load time using a Redis cluster, and to offer improved, granular control over data seeding and caching on the signal, device, and organization levels.",
+        "Building a rules engine and associated UI to enable the company to close a growing segment of prospective customers who need to monitor and react to device measurements in near real-time, thereby improving their visibility and insight into what’s happening in the field, and facilitating preventative maintenance and iterative efficiency tuning.",
+        "Streamlining the development and deployment cycle with Terraform, CI/CD integrations between GitHub and Shippable, and advocating for and instructing on best practices in Git and Gitflow.",
+        "Migrating unit tests to use Jest, improving testing speed and reliability, and making writing and maintaining tests easier on the developer."
       ]
     },
     {
@@ -58,8 +48,8 @@
       "endDate": "2017-09-25",
       "summary": "Stackline transforms how brands manage online retail by providing mission critical tools for e-commerce.",
       "highlights": [
-        "Built a Vendor Data Collection service for retailer websites, which logs in and (1) runs, (2) pulls, (3) transforms, and (4) loads from sales and inventory reports. The Node.js service leverages AWS ECS/EC2, Lambda, S3, SQS, and SNS to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
-        "Built a Desktop Data Collector for collecting vendor data from the customer's own hardware, eliminating the need for sharing login credentials with clients. Developed with Electron/Node.js, React, and Webpack, it includes a UI for account management and job monitoring, as well as a 'headless Chrome' API integrated into Electron for orchestrating the report collection process."
+        "Worked independently alongside a small, three-person team of backend developers to build a Vendor Data Collection service for retailer websites, to position Stackline as the single-source of truth for all customer sales data. The Node.js service logs in to vendor websites and (1) runs, (2) pulls, (3) transforms, and (4) loads sales and inventory reports. It was built on AWS ECS/EC2, Lambda, S3, SQS, and SNS, to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
+        "Built a Desktop Data Collector for running the vendor data collection process from the customer's own hardware, eliminating the need for sharing login credentials with clients, thus eliminating a significant hurdle for some prominent customers. Developed with Electron/Node.js, React, and Webpack, it includes a UI for account management and job monitoring, as well as a 'headless Chrome' API integrated into Electron for orchestrating the report collection process."
       ]
     },
     {
@@ -70,10 +60,10 @@
       "endDate": "2017-07-31",
       "summary": "Pushpay improves sales and business processes by making payments simple.",
       "highlights": [
-        "Maintained and extended a powerful mobile app development suite, built in Node.js, React, and React Native.",
-        "Developed and integrated metrics into the platform, using StatsD and Librato.",
-        "Automated screenshot collection for applications developed on the platform to save a significant amount of time spent by implementation specialists.",
-        "Developed UI/UX improvements to improve the customer experience."
+        "Joined as the first US developer on the eChurch platform, interfacing with a small team of developers based out of the original New Zealand headquarters to maintain and enhance a powerful mobile app content management and delivery platform, built in Node.js, React, and React Native.",
+        "Integrated much-needed metrics collection into the platform, using StatsD and Librato, to provide insight into customer and end-user usage patterns, as well as into server performance and irregularities, enabling the support team to more effectively work with customers to get the most out of the platform, and enabling the development team to identify and eliminate performance bottlenecks.",
+        "Automated screenshot collection for apps designed on the platform, to save a tremendous amount of time spent by (very grateful) implementation specialists (on what was their lengthiest and most repetitive task), reducing the overall time to onboard new customers.",
+        "Developed UI/UX improvements to improve the customer experience throughout the platform and reduce the number of support requests received by the support team."
       ]
     },
     {
@@ -84,9 +74,9 @@
       "endDate": "2017-06-01",
       "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
-        "Developed a cross-platform mobile application in ES6, with React Native and Redux.",
-        "Redesigned existing functionality from the original iPad app for mobile phones, introducing new levels of interactivity and instant feedback to improve the user experience.",
-        "Integrated in-app purchases and in-app subscriptions for unlocking premium content."
+        "Developed a complex, cross-platform mobile application with over 45 detailed screens and multiple dynamic formulae based on optional data entered throughout the app, using ES6, with React Native and Redux.",
+        "Redesigned existing screens and functionality from the original iPad app to suit the phone form factor, introducing new levels of interactivity and instant feedback (e.g., earnings and interest graphs update as sliders are dragged) to improve the user experience.",
+        "Integrated in-app purchases (one-time purchases) and in-app subscriptions via the Apple App Store unlocking premium content throughout the app’s various reports."
       ]
     },
     {
@@ -97,10 +87,10 @@
       "endDate": "2017-05-01",
       "summary": "Grind Log Pro is an easy and efficient tool for logging meat grinds and generating grind log reports based on the 2016 USDA protocol. ",
       "highlights": [
-        "Designed a mobile UI for the existing Grind Log Pro application, a tool to help grocery stores maintain compliance with the USDA regulations in a reliable, convenient, and consistent manner.",
-        "Upgraded and fixed bugs in existing application, adding error handling, improving security, and upgrading the login for mobile.",
-        "Included a real-time scanning feature to quickly and easily scan grind barcodes and enter the data into the app.",
-        "Published on the Apple App Store and the Google Play Store."
+        "Designed a mobile UI in an extremely short (one-week) timeframe, for the existing Grind Log Pro web app – a fast and flexible tool to help grocery stores maintain compliance with the USDA regulations in a reliable, convenient, and consistent manner.",
+        "Significantly hardened the existing app through upgrades and bug fixes; added defensive error handling, improved app security, integrated real-time, Slack-integrated application logs, and upgraded the login flow for mobile.",
+        "Streamlined the barcode scanning process with the inclusion of a real-time scanning feature to quickly and easily scan grind barcodes and enter the data into the app.",
+        "Handled the publication and update processes on both the Apple App Store and the Google Play Store."
       ]
     },
     {
@@ -111,9 +101,9 @@
       "endDate": "2017-01-01",
       "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
-        "Designed and developed user-friendly, and reusable front-end components in Adobe’s AEM (Adobe Experience Manager) platform, using Angular 1 and Sightly, for use by marketing personnel and other non-developers.",
-        "Automated the production of over 200 marketing pages for the rollout of a high-SEO marketing site on the AEM platform.",
-        "Produced landing experiences that secured a lucrative advertising deal with American Express."
+        "Worked on a two-person team to design and develop user-friendly, and reusable front-end components in Adobe’s unique AEM (Adobe Experience Manager) platform, using Angular 1 and Sightly, for ongoing use by marketing personnel and other non-developers.",
+        "Automated the production of over 200 marketing pages for the rollout of a high-SEO marketing site on the AEM platform, avoiding both costly scope creep and the scrapping of any part of the planned delivery, instead making it possible to build and deliver the full site on time and within budget.",
+        "Produced multiple landing experiences for the project that secured a lucrative advertising deal with American Express."
       ]
     },
     {
@@ -124,9 +114,9 @@
       "endDate": "2016-06-01",
       "summary": "Cadence is a leading provider of language services to the global business and investment community, and an innovator in real-time translation technology.",
       "highlights": [
-        "Redesigned the landing page, updated the color scheme, and improved the look and feel of the rest of the site on mobile.",
-        "Redesigned the user intake form in ReactJS, included helpful widgets and tools to improve UX, and integrated the form with Cadence’s \"smart-match\" technology on the backend.",
-        "Integrated Intercom chat into the ReactJS application, using local storage to retain user session between visits."
+        "Worked independently to redesign the user intake form in ReactJS, to vastly improve the form integration with the rest of the application, making it easier and more inviting for new customers to sign up and onboard quickly. Also included helpful widgets and tools to improve the UX, and integrated the form with Cadence’s \"smart-match\" technology on the backend.",
+        "Dramatically redesigned the landing page to showcase the flexibility and technical sophistication of the platform, updated the site’s color scheme, and improved the look and feel of the all of the site’s pages on mobile.",
+        "Integrated Intercom chat into the ReactJS application and the team’s Slack group, to improve the customer experience from the first visit, and to enable the support team to shepherd new customers during the signup process and through their first engagement."
       ]
     },
     {
@@ -137,8 +127,9 @@
       "endDate": "2016-09-01",
       "summary": "Galvanize is a technology school and co-working space that provides entrepreneurs and learners with life-changing opportunities for growth.",
       "highlights": [
-        "Leading an introductory JavaScript class and coaching ten (10) students in the basics of HTML, CSS, and JavaScript.",
-        "Emphasizing the importance of (1) solving the right problem, (2) design-first approaches, and (3) “clean code”."
+        "Independently taught an introductory JavaScript class and coached ten students of diverse backgrounds and technical experience in the basics of HTML, CSS, and JavaScript, in just eight short weeks.",
+        "Emphasized the importance of solving the right problem, design-first approaches, and writing clean code, preparing many of the students for strong success in the full six-month Galvanize course. Many of the students have since successfully entered the software industry.",
+        "Coached the students through various homework projects, including a student-driven final project, for which most of the students produced sophisticated and beautifully-designed applications, including a Yelp-integrated coffee shop locator, a tide pool map for kindergarten instruction, and an animated card-matching game."
       ]
     },
     {
@@ -149,11 +140,14 @@
       "endDate": "2017-01-01",
       "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
-        "Designing and implementing a scalable “serverless” application architecture for the near real-time replication of a monolithic SQL Server instance to DynamoDB, and near real-time publication of changed data, using AWS Lambda, S3, SNS, SQS, and API Gateway.",
-        "Implementing symmetric at-rest encryption for data stored in DynamoDB and SQS, using C#, NodeJS, and Amazon’s Key Management Service (KMS).",
-        "Delivering training to 25+ mid- and senior-level client personnel on AWS managed services and the solution architecture.",
-        "Driving cross-disciplinary collaboration on a fast-paced, agile Scrum team of developers, testers, and managers.",
-        "Mentoring and assisting other developers with code reviews, pair programming, and general development advice."
+        "Worked in an enterprise environment on a mixed team of contractors and FTEs to redesign a integration layer for a third-party vendor.",
+        "Designed and implemented a scalable, serverless application architecture for replication and transformation of data from a SQL Server instance to DynamoDB, and near real-time publication of updates, using AWS Lambda, S3, SNS, SQS, and API Gateway.",
+        "Implemented symmetric at-rest encryption for data in DynamoDB and SQS, using C#, Node.js, and Amazon’s Key Management Service.",
+        "Developed and maintained high-throughput, multi-threaded Windows services with .NET in C# for monitoring SQL Server Service Broker queues and uploading data updates to DynamoDB continuously.",
+        "Delivered training to 25+ mid- and senior-level client personnel on AWS managed services and the solution architecture.",
+        "Drove cross-disciplinary collaboration on a fast-paced, agile Scrum team of developers, testers, and managers.",
+        "Mentored and assisted other developers with code reviews, pair programming, and general development advice.",
+        "Implemented and maintained end-to-end performance monitoring solution with the ELK stack (Elasticsearch, Logstash, and Kibana), to monitor system health and performance with high-level charts and statistics as well and detailed event-level logs."
       ]
     },
     {
@@ -164,9 +158,8 @@
       "endDate": "2016-01-31",
       "summary": "Gesto Technologies provides an all-in-one point-of-sale and loyalty platform for businesses in the hospitality, gaming, sports, and retail industries.",
       "highlights": [
-        "Designed and developed an extensible promotions service, including a DSL for defining promotions, an efficient algorithm for optimizing the application of available promotions to orders, and an attractive admin interface for managing promotions.",
-        "Triaged and resolved bugs, production issues, and customer support requests during on-call rotation.",
-        "Worked to simplify and streamline development and deployment processes across the platform, improving both developer productivity as well as the speed and reliability of deployments.",
+        "Singlehandedly designed and developed an extensible promotions service to serve as the foundation for customer engagement on the platform. The service including a DSL for defining promotions, an efficient algorithm for optimizing the application of available promotions to orders, and an attractive admin interface for managing promotions.",
+        "Worked with a distributed team to triage and resolve bugs, production issues, and customer support requests, during on-call rotation.",
         "Designed and developed a menu management tool in Angular, Express, and MongoDB, to improve the user experience of customer menu management, and to preserve the integrity of the menu data during updates."
       ]
     },
@@ -178,12 +171,13 @@
       "endDate": "2015-10-31",
       "summary": "Avanade is a business technology solutions and managed services provider with innovative insights and expertise in Microsoft technologies that helps customers realize results.",
       "highlights": [
-        "Working closely with Technology Infrastructure (TI) developers, business consultants, product managers, and key product stakeholders to research and document enterprise requirements, user-stories, and product features, integrating the results into a core project methodology.",
-        "Participating in software re-architecture planning: validating database schemas, user requirements, and business processes in the context of the in-progress project methodology, as well as moderating the feature-methodology interaction",
-        "Working with the Software & Cloud Services (SCS) UX Working Group; developing a UX Design Pattern Library in SharePoint 2010 and KnockoutJS to capture internal UX patterns and offer SCS development teams a central, user-friendly repository for repeatable code and best practices.",
-        "Producing adaptive, user-centered HTML5 help and PowerPoint training decks to define and simplify complex user workflows.",
-        "Taking ownership of the entire library of end-user and business consultant documentation for an enterprise software platform with a diverse customer base, including installation guides, user guides, customer demonstration guides, and UI documentation.",
-        "Working with a senior Technical Writer to develop a new, iterative strategy for company-wide software documentation."
+        "Designed and developed UX-driven features for a large enterprise .NET MVC application written in C#, including user-requested status monitoring elements, page-level integration of detailed, high-quality context-sensitive help (CSH), and detailed form tooltips.",
+        "Developed and maintained a UX Design Pattern Library with SharePoint 2010, Bootstrap, jQuery, and Knockout.js to offer internal development teams a central, user-friendly repository for repeatable code and best practices.",
+        "Produced responsive, user-centered HTML5 help and PowerPoint training decks to simplify complex user workflows.",
+        "Worked with a senior Technical Writer to develop a department-wide framework for technical documentation.",
+        "Facilitated software re-architecture by validating database schemas, user requirements, and business processes in the context of the in-progress methodology, and developing artifacts to codify the feature-methodology interplay.",
+        "Took ownership of the entire library of end-user and business consultant documentation for an enterprise software platform with a diverse customer base, in order to ensure a consistent, high-quality experience.",
+        "Scripted, recorded, and edited a video training series for consultants and end-users of the software platform."
       ]
     },
     {
@@ -269,6 +263,17 @@
     }
   ],
   "sideProjects": [
+    {
+      "company": "Sympathize",
+      "position": "Lead Developer",
+      "website": "",
+      "startDate": "2018-02-01",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": [
+        "Designing and developing a real-time chat application to connect users to discuss issues they face and offer support and to one another."
+      ]
+    },
     {
       "company": "GottaGoGov",
       "position": "Lead Developer",
