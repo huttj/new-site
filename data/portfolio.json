@@ -174,7 +174,7 @@
                         "name": "Video Comments",
                         "type": "item",
                         "description": "A tool to create comments on videos. The comments are displayed during subsequent views, at the same timestamp at which they were left.",
-                        "link": "https://cdn.rawgit.com/huttj/video-comments/e7b986cc5c88be9912ce8b05209dd6ed8fde35b7/list.html",
+                        "link": "https://cdn.rawgit.com/huttj/video-comments/0d006f94c68117364530589c81b99977adf2baaf/list.html",
                         "picture": "vc.png",
                         "dateStarted": "",
                         "dateCompleted": "September 2014"
