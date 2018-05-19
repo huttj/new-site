@@ -35,7 +35,8 @@
       "highlights": [
         "Working with a small team of four other developers to scale an add critical features to a real-time IoT data collection and analysis platform on built on AWS, with Node.js and AngularJS.",
         "Building a drop-in replacement for the AWS IoT Device Shadow service to dramatically improve performance and initial load time using a Redis cluster, and to offer improved, granular control over data seeding and caching on the signal, device, and organization levels.",
-        "Building a rules engine and associated UI to enable the company to close a growing segment of prospective customers who need to monitor and react to device measurements in near real-time, thereby improving their visibility and insight into what’s happening in the field, and facilitating preventative maintenance and iterative efficiency tuning.",
+        "Evaluated and improved the performance of the Redis-based solution with timing benchmarks for each of the endpoints and methods.",
+        "Building a rules engine and corresponding UI to enable the company to close a growing segment of prospective customers who need to monitor and react to device measurements in near real-time, thereby improving their visibility and insight into what’s happening in the field, and facilitating preventative maintenance and iterative efficiency tuning.",
         "Streamlining the development and deployment cycle with Terraform, CI/CD integrations between GitHub and Shippable, and advocating for and instructing on best practices in Git and Gitflow.",
         "Migrating unit tests to use Jest, improving testing speed and reliability, and making writing and maintaining tests easier on the developer."
       ]
@@ -48,7 +49,7 @@
       "endDate": "2017-09-25",
       "summary": "Stackline transforms how brands manage online retail by providing mission critical tools for e-commerce.",
       "highlights": [
-        "Worked independently alongside a small, three-person team of backend developers to build a Vendor Data Collection service for retailer websites, to position Stackline as the single-source of truth for all customer sales data. The Node.js service logs in to vendor websites and (1) runs, (2) pulls, (3) transforms, and (4) loads sales and inventory reports. It was built on AWS ECS/EC2, Lambda, S3, SQS, and SNS, to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
+        "Worked independently alongside a three-person team of backend developers to build a Vendor Data Collection service for retailer websites, to position Stackline as the single-source of truth for all customer sales data. The Node.js service logs in to vendor websites and (1) runs, (2) pulls, (3) transforms, and (4) loads sales and inventory reports. It was built on AWS ECS/EC2, Lambda, S3, SQS, and SNS, to provide a scalable and fault-tolerant solution with real-time status reporting in Slack.",
         "Built a Desktop Data Collector for running the vendor data collection process from the customer's own hardware, eliminating the need for sharing login credentials with clients, thus eliminating a significant hurdle for some prominent customers. Developed with Electron/Node.js, React, and Webpack, it includes a UI for account management and job monitoring, as well as a 'headless Chrome' API integrated into Electron for orchestrating the report collection process."
       ]
     },
@@ -60,7 +61,7 @@
       "endDate": "2017-07-31",
       "summary": "Pushpay improves sales and business processes by making payments simple.",
       "highlights": [
-        "Joined as the first US developer on the eChurch platform, interfacing with a small team of developers based out of the original New Zealand headquarters to maintain and enhance a powerful mobile app content management and delivery platform, built in Node.js, React, and React Native.",
+        "Joined as the first US developer on Pushpay’s mobile content management platform, interfacing with a small team of developers based out of the original New Zealand headquarters to maintain and enhance a powerful mobile app content management and delivery platform, built in Node.js, React, and React Native.",
         "Integrated much-needed metrics collection into the platform, using StatsD and Librato, to provide insight into customer and end-user usage patterns, as well as into server performance and irregularities, enabling the support team to more effectively work with customers to get the most out of the platform, and enabling the development team to identify and eliminate performance bottlenecks.",
         "Automated screenshot collection for apps designed on the platform, to save a tremendous amount of time spent by (very grateful) implementation specialists (on what was their lengthiest and most repetitive task), reducing the overall time to onboard new customers.",
         "Developed UI/UX improvements to improve the customer experience throughout the platform and reduce the number of support requests received by the support team."
@@ -74,7 +75,7 @@
       "endDate": "2017-06-01",
       "summary": "Maxsam Partners is a technology and leadership consultancy focused on assisting high-growth companies with their sales and development needs.",
       "highlights": [
-        "Developed a complex, cross-platform mobile application with over 45 detailed screens and multiple dynamic formulae based on optional data entered throughout the app, using ES6, with React Native and Redux.",
+        "Developed a feature-rich, cross-platform mobile application with over 45 detailed screens and multiple dynamic formulae based on optional data entered throughout the app, using ES6, with React Native and Redux.",
         "Redesigned existing screens and functionality from the original iPad app to suit the phone form factor, introducing new levels of interactivity and instant feedback (e.g., earnings and interest graphs update as sliders are dragged) to improve the user experience.",
         "Integrated in-app purchases (one-time purchases) and in-app subscriptions via the Apple App Store unlocking premium content throughout the app’s various reports."
       ]
