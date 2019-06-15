@@ -28,12 +28,25 @@
                 </div>
             </div>
 
-            <div class="column">
+
+            <div class="column" ng-if="width <= 978">
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)"></div>
+			</div>            
+
+            <div class="column" ng-if="width > 978">
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.column1 | resumeSort:true)"></div>
+			</div>            
+			<div class="column" ng-if="width > 978">
+            	<div ng-include src="'/job.html'" ng-repeat="job in (data.column2 | resumeSort:true)"></div>
+            </div>
+
+
+            <!-- <div class="column">
             	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="width > 978 ? $index % 2 == 0 : true"></div>
 			</div>            
 			<div class="column" ng-if="width > 978">
             	<div ng-include src="'/job.html'" ng-repeat="job in (data.work | resumeSort:true)" ng-if="width > 978 && $index % 2 == 1"></div>
-            </div>
+            </div> -->
 
             <script type="text/ng-template" id="/job.html">
                 <h3><span ng-bind="::job.position"></span> - <a href="{{::job.website}}" ng-bind="::job.company"></a></h3>

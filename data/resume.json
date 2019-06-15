@@ -26,6 +26,36 @@
   },
   "work": [
     {
+      "company": "LivePerson",
+      "position": "Sr. Software Development Engineer",
+      "website": "https://www.liveperson.com",
+      "startDate": "2018-08-06",
+      "endDate": "Present",
+      "summary": "LivePerson's AI-powered conversational platform makes it easy for consumers to buy products and get answers to questions in messaging channels they already use every day.",
+      "highlights": [
+        "Architecting, building, and shipping an AI and automation-first platform, with a six-person team, to drive big wins for brands and agents in the LivePerson ecosystem, to include a multi-service implementation of AI Assist, an AI analytics and configuration recommendation system for brands, and an AI-driven tool to identify and execute the \"next best action\" for any customer inquiry.",
+        "Working independently to build a high-impact, customer-facing proof of concept implementation of the AI Assist platform vision, using Node.js and React, which served as the foundation and first product of a new team, Core AI, in the fledgling Seattle office.",
+        "Introducing the Data Science team to the ELK stack, establishing the approach and core implementation of a feature which has quickly become its own product, called Zeitgeist, which gives brands deep and far-reaching insight into the behavior and needs of their customers.",
+        "Traveling to the Israel offices to learn about the existing products and platforms from the teams that designed and built them, documenting and sharing the designs, implementations, and limitations, and developing a transition plan for a core platform component.",
+        "Driving improvements to the platform, as well as to developer experience throughout the organization by spearheading developer advocacy through working sessions, standards, and documentation.",
+        "Recruiting, interviewing, and hiring the first round of new developers for several new teams in the Seattle office."
+      ]
+    },
+    {
+      "company": "Coinstar",
+      "position": "Senior Software Engineer (Contract)",
+      "website": "https://www.coinstar.com",
+      "startDate": "2018-06-01",
+      "endDate": "2018-08-06",
+      "summary": "Coinstar kiosks turn the coins you toss in a jar into something you really want – like cash, a NO FEE eGift Card, or a charity donation.",
+      "highlights": [
+        "Worked independently to turn transaction and other hardware event data into (1) adaptable, automated alerts, (2) actionable insights, and (3) an ongoing source for powerful reports to be used by personnel across the business - from field engineers to BI analysts.",
+        "Set up and configured the ELK stack (Elasticsearch, Logstash, and Kibana) and the X-Pack extension suite to ingest and process millions of transaction and hardware events per month.",
+        "Built an ETL in Node.js to efficiently load heavily normalized, and partially XML-based, data from Microsoft SQL Server, de-normalize and transform it into newline-delimited JSON, and output it for consumption by Logstash.",
+        "Built a suite of visualizations, dashboards, machine learning jobs, and other data-driven assets for general consumption throughout the organization."
+      ]
+    },
+    {
       "company": "Elevāt",
       "position": "Senior Software Developer",
       "website": "https://www.elevat-iot.com",
@@ -265,14 +295,15 @@
   ],
   "sideProjects": [
     {
-      "company": "Sympathize",
+      "company": "Empathize",
       "position": "Lead Developer",
       "website": "",
       "startDate": "2018-02-01",
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Designing and developing a real-time chat application to connect users to discuss issues they face and offer support and to one another."
+        "Designing and developing a real-time chat application to connect users to discuss issues they face and offer support and to one another.",
+        "Developing a Facebook Messenger integration to enable users to connect in a low-friction manner through one of the most popular platforms in the world."
       ]
     },
     {
@@ -412,38 +443,32 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "8",
+      "name": "Development and Delivery",
+      "level": "102",
       "keywords": [
-        "HTML, CSS, JavaScript",
-        "NodeJS, SocketIO, Meteor",
-        "Angular, Ionic, Knockout",
-        "PostgreSQL, T-SQL, MySQL",
-        "RethinkDB, MongoDB, Redis"
+        "Full-stack and JavaScript application development, using Node.js, React, React Native, Redux, MobX, and Electron",
+        "Cloud deployment and architecture on Heroku and with AWS Services (ECS/EC2, Lambda, S3, SQS, SNS, API Gateway)",
+        "SQL (MySQL, PostgreSQL) and NoSQL (MongoDB, DynamoDB, RethinkDB, ScyllaDB) database administration"
       ]
     },
     {
-      "name": "Technical Writing",
-      "level": "7",
+      "name": "Collaboration and Design",
+      "level": "101",
       "keywords": [
-        "Microsoft Word",
-        "MadCap Flare",
-        "Editing",
-        "Proofreading",
-        "Information Architecture"
+        "User-centered UI/UX research, design, and development",
+        "Leadership experience with Agile and Scrum teams",
+        "Teaching experience in technical and non-technical fields",
+        "Mandarin Chinese (Fluent)"
       ]
     },
     {
-      "name": "Teaching",
-      "level": "6",
+      "name": "Data and Performance",
+      "level": "100",
       "keywords": [
-        "One-on-one training",
-        "Web-based training",
-        "Developing training materials",
-        "Junior developer mentoring",
-        "Entrepreneurial and business mentoring"
+        "Data monitoring, analytics and metrics with Elasticsearch (ELK)",
+        "Performance benchmarks and tuning in browsers and Node.js"
       ]
-    }
+    }    
   ],
   "languages": [
     {
