@@ -417,9 +417,9 @@ hr {
     }
 
     .home.ui.grid > .column.featured-image img {
-        width: 70% !important;
+        width: 95% !important;
         padding: 0%;
-        margin: 2% 15% 0;
+        margin: 2% 0 0 5%;
     }
 }
 
