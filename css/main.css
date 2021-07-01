@@ -23,8 +23,9 @@ body {
 
 .intro {
     margin-top: 3rem !important;
-    padding: 0 0 0 7% !important;
+    padding: 0 0 0 3% !important;
     zoom: 1.25;
+    width: 40% !important;
 }
 
 .home.ui.grid > .column.featured-image {
@@ -32,14 +33,15 @@ body {
     bottom: 0;
     margin-bottom: -5px;
     vertical-align: bottom;
-    width: 50%;
+    width: 60%;
 }
 
 .home.ui.grid > .column.featured-image img {
     margin: 0;
-    width: 90%;
+    width: 100%;
     bottom: 0;
     position: relative;
+    text-align: center;
 }
 
 * {
@@ -345,14 +347,14 @@ hr {
     }
     .intro {
         margin-top: 2rem !important;
-        padding-left: 6% !important;
+        padding-left: 3% !important;
     }
 }
 
 @media screen and (max-width: 1150px) {
     .intro {
         margin-top: 2rem !important;
-        padding-left: 5% !important;
+        padding-left: 3% !important;
         zoom: 1.1;
     }
     .home.ui.grid > .column.featured-image img {
@@ -377,6 +379,7 @@ hr {
 @media screen and (max-width: 999px) {
     .intro {
         margin-top: 1rem !important;
+        width: 100% !important;
     }
 
     .portfolio .ui.stackable.grid > div.categories.left.floated.column {
@@ -410,11 +413,9 @@ hr {
     }
 
     .intro {
-        padding: 0 5% !important;
+        padding: 0 3% !important;
     }
-}
 
-@media only screen and (max-width: 991px) {
     .home.ui.grid > .column.featured-image img {
         width: 70% !important;
         padding: 0%;

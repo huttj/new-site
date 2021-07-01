@@ -1,10 +1,10 @@
 {
     "title": "Joshua the Hutt",
-    "headline": "What's your business challenge?",
-    "subheading": "Let's solve it together.",
-    "message": "<p>I am an Entrepreneur and Software Developer, based in Seattle.</p><p>I build sleek web and mobile apps for startups, and scalable, serverless cloud apps for enterprises. I love a good business challenge — let me help with yours.</p>",
-    "button": "Email Me",
+    "headline": "What's blocking your business?",
+    "subheading": "Let me help you break through.",
+    "message": "<p>I make businesses more effective by architecting and delivering killer apps and big data pipelines. I love a good challenge — let me help you with yours.</p>",
+    "button": "Message me",
     "buttonHover": "Let's Talk!",
     "callToAction": "Let's share ideas!",
-    "picture": "img/profile-cutout-short.jpg"
+    "picture": "img/portrait.jpg"
 }
