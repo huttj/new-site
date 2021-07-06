@@ -26,11 +26,25 @@
   },
   "work": [
     {
+      "company": "Lowe's Innovation Labs",
+      "position": "Lead Software Development Engineer",
+      "website": "https://www.lowesinnovationlabs.com/",
+      "startDate": "2020-05-01",
+      "endDate": "Present",
+      "summary": "Lowe’s Innovation Labs explores how emerging technologies can advance home improvement, by rapidly prototyping solutions and putting them to the test in real-world, living labs, as well as scaling the solutions that drive value for Lowe’s customers and associates.",
+      "highlights": [
+        "Designing, developing, and deploying a single backend platform in Node.js, to seamlessly integrate a suite of 3D design applications to share and enable progressive enhancement of models and scenes as they progress through the workflow.",
+        "Leading a small team of five (5) developers to develop a 3D asset scanning pipeline management tool to support a key Lowe’s initiative to produce high-resolution 3D models to modernize the catalog on Lowes.com, the Lowe’s app, and other sites.",
+        "Driving the system design and system architecture of the 3D asset management tool, creating documents and diagrams to serialize the approach, lock in the focus, and inform the implementation.",
+        "Introducing Lowe’s enterprise Forgerock authentication strategy into the Lab’s ecosystem, to support in-store authentication by store associates for the Lab’s apps, where applicable."
+      ]
+    },
+    {
       "company": "LivePerson",
       "position": "Sr. Software Development Engineer",
       "website": "https://www.liveperson.com",
       "startDate": "2018-08-06",
-      "endDate": "Present",
+      "endDate": "2020-05-01",
       "summary": "LivePerson's AI-powered conversational platform makes it easy for consumers to buy products and get answers to questions in messaging channels they already use every day.",
       "highlights": [
         "Architecting, building, and shipping an AI and automation-first platform, with a six-person team, to drive big wins for brands and agents in the LivePerson ecosystem, to include a multi-service implementation of AI Assist, an AI analytics and configuration recommendation system for brands, and an AI-driven tool to identify and execute the \"next best action\" for any customer inquiry.",
